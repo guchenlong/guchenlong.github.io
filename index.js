@@ -105,7 +105,7 @@ function initItemListCss() {  // 初始化 css
     for (let i = 0; i < itemRightPeopleElement.length; i++) {
         let item = itemRightPeopleElement[i];
         item.style.padding = "0 1vw";
-        item.style.background = "rgb(174, 238, 238)";
+        item.style.background = "#D3D3D3";
         item.style.fontFamily = "微软雅黑";
     }
     // itemRightEvent - css
@@ -113,7 +113,8 @@ function initItemListCss() {  // 初始化 css
     for (let i = 0; i < itemRightEventElement.length; i++) {
         let item = itemRightEventElement[i];
         item.style.padding = "0 1vw";
-        item.style.background = "#rgb(255, 255, 205)";
+        item.style.background = "#F5F5F5";
         item.style.fontFamily = "微软雅黑";
+        item.style.marginLeft = "5px";
     }
 }
