@@ -28,7 +28,7 @@ function initItemListStr() {  // 初始化 - 时间戳 - 数组数据
                     <span class='itemRightTime'>${ item.time }</span>
                     <span class='itemRightLocation'>${ item.location }</span>
                     <span class='itemRightPeople'>${ item.people }</span>
-                    <a class='itemRightEvent' href="https://www.yuque.com/guchenlong/scvtw0/ag7a6zn4ggg5hm9g?singleDoc# 《test》">${ item.event }</a>
+                    <a class='itemRightEvent' href=${ item.link }>${ item.event }</a>
                 </div>
             </div>
         `;
