@@ -87,8 +87,8 @@ function initItemListCss() {  // 初始化 css
     var itemRightTimeElement = document.getElementsByClassName("itemRightTime");
     for (let i = 0; i < itemRightTimeElement.length; i++) {
         let item = itemRightTimeElement[i];
-        item.style.padding = "0 2vw";
-        item.style.background = "#FFC0CB";
+        item.style.padding = "0 1vw";
+        item.style.background = "rgb(255, 192, 203)";
         item.style.fontFamily = "微软雅黑";
         item.style.fontSize = "16px";
     }
@@ -96,24 +96,24 @@ function initItemListCss() {  // 初始化 css
     var itemRightLocationElement = document.getElementsByClassName("itemRightLocation");
     for (let i = 0; i < itemRightLocationElement.length; i++) {
         let item = itemRightLocationElement[i];
-        item.style.padding = "0 2vw";
-        item.style.background = "#FFFAF0";
+        item.style.padding = "0 1vw";
+        item.style.background = "rgb(255, 250, 240)";
         item.style.fontFamily = "微软雅黑";
     }
     // itemRightPeople - css
     var itemRightPeopleElement = document.getElementsByClassName("itemRightPeople");
     for (let i = 0; i < itemRightPeopleElement.length; i++) {
         let item = itemRightPeopleElement[i];
-        item.style.padding = "0 2vw";
-        item.style.background = "#AEEEEE";
+        item.style.padding = "0 1vw";
+        item.style.background = "rgb(174, 238, 238)";
         item.style.fontFamily = "微软雅黑";
     }
     // itemRightEvent - css
     var itemRightEventElement = document.getElementsByClassName("itemRightEvent");
     for (let i = 0; i < itemRightEventElement.length; i++) {
         let item = itemRightEventElement[i];
-        item.style.padding = "0 2vw";
-        item.style.background = "#FFFFCD";
+        item.style.padding = "0 1vw";
+        item.style.background = "#rgb(255, 255, 205)";
         item.style.fontFamily = "微软雅黑";
     }
 }
