@@ -12,13 +12,51 @@
                 margin: 0;
                 padding: 0;
             }
-
+            a {
+                text-decoration: none;
+            }
             #app {
                 width: 100%;
                 min-height: 100vh;
+                padding-top: 20px;
                 background-color: #FAEBD7;
             }
-
+            #time-universe {
+                padding: 20px;
+                margin: 20px;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+            }
+            #time-galaxy {
+                padding: 20px;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+            }
+            #time-solarSystem {
+                padding: 20px;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+            }
+            #time-earth {
+                padding: 20px;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+            }
+            #time-earthLife {
+                padding: 20px;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+            }
+            #time-earthHuman {
+                padding: 20px;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+            }
+            #time-earthHumanCivilization {
+                padding: 20px;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+            }
             #item-list {
                 width: 80%;
                 margin: 0 auto;
@@ -38,7 +76,35 @@
     </head>
     <body>
         <div id="app">
-            <div id="item-list"></div>
+            <div id="time-universe">
+                宇宙
+                <div id="time-galaxy">
+                    银河系
+                    <div id="time-solarSystem">
+                        太阳系
+                        <!-- <div>水星</div>
+                        <div>金星</div>
+                        <div>火星</div>
+                        <div>木星</div>
+                        <div>土星</div>
+                        <div>天王星</div>
+                        <div>海王星</div> -->
+                        <div id="time-earth">
+                            地球
+                            <div id="time-earthLife">
+                                地球生命
+                                <div id="time-earthHuman">
+                                    地球人类
+                                    <div id="time-earthHumanCivilization">
+                                        地球人类文明
+                                        <div id="item-list"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <script src="./data.js"></script>
         <script src="./index.js"></script>
