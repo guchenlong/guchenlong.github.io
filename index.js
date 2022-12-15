@@ -18,7 +18,8 @@ function initItemListStr() {  // 初始化 - 时间戳 - 数组数据
     let str = '';
     for (let i = 0; i < jsondata.length; i++) {
         let item = jsondata[i];
-        str = `${ str }
+        if (item.event) {
+            str = `${ str }
             <div class='item'>
                 <div class='itemLeft'>
                     <div class='itemLeftPoint'></div>
@@ -32,6 +33,7 @@ function initItemListStr() {  // 初始化 - 时间戳 - 数组数据
                 </div>
             </div>
         `;
+        }
     }
     return str;
 }
