@@ -15,81 +15,15 @@
             a {
                 text-decoration: none;
             }
-            #app {
+            body {
                 width: 100%;
                 min-height: 100vh;
-                padding-top: 20px;
                 background-color: #FAEBD7;
-            }
-            #time-universe {
-            }
-            #time-universe-item {
-                display: inline-block;
-                padding: 10px;
-                margin: 10px;
-                background-color: rgb(255, 192, 203);
-            }
-            #time-galaxy {
-                padding-left: 20px;
-            }
-            #time-galaxy-item {
-                display: inline-block;
-                padding: 10px;
-                margin: 10px;
-                background-color: rgb(255, 192, 203);
-            }
-            #time-solarSystem {
-                padding-left: 20px;
-            }
-            #time-solarSystem-item {
-                display: inline-block;
-                padding: 10px;
-                margin: 10px;
-                background-color: rgb(255, 192, 203);
-            }
-            #time-earth {
-                padding-left: 20px;
-            }
-            #time-earth-item {
-                display: inline-block;
-                padding: 10px;
-                margin: 10px;
-                background-color: rgb(255, 192, 203);
-            }
-            #time-earthLife {
-                padding-left: 20px;
-            }
-            #time-earthLife-item {
-                display: inline-block;
-                padding: 10px;
-                margin: 10px;
-                background-color: rgb(255, 192, 203);
-            }
-            #time-earthHuman {
-                padding-left: 20px;
-            }
-            #time-earthHuman-item {
-                display: inline-block;
-                padding: 10px;
-                margin: 10px;
-                background-color: rgb(255, 192, 203);
-            }
-            #time-earthHumanCivilization {
-                padding-left: 20px;
-            }
-            #time-earthHumanCivilization-item {
-                display: inline-block;
-                padding: 10px;
-                margin: 10px;
-                background-color: rgb(255, 192, 203);
-            }
-            #item-list {
-                width: 80%;
-                padding: 20px;
-                background-color: #FAEBD7;
+                font-family: "微软雅黑";
             }
         </style>
         <script>
+            // 百度统计
             var _hmt = _hmt || [];
             (function() {
               var hm = document.createElement("script");
@@ -100,30 +34,57 @@
         </script>
     </head>
     <body>
-        <div id="app">
-            <div id="time-universe">
-                <div id="time-universe-item">宇宙</div>
-                <div id="time-galaxy">
-                    <div id="time-galaxy-item">银河系</div>
-                    <div id="time-solarSystem">
-                        <div id="time-solarSystem-item">太阳系</div>
-                        <!-- <div>水星</div>
-                        <div>金星</div>
-                        <div>火星</div>
-                        <div>木星</div>
-                        <div>土星</div>
-                        <div>天王星</div>
-                        <div>海王星</div> -->
-                        <div id="time-earth">
-                            <div id="time-earth-item">地球</div>
-                            <div id="time-earthLife">
-                                <div id="time-earthLife-item">地球生命</div>
-                                <div id="time-earthHuman">
-                                    <div id="time-earthHuman-item">地球人类</div>
-                                    <div id="time-earthHumanCivilization">
-                                        <div id="time-earthHumanCivilization-item">地球人类文明</div>
-                                        <div id="item-list"></div>
-                                    </div>
+        <style>
+            #title {
+                /* 容器 */
+                width: 100%;
+                padding: 20px 0;
+                border-bottom: 1px solid #ddd;
+                /* 容器内 */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+            }
+            #tab {
+                width: 90%;
+                margin: 2vw auto;
+                padding: 10px;
+                border-radius: 5px;
+                background-color: #fff;
+            }
+            #main {
+                width: 90%;
+                margin: 2vw auto;
+                padding: 10px;
+                border-radius: 5px;
+                background-color: #fff;
+            }
+        </style>
+        <div id="title">时间的旅程</div>
+        <div id="tab">
+            <style>
+                .tab-item {
+                    margin-top: 10px;
+                    padding: 10px;
+                    border-radius: 5px;
+                    background-color:#4169E1;
+                    font-size: 18px;
+                    color: #fff;
+                }
+            </style>
+            <div>
+                <div class="tab-item">宇宙（-138，1700，0000）</div>
+                <div>
+                    <div class="tab-item" style="margin-left: 5vw;">银河系（-120，0000，0000）</div>
+                    <div>
+                        <div class="tab-item" style="margin-left: 10vw;">太阳系（-50，0000，0000）</div>
+                        <div>
+                            <div class="tab-item" style="margin-left: 15vw;">地球（-45，7000，0000）</div>
+                            <div>
+                                <div class="tab-item" style="margin-left: 20vw;">地球人类（-533，2000）</div>
+                                <div>
+                                    <div class="tab-item" style="margin-left: 25vw;">地球人类文明（-4100）</div>
                                 </div>
                             </div>
                         </div>
@@ -131,7 +92,27 @@
                 </div>
             </div>
         </div>
-        <script src="./data.js"></script>
-        <script src="./index.js"></script>
+        <div id="main">
+            <style>
+                #main-title {
+                    /* 容器 */
+                    width: 100%;
+                    padding: 20px 0;
+                    /* 容器内 */
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 20px;
+                }
+                #item-list {
+                    width: 80%;
+                    padding: 20px;
+                }
+            </style>
+            <div id="main-title">地球人类文明</div>
+            <div id="item-list"></div>
+        </div>
     </body>
+    <script src="./data.js"></script>
+    <script src="./index.js"></script>
 </html>
