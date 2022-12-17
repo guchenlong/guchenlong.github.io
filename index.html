@@ -21,6 +21,35 @@
                 background-color: #FAEBD7;
                 font-family: "微软雅黑";
             }
+            header {
+                /* 容器 */
+                width: 100%;
+                padding: 20px 0;
+                border-bottom: 1px dashed #ddd;
+                /* 容器内 */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 25px;
+            }
+            nav {}
+            main {
+                display: flex;
+            }
+            article {
+                width: 75%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            aside {
+                width: 25%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            footer {}
         </style>
         <script type="text/javascript" src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=xNpgc1RY38Qcft5THljMzKk7WUNxPTft"></script>
         <script>
@@ -44,30 +73,27 @@
     </head>
     <body>
         <header>
+            时间的旅程
+        </header>
+        <nav>
             <style>
-                #title {
-                    /* 容器 */
-                    width: 100%;
-                    padding: 20px 0;
-                    border-bottom: 1px dashed #ddd;
-                    /* 容器内 */
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-size: 25px;
+                #map {
+                    display: block;
+                    width: 97%;
+                    margin: 2vw auto;
+                    height: 40vw;
+                    border-radius: 5px;
                 }
             </style>
-            <div id="title">时间的旅程</div>
-        </header>
-        <nav></nav>
+            <div id="map"></div>
+        </nav>
         <main>
             <article>
                 <section id="tab">
                     <style>
                         #tab {
-                            width: 90%;
-                            margin: 2vw auto;
-                            padding: 10px 10px 20px;
+                            width: 95%;
+                            padding: 0 10px 20px;
                             border-radius: 5px;
                             background-color: #fff;
                         }
@@ -113,22 +139,10 @@
                         </div>
                     </div>
                 </section>
-                <section id="ditu">
-                    <style>
-                        #map {
-                            display: block;
-                            width: 90vw;
-                            margin: 2vw auto;
-                            height: 50vw;
-                            border-radius: 5px;
-                        }
-                    </style>
-                    <div id="map"></div>
-                </section>
                 <section id="main">
                     <style>
                         #main {
-                            width: 90%;
+                            width: 95%;
                             margin: 2vw auto;
                             padding: 10px;
                             border-radius: 5px;
@@ -212,10 +226,52 @@
                     <div id="item-list"></div>
                 </section>
             </article>
-            <aside></aside>
+            <aside>
+                <section id="recommend">
+                    <style>
+                        #recommend {
+                            width: 85%;
+                            min-height: 100vh;
+                            border-radius: 5px;
+                            background-color: #fff;
+                            border: 1px solid #ddd;
+                            padding-top: 10px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                        .recommend-item {
+                            width: 80%;
+                            margin: 5px 0;
+                            padding: 10px 0 10px 20px;
+                            color: #fff;
+                            background-color: #EB8E55;
+                            border-radius: 5px;
+                        }
+                    </style>
+                    <a class="recommend-item" target="_blank" href="https://www.yuque.com/guchenlong/scvtw0/gmpagg3tdxihucho?singleDoc# 《古埃及（-3150 ~ 639，3789 年）》">
+                        古埃及（-3150 ~ 639，3789 年）
+                    </a>
+                    <a class="recommend-item" target="_blank" href="https://www.yuque.com/guchenlong/scvtw0/wzfy1eyytsdcq1oq?singleDoc# 《古希腊（-2000 ~ -146，1854 年）》">
+                        古希腊（-2000 ~ -146，1854 年）
+                    </a>
+                    <a class="recommend-item" target="_blank" href="https://www.yuque.com/guchenlong/scvtw0/zumud2ggsulnpg7y?singleDoc# 《马其顿王国（-808 ~ -168，640 年）》">
+                        马其顿王国（-808 ~ -168，640 年）
+                    </a>
+                    <a class="recommend-item" target="_blank" href="https://www.yuque.com/guchenlong/scvtw0/ogg4grbfuraf0vn5?singleDoc# 《古罗马（-753 ~ 1453，2206 年）》">
+                        古罗马（-753 ~ 1453，2206 年）
+                    </a>
+                    <a class="recommend-item" target="_blank" href="https://www.yuque.com/guchenlong/scvtw0/mm65fgwekro221yo?singleDoc# 《波斯帝国（-550 ~ -330，220 年）》">
+                        波斯帝国（-550 ~ -330，220 年）
+                    </a>
+                    <a class="recommend-item" target="_blank" href="https://www.yuque.com/guchenlong/scvtw0/kbmqo03ca0m6ntqd?singleDoc# 《奥斯曼帝国（1299 ~ 1923，624 年）》">
+                        奥斯曼帝国（1299 ~ 1923，624 年）
+                    </a>
+                </section>
+            </aside>
         </main>
         <footer></footer>
-        <script src="./data.js" async></script>
-        <script src="./index.js" async></script>
     </body>
+    <script src="./data.js" async></script>
+    <script src="./index.js" async></script>
 </html>
