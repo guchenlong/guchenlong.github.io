@@ -32,9 +32,14 @@
                 justify-content: center;
                 font-size: 25px;
             }
-            nav {}
+            nav {
+                margin: 2vw 0;
+                padding-bottom: 1vw;
+                width: 100%;
+            }
             main {
                 display: flex;
+                margin: 2vw 0;
             }
             article {
                 width: 75%;
@@ -49,7 +54,11 @@
                 flex-direction: column;
                 align-items: center;
             }
-            footer {}
+            footer {
+                width: 100%;
+                height: 50px;
+                border-top: 1px dashed #ddd;
+            }
         </style>
         <script type="text/javascript" src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=xNpgc1RY38Qcft5THljMzKk7WUNxPTft"></script>
         <script>
@@ -77,73 +86,102 @@
         </header>
         <nav>
             <style>
+                #nav-1 {
+                    width: 100%;
+                    background-color: #F5F5F5;
+                }
+                #timeline-box {
+                    padding: 2vw 0;
+                    margin: 50px 15vw;
+                    height: 300px;
+                    position: relative;
+                }
+                #timeline {
+                    height: 1px;
+                    background-color: black;
+                    position: relative;
+                }
+                .timeline-line {
+                    width: 2px;
+                    display: inline-block;
+                    background-color: #1677ff;
+                }
+                .timeline-item {
+                    display: block;
+                    padding: 5px;
+                    color: #fff;
+                    background-color: #1677ff;
+                    margin-top: -4px;
+                }
+                #universe-timeline {
+                    position: absolute;
+                    left: 0;
+                }
+                #galaxy-timeline {
+                    position: absolute;
+                    left: calc(((13817000000 - 12000000000) / 13817000000) * 100%);
+                }
+                #solarSystem-timeline {
+                    position: absolute;
+                    left: calc(((13817000000 - 5000000000) / 13817000000) * 100%);
+                }
+                #earth-timeline {
+                    position: absolute;
+                    left: calc(((13817000000 - 4570000000) / 13817000000) * 100%);
+                }
+                #earthPeople-timeline {
+                    position: absolute;
+                    left: calc(((13817000000 - 5332000) / 13817000000) * 100%);
+                }
+                #earthPeopleCivilization-timeline {
+                    position: absolute;
+                    left: calc(((13817000000 - 4100) / 13817000000) * 100%);
+                }
                 #map {
                     display: block;
                     width: 97%;
-                    margin: 2vw auto;
+                    margin: 0 auto;
                     height: 40vw;
                     border-radius: 5px;
                 }
             </style>
+            <section id="nav-1">
+                <div id="timeline-box">
+                    <div id="timeline"></div>
+                    <div id="universe-timeline">
+                        <span class="timeline-line" style="height: 260px;"></span>
+                        <a class="timeline-item" href="https://www.yuque.com/guchenlong/scvtw0/ykxukanukcgx9rsg?singleDoc# 《宇宙（-138，1700，0000）》" target="blank">宇宙（-138，1700，0000）</a>
+                    </div>
+                    <div id="galaxy-timeline">
+                        <span class="timeline-line" style="height: 220px;"></span>
+                        <a class="timeline-item" href="https://www.yuque.com/guchenlong/scvtw0/hg2623zcl2fpsuqd?singleDoc# 《银河系（-120，0000，0000）》" target="blank">银河系（-120，0000，0000）</a>
+                    </div>
+                    <div id="solarSystem-timeline">
+                        <span class="timeline-line"  style="height: 180px;"></span>
+                        <a class="timeline-item" href="https://www.yuque.com/guchenlong/scvtw0/hrwn9x74z6r0hb20?singleDoc# 《太阳系（-50，0000，0000）》" target="blank">太阳系（-50，0000，0000）</a>
+                    </div>
+                    <div id="earth-timeline">
+                        <span class="timeline-line" style="height: 140px;"></span>
+                        <a class="timeline-item" href="https://www.yuque.com/guchenlong/scvtw0/ccdqucervpive42u?singleDoc# 《地球（-45，7000，0000）》" target="blank">地球（-45，7000，0000）</a>
+                    </div>
+                    <div id="earthPeople-timeline">
+                        <span class="timeline-line" style="height: 100px;"></span>
+                        <a class="timeline-item" href="https://www.yuque.com/guchenlong/scvtw0/vbl8u7a8z1efabb7?singleDoc# 《地球人类（-533，2000）》" target="blank" style="width: 190px;">地球人类（-533，2000）</a>
+                    </div>
+                    <div id="earthPeopleCivilization-timeline">
+                        <span class="timeline-line" style="height: 60px;"></span>
+                        <a class="timeline-item" href="https://www.yuque.com/guchenlong/scvtw0/wg4y32ov01xwp5a6?singleDoc# 《地球人类文明（-4100）》" target="blank" style="width: 180px;">地球人类文明（-4100）</a>
+                    </div>
+                </div>
+            </section>
             <div id="map"></div>
         </nav>
         <main>
             <article>
-                <section id="tab">
-                    <style>
-                        #tab {
-                            width: 95%;
-                            padding: 0 10px 20px;
-                            border-radius: 5px;
-                            background-color: #fff;
-                        }
-                        .tab-item {
-                            margin-top: 10px;
-                            padding: 10px;
-                            border-radius: 5px;
-                            background-color:#4169E1;
-                            font-size: 18px;
-                        }
-                        .tab-item a {
-                            color: #fff;
-                        }
-                    </style>
-                    <div>
-                        <div class="tab-item">
-                            <a href="https://www.yuque.com/guchenlong/scvtw0/ykxukanukcgx9rsg?singleDoc# 《宇宙（-138，1700，0000）》" target="blank">宇宙（-138，1700，0000）</a>
-                        </div>
-                        <div>
-                            <div class="tab-item" style="margin-left: 5vw;">
-                                <a href="https://www.yuque.com/guchenlong/scvtw0/hg2623zcl2fpsuqd?singleDoc# 《银河系（-120，0000，0000）》" target="blank">银河系（-120，0000，0000）</a>
-                            </div>
-                            <div>
-                                <div class="tab-item" style="margin-left: 10vw;">
-                                    <a href="https://www.yuque.com/guchenlong/scvtw0/hrwn9x74z6r0hb20?singleDoc# 《太阳系（-50，0000，0000）》" target="blank">太阳系（-50，0000，0000）</a>
-                                </div>
-                                <div>
-                                    <div class="tab-item" style="margin-left: 15vw;">
-                                        <a href="https://www.yuque.com/guchenlong/scvtw0/ccdqucervpive42u?singleDoc# 《地球（-45，7000，0000）》" target="blank">地球（-45，7000，0000）</a>
-                                    </div>
-                                    <div>
-                                        <div class="tab-item" style="margin-left: 20vw;">
-                                            <a href="https://www.yuque.com/guchenlong/scvtw0/vbl8u7a8z1efabb7?singleDoc# 《地球人类（-533，2000）》" target="blank">地球人类（-533，2000）</a>
-                                        </div>
-                                        <div>
-                                            <div class="tab-item" style="margin-left: 25vw;">
-                                                <a href="https://www.yuque.com/guchenlong/scvtw0/wg4y32ov01xwp5a6?singleDoc# 《地球人类文明（-4100）》" target="blank">地球人类文明（-4100）</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
                 <section id="main">
                     <style>
                         #main {
                             width: 95%;
-                            margin: 2vw auto;
                             padding: 10px;
                             border-radius: 5px;
                             background-color: #fff;
