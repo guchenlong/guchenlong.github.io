@@ -29,12 +29,18 @@ function initItemListStr() {  // 初始化 - 时间戳 - 数组数据
                     <div class='itemRight'>
                         <span class='itemRightTime'>${ item.time }</span>
                         <span class='itemRightLocation'>${ item.location }</span>
-                        <a class='itemRightEvent' href=${ item.link } target="blank">${ item.event }</a>
-                        <span class='itemRightPeople'>${ item.people }</span>
+                        <span class='itemRightEvent' onclick=jump('${ encodeURIComponent(item.link) }') href=${ item.link } target="blank">${ item.event }</span>
+                        ${ item.people && (`<span class='itemRightPeople'>${ item.people }</span>`) }
                     </div>
                 </div>
             `;
         }
     }
     return str;
+}
+
+function jump(url) {
+    if (url) {
+        window.open(decodeURIComponent(url));
+    }   
 }
