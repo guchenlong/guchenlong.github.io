@@ -17,7 +17,7 @@ function initItemListStr(range) {  // 初始化 - 时间戳 - 数组数据
     for (let i = 0; i < jsondata.length; i++) {
         let item = jsondata[i];
         if (range == -5000) {
-            if (item.time >= -5000 && item.time <= -1000) {
+            if (item.time >= -5000 && item.time <= -1000 || item.time >= range && item.time <= range + 999) {
                 if (item.range || item.event) {
                     str = 
                     `
@@ -70,5 +70,11 @@ function jump(url) {
 }
 
 function changeTabRange(range) {  // 点击 - 选项卡 - 切换
+    let tab2 = document.getElementById("main-tab-2");
+    if (range == 1001) {
+        tab2.style.display = "flex";
+    } else {
+        tab2.style.display = "none";
+    }
     initItemListHTML(range);
 }
