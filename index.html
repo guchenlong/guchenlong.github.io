@@ -18,14 +18,13 @@
             body {
                 width: 100%;
                 min-height: 100vh;
-                background-color: #FAEBD7;
                 font-family: "微软雅黑";
             }
             header {
                 /* 容器 */
                 width: 100%;
                 padding: 20px 0;
-                border-bottom: 1px dashed #ddd;
+                border-bottom: 1px solid #ddd;
                 /* 容器内 */
                 display: flex;
                 align-items: center;
@@ -36,6 +35,7 @@
                 margin: 2vw 0;
                 padding-bottom: 1vw;
                 width: 100%;
+                border-bottom: 1px solid #ddd;
             }
             main {
                 display: flex;
@@ -88,57 +88,71 @@
             <style>
                 #nav-1 {
                     width: 100%;
-                    background-color: #F5F5F5;
+                    display: flex;
                 }
-                #timeline-box {
-                    padding: 2vw 0;
-                    margin: 50px 15vw;
-                    height: 300px;
+                #timeline-box-1 {
+                    margin: 50px;
+                    position: relative;
+                }
+                #timeline-box-2 {
+                    flex: 1;
+                    margin: 50px;
                     position: relative;
                 }
                 #timeline {
-                    height: 1px;
+                    width: 1px;
+                    height: 500px;
                     background-color: black;
                     position: relative;
                 }
                 .timeline-line {
                     width: 2px;
+                    height: 1px;
                     display: inline-block;
                     background-color: #1677ff;
                 }
                 .timeline-item {
-                    display: block;
-                    padding: 5px;
+                    display: flex;
+                    padding: 4px 10px;
                     color: #fff;
+                    font-size: 14px;
                     background-color: #1677ff;
-                    margin-top: -4px;
+                    z-index: 1;
+                    margin-top: -14px;
+                    border-radius: 5px;
                 }
                 #universe-timeline {
                     position: absolute;
-                    left: 0;
+                    top: 0;
+                    display: flex;
                 }
                 #galaxy-timeline {
+                    display: flex;
                     position: absolute;
-                    left: calc(((13817000000 - 12000000000) / 13817000000) * 100%);
+                    top: calc(((13817000000 - 12000000000) / 13817000000) * 100%);
                 }
                 #solarSystem-timeline {
+                    display: flex;
                     position: absolute;
-                    left: calc(((13817000000 - 5000000000) / 13817000000) * 100%);
+                    top: calc(((13817000000 - 5000000000) / 13817000000) * 100%);
                 }
                 #earth-timeline {
+                    display: flex;
                     position: absolute;
-                    left: calc(((13817000000 - 4570000000) / 13817000000) * 100%);
+                    top: calc(((13817000000 - 4570000000) / 13817000000) * 100%);
                 }
                 #earthPeople-timeline {
+                    display: flex;
                     position: absolute;
-                    left: calc(((13817000000 - 5332000) / 13817000000) * 100%);
+                    top: calc(((13817000000 - 5332000) / 13817000000) * 100%);
                 }
                 #earthPeopleCivilization-timeline {
+                    display: flex;
                     position: absolute;
-                    left: calc(((13817000000 - 4100) / 13817000000) * 100%);
+                    top: calc(((13817000000 - 4100) / 13817000000) * 100%);
                 }
                 #map {
-                    display: block;
+                    display: flex;
                     width: 97%;
                     margin: 0 auto;
                     height: 40vw;
@@ -146,35 +160,128 @@
                 }
             </style>
             <section id="nav-1">
-                <div id="timeline-box">
-                    <div id="timeline"></div>
-                    <div id="universe-timeline">
-                        <span class="timeline-line" style="height: 260px;"></span>
-                        <a class="timeline-item" href="https://www.yuque.com/guchenlong/scvtw0/ykxukanukcgx9rsg?singleDoc# 《宇宙（-138，1700，0000）》" target="blank">宇宙（-138，1700，0000）</a>
+                <style>
+                    #timeline-left {
+                        width: 50%;
+                    }
+                    #timeline-right {
+                        flex: 1;
+                    }
+                </style>
+                <section id="timeline-left">
+                    <div id="timeline-box-1">
+                        <div id="timeline"></div>
+                        <div id="universe-timeline">
+                            <span class="timeline-line" style="width: 60px;"></span>
+                            <a class="timeline-item" href="https://www.yuque.com/guchenlong/scvtw0/ykxukanukcgx9rsg?singleDoc# 《宇宙（-138，1700，0000）》" target="blank">宇宙（-138，1700，0000）</a>
+                        </div>
+                        <div id="galaxy-timeline">
+                            <span class="timeline-line" style="width: 60px;"></span>
+                            <a class="timeline-item" href="https://www.yuque.com/guchenlong/scvtw0/hg2623zcl2fpsuqd?singleDoc# 《银河系（-120，0000，0000）》" target="blank">银河系（-120，0000，0000）</a>
+                        </div>
+                        <div id="solarSystem-timeline">
+                            <span class="timeline-line"  style="width: 60px;"></span>
+                            <a class="timeline-item" href="https://www.yuque.com/guchenlong/scvtw0/hrwn9x74z6r0hb20?singleDoc# 《太阳系（-50，0000，0000）》" target="blank">太阳系（-50，0000，0000）</a>
+                        </div>
+                        <div id="earth-timeline">
+                            <span class="timeline-line" style="width: 300px;"></span>
+                            <a class="timeline-item" href="https://www.yuque.com/guchenlong/scvtw0/ccdqucervpive42u?singleDoc# 《地球（-45，7000，0000）》" target="blank">地球（-45，7000，0000）</a>
+                        </div>
+                        <div id="earthPeople-timeline">
+                            <span class="timeline-line" style="width: 60px;"></span>
+                            <a class="timeline-item" href="https://www.yuque.com/guchenlong/scvtw0/vbl8u7a8z1efabb7?singleDoc# 《地球人类（-533，2000）》" target="blank">地球人类（-533，2000）</a>
+                        </div>
+                        <div id="earthPeopleCivilization-timeline">
+                            <span class="timeline-line" style="width: 300px;"></span>
+                            <a class="timeline-item" href="https://www.yuque.com/guchenlong/scvtw0/wg4y32ov01xwp5a6?singleDoc# 《地球人类文明（-4100）》" target="blank" style="background-color:lightslategrey;">地球人类文明（-4100）</a>
+                        </div>
                     </div>
-                    <div id="galaxy-timeline">
-                        <span class="timeline-line" style="height: 220px;"></span>
-                        <a class="timeline-item" href="https://www.yuque.com/guchenlong/scvtw0/hg2623zcl2fpsuqd?singleDoc# 《银河系（-120，0000，0000）》" target="blank">银河系（-120，0000，0000）</a>
+                </section>
+                <section id="timeline-right">
+                    <style>
+                        #timeline-box-2 .timeline-item {
+                            background-color:lightslategrey;
+                        }
+                        #light-timeline {
+                            display: flex;
+                            position: absolute;
+                            top: calc(((4100 + 1879) / 7100) * 100%);
+                        }
+                        #car-timeline {
+                            display: flex;
+                            position: absolute;
+                            top: calc(((4100 + 1886) / 7100) * 100%);
+                        }
+                        #fly-timeline {
+                            display: flex;
+                            position: absolute;
+                            top: calc(((4100 + 1903) / 7100) * 100%);
+                        }
+                    </style>
+                    <div id="timeline-box-2">
+                        <div id="timeline"></div>
+                        <div style="display: flex; position: absolute; top: 0;">
+                            <span class="timeline-line" style="width: 60px;"></span>
+                            <a class="timeline-item" href="" target="blank">美索不达米亚文明（-4100）</a>
+                        </div>
+                        <div style="display: flex; position: absolute; top: calc(((4100 - 2690) / 7100) * 100%);">
+                            <span class="timeline-line" style="width: 60px;"></span>
+                            <a class="timeline-item" href="" target="blank">埃及金字塔（-2690）</a>
+                        </div>
+                        <div style="display: flex; position: absolute; top: calc(((4100 - 1772) / 7100) * 100%);">
+                            <span class="timeline-line" style="width: 60px;"></span>
+                            <a class="timeline-item" href="" target="blank">汉谟拉比法典（-1772）</a>
+                        </div>
+                        <div style="display: flex; position: absolute; top: calc(((4100 - 1046) / 7100) * 100%);">
+                            <span class="timeline-line" style="width: 60px;"></span>
+                            <a class="timeline-item" href="" target="blank">武王伐纣（-1046）</a>
+                        </div>
+                        <div style="display: flex; position: absolute; top: calc(((4100 - 399) / 7100) * 100%);">
+                            <span class="timeline-line" style="width: 60px;"></span>
+                            <a class="timeline-item" href="" target="blank">苏格拉底（-399）</a>
+                        </div>
+                        <div style="display: flex; position: absolute; top: calc(((4100 - 100) / 7100) * 100%);">
+                            <span class="timeline-line" style="width: 200px;"></span>
+                            <a class="timeline-item" href="" target="blank">凯撒（-100）</a>
+                        </div>
+                        <div style="display: flex; position: absolute; top: calc(((4100 + 181) / 7100) * 100%);">
+                            <span class="timeline-line" style="width: 300px;"></span>
+                            <a class="timeline-item" href="" target="blank">诸葛亮（181）</a>
+                        </div>
+                        <div style="display: flex; position: absolute; top: calc(((4100 + 570) / 7100) * 100%);">
+                            <span class="timeline-line" style="width: 60px;"></span>
+                            <a class="timeline-item" href="" target="blank">默罕默德（570）</a>
+                        </div>
+                        <div style="display: flex; position: absolute; top: calc(((4100 + 1096) / 7100) * 100%);">
+                            <span class="timeline-line" style="width: 60px;"></span>
+                            <a class="timeline-item" href="" target="blank">牛津大学（1096）</a>
+                        </div>
+                        <div id="light-timeline">
+                            <span class="timeline-line" style="width: 60px;"></span>
+                            <a class="timeline-item" href="" target="blank">电灯出现（1879.10.21）</a>
+                        </div>
+                        <div id="car-timeline">
+                            <span class="timeline-line" style="width: 260px;"></span>
+                            <a class="timeline-item" href="" target="blank">汽车出现（1886.03.08）</a>
+                        </div>
+                        <div id="fly-timeline">
+                            <span class="timeline-line" style="width: 460px;"></span>
+                            <a class="timeline-item" href="" target="blank">飞机出现（1903）</a>
+                        </div>
+                        <div id="fly-timeline">
+                            <span class="timeline-line" style="width: 600px; top: calc(((4100 + 1990) / 7100) * 100%);"></span>
+                            <a class="timeline-item" href="" target="blank">万维网（1990）</a>
+                        </div>
+                        <div style="display: flex; position: absolute; top: 100%">
+                            <span class="timeline-line" style="width: 100px;"></span>
+                            <a class="timeline-item" href="" target="blank">公元3000年</a>
+                        </div>
                     </div>
-                    <div id="solarSystem-timeline">
-                        <span class="timeline-line"  style="height: 180px;"></span>
-                        <a class="timeline-item" href="https://www.yuque.com/guchenlong/scvtw0/hrwn9x74z6r0hb20?singleDoc# 《太阳系（-50，0000，0000）》" target="blank">太阳系（-50，0000，0000）</a>
-                    </div>
-                    <div id="earth-timeline">
-                        <span class="timeline-line" style="height: 140px;"></span>
-                        <a class="timeline-item" href="https://www.yuque.com/guchenlong/scvtw0/ccdqucervpive42u?singleDoc# 《地球（-45，7000，0000）》" target="blank">地球（-45，7000，0000）</a>
-                    </div>
-                    <div id="earthPeople-timeline">
-                        <span class="timeline-line" style="height: 100px;"></span>
-                        <a class="timeline-item" href="https://www.yuque.com/guchenlong/scvtw0/vbl8u7a8z1efabb7?singleDoc# 《地球人类（-533，2000）》" target="blank" style="width: 190px;">地球人类（-533，2000）</a>
-                    </div>
-                    <div id="earthPeopleCivilization-timeline">
-                        <span class="timeline-line" style="height: 60px;"></span>
-                        <a class="timeline-item" href="https://www.yuque.com/guchenlong/scvtw0/wg4y32ov01xwp5a6?singleDoc# 《地球人类文明（-4100）》" target="blank" style="width: 180px;">地球人类文明（-4100）</a>
-                    </div>
-                </div>
+                </section>
             </section>
-            <div id="map"></div>
+            <section>
+                <div id="map"></div>
+            </section>
         </nav>
         <main>
             <article>
@@ -184,10 +291,8 @@
                             width: 95%;
                             padding: 10px;
                             border-radius: 5px;
-                            background-color: #fff;
-                        }
-                        
-                        
+                            border: 1px solid #ddd;                            
+                        }                        
                     </style>
                     <section name="main-title">
                         <style>
