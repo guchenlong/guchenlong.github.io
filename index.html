@@ -262,18 +262,18 @@
                         </div>
                         <div id="light-timeline">
                             <span class="timeline-line" style="width: 20px;"></span>
-                            <a class="timeline-item" href="" target="blank">电灯出现（1879.10.21）</a>
+                            <a class="timeline-item" href="" target="blank">电灯出现（1879）</a>
                         </div>
                         <div id="car-timeline">
-                            <span class="timeline-line" style="width: 220px;"></span>
-                            <a class="timeline-item" href="" target="blank">汽车出现（1886.03.08）</a>
+                            <span class="timeline-line" style="width: 180px;"></span>
+                            <a class="timeline-item" href="" target="blank">汽车出现（1886）</a>
                         </div>
                         <div id="fly-timeline">
-                            <span class="timeline-line" style="width: 420px;"></span>
+                            <span class="timeline-line" style="width: 340px;"></span>
                             <a class="timeline-item" href="" target="blank">飞机出现（1903）</a>
                         </div>
                         <div id="fly-timeline">
-                            <span class="timeline-line" style="width: 580px; top: calc(((4100 + 1990) / 7100) * 100%);"></span>
+                            <span class="timeline-line" style="width: 500px; top: calc(((4100 + 1990) / 7100) * 100%);"></span>
                             <a class="timeline-item" href="" target="blank">万维网（1990）</a>
                         </div>
                         <div style="display: flex; position: absolute; top: 100%">
@@ -283,7 +283,7 @@
                     </div>
                 </section>
             </section>
-            <section>
+            <section id="nav-2">
                 <div id="map"></div>
             </section>
         </nav>
@@ -334,6 +334,23 @@
                                 align-items: center;
                                 justify-content: center;
                             }
+                            #main-tab-2 {
+                                display: flex;
+                                padding: 20px 0;
+                                border-bottom: 1px dotted #ddd;
+                            }
+                            #main-tab-2 div {
+                                width: 20%;
+                                padding: 5px 5px;
+                                margin: 0 10px;
+                                color: #fff;
+                                font-size: 12px;
+                                border-radius: 5px;
+                                background-color: #EB8E55;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
                         </style>
                         <div id="main-tab">
                             <div onclick="changeTabRange(-5000)">-5000 ~ -1000</div>
@@ -342,6 +359,18 @@
                             <div onclick="changeTabRange(1001)">1001 ~ 2000</div>
                             <div onclick="changeTabRange(2000)">2000 ~ </div>
                         </div>
+                        <section id="main-tab-2" style="display: none;">
+                            <div>1001 ~ 1100</div>
+                            <div>1101 ~ 1200</div>
+                            <div>1201 ~ 1300</div>
+                            <div>1301 ~ 1400</div>
+                            <div>1401 ~ 1500</div>
+                            <div>1501 ~ 1600</div>
+                            <div>1601 ~ 1700</div>
+                            <div>1701 ~ 1800</div>
+                            <div>1801 ~ 1900</div>
+                            <div>1901 ~ 2000</div>
+                        </section>
                     </section>
                     <section name="item-list">
                         <style>
