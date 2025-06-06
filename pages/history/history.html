@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>时间的旅程</title>
+        <meta charset="utf-8" />
+        <meta name="Keywords" content="时间的旅程,宇宙,银河系,太阳系,地球,地球人类,地球人类文明"/>
+        <meta name="Description" content="时间的旅程"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <meta name="baidu-site-verification" content="code-LV2b2fEFzP" />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            a {
+                text-decoration: none;
+            }
+            body {
+                width: 100%;
+                min-height: 100vh;
+                font-family: "微软雅黑";
+            }
+            header {
+                /* 容器 */
+                width: 100%;
+                padding: 20px 0;
+                border-bottom: 1px solid #ddd;
+                /* 容器内 */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 25px;
+            }
+            nav {
+                margin: 2vw 0;
+                padding-bottom: 1vw;
+                width: 100%;
+                border-bottom: 1px solid #ddd;
+            }
+            main {
+                display: flex;
+                margin: 2vw 0;
+            }
+            article {
+                width: 75%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            aside {
+                width: 25%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            footer {
+                width: 100%;
+                height: 50px;
+                border-top: 1px dashed #ddd;
+            }
+        </style>
+        <script type="text/javascript" src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=xNpgc1RY38Qcft5THljMzKk7WUNxPTft"></script>
+        <script>
+            // 百度统计
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "https://hm.baidu.com/hm.js?a1feafc5031bed40102853c48ab5bfc0";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+            })();
+
+            // 百度地图
+            setTimeout(() => {
+                var map = new BMapGL.Map("map");
+                var point = new BMapGL.Point(116.404, 39.915);
+                map.centerAndZoom(point, 0);
+                map.enableScrollWheelZoom(true);
+            }, 500)
+        </script>
+    </head>
+    <body>
+        <header>
+            时间的旅程
+        </header>
+        <nav>
+            <style>
+                #nav-1 {
+                    width: 100%;
+                    display: flex;
+                }
+                #timeline-box-1 {
+                    margin: 50px;
+                    position: relative;
+                }
+                #timeline-box-2 {
+                    flex: 1;
+                    margin: 50px;
+                    position: relative;
+                }
+                #timeline {
+                    width: 1px;
+                    height: 500px;
+                    background-color: black;
+                    position: relative;
+                }
+                .timeline-line {
+                    width: 2px;
+                    height: 1px;
+                    display: inline-block;
+                    background-color: #1677ff;
+                }
+                .timeline-item {
+                    display: flex;
+                    padding: 4px 10px;
+                    color: #fff;
+                    font-size: 14px;
+                    background-color: #1677ff;
+                    z-index: 1;
+                    margin-top: -14px;
+                    border-radius: 5px;
+                }
+                #universe-timeline {
+                    position: absolute;
+                    top: 0;
+                    display: flex;
+                }
+                #galaxy-timeline {
+                    display: flex;
+                    position: absolute;
+                    top: calc(((13817000000 - 12000000000) / 13817000000) * 100%);
+                }
+                #solarSystem-timeline {
+                    display: flex;
+                    position: absolute;
+                    top: calc(((13817000000 - 5000000000) / 13817000000) * 100%);
+                }
+                #earth-timeline {
+                    display: flex;
+                    position: absolute;
+                    top: calc(((13817000000 - 4570000000) / 13817000000) * 100%);
+                }
+                #earthPeople-timeline {
+                    display: flex;
+                    position: absolute;
+                    top: calc(((13817000000 - 5332000) / 13817000000) * 100%);
+                }
+                #earthPeopleCivilization-timeline {
+                    display: flex;
+                    position: absolute;
+                    top: calc(((13817000000 - 4100) / 13817000000) * 100%);
+                }
+                #map {
+                    display: flex;
+                    width: 97%;
+                    margin: 0 auto;
+                    height: 40vw;
+                    border-radius: 5px;
+                }
+            </style>
+            <section id="nav-1">
+                <style>
+                    #timeline-left {
+                        width: 50%;
+                    }
+                    #timeline-right {
+                        flex: 1;
+                    }
+                </style>
+                <section id="timeline-left">
+                    <div id="timeline-box-1">
+                        <div id="timeline"></div>
+                        <div id="universe-timeline">
+                            <span class="timeline-line" style="width: 20px;"></span>
+                            <a class="timeline-item" href="" target="blank">宇宙（-138，1700，0000）</a>
+                        </div>
+                        <div id="galaxy-timeline">
+                            <span class="timeline-line" style="width: 20px;"></span>
+                            <a class="timeline-item" href="" target="blank">银河系（-120，0000，0000）</a>
+                        </div>
+                        <div id="solarSystem-timeline">
+                            <span class="timeline-line"  style="width: 20px;"></span>
+                            <a class="timeline-item" href="" target="blank">太阳系（-50，0000，0000）</a>
+                        </div>
+                        <div id="earth-timeline">
+                            <span class="timeline-line" style="width: 250px;"></span>
+                            <a class="timeline-item" href="" target="blank">地球（-45，7000，0000）</a>
+                        </div>
+                        <div style="display: flex; position: absolute; top: calc(((13817000000 - 4425000000) / 13817000000) * 100%);">
+                            <span class="timeline-line" style="width: 470px;"></span>
+                            <a class="timeline-item" href="" target="blank">月球（-44，2500，0000）</a>
+                        </div>
+                        <div id="earthPeople-timeline">
+                            <span class="timeline-line" style="width: 20px;"></span>
+                            <a class="timeline-item" href="" target="blank">地球人类（-533，2000）</a>
+                        </div>
+                        <div id="earthPeopleCivilization-timeline">
+                            <span class="timeline-line" style="width: 260px;"></span>
+                            <a class="timeline-item" href="" target="blank" style="background-color:lightslategrey;">地球人类文明（-4100）</a>
+                        </div>
+                    </div>
+                </section>
+                <section id="timeline-right">
+                    <style>
+                        #timeline-box-2 .timeline-item {
+                            background-color:lightslategrey;
+                        }
+                        #light-timeline {
+                            display: flex;
+                            position: absolute;
+                            top: calc(((4100 + 1879) / 7100) * 100%);
+                        }
+                        #car-timeline {
+                            display: flex;
+                            position: absolute;
+                            top: calc(((4100 + 1886) / 7100) * 100%);
+                        }
+                        #fly-timeline {
+                            display: flex;
+                            position: absolute;
+                            top: calc(((4100 + 1903) / 7100) * 100%);
+                        }
+                    </style>
+                    <div id="timeline-box-2">
+                        <div id="timeline"></div>
+                        <div style="display: flex; position: absolute; top: 0;">
+                            <span class="timeline-line" style="width: 20px;"></span>
+                            <a class="timeline-item" href="" target="blank">美索不达米亚文明（-4100）</a>
+                        </div>
+                        <div style="display: flex; position: absolute; top: calc(((4100 - 2690) / 7100) * 100%);">
+                            <span class="timeline-line" style="width: 20px;"></span>
+                            <a class="timeline-item" href="" target="blank">埃及金字塔（-2690）</a>
+                        </div>
+                        <div style="display: flex; position: absolute; top: calc(((4100 - 1772) / 7100) * 100%);">
+                            <span class="timeline-line" style="width: 20px;"></span>
+                            <a class="timeline-item" href="" target="blank">汉谟拉比法典（-1772）</a>
+                        </div>
+                        <div style="display: flex; position: absolute; top: calc(((4100 - 1046) / 7100) * 100%);">
+                            <span class="timeline-line" style="width: 20px;"></span>
+                            <a class="timeline-item" href="" target="blank">武王伐纣（-1046）</a>
+                        </div>
+                        <div style="display: flex; position: absolute; top: calc(((4100 - 399) / 7100) * 100%);">
+                            <span class="timeline-line" style="width: 20px;"></span>
+                            <a class="timeline-item" href="" target="blank">苏格拉底（-399）</a>
+                        </div>
+                        <div style="display: flex; position: absolute; top: calc(((4100 - 100) / 7100) * 100%);">
+                            <span class="timeline-line" style="width: 160px;"></span>
+                            <a class="timeline-item" href="" target="blank">凯撒（-100）</a>
+                        </div>
+                        <div style="display: flex; position: absolute; top: calc(((4100 + 181) / 7100) * 100%);">
+                            <span class="timeline-line" style="width: 280px;"></span>
+                            <a class="timeline-item" href="" target="blank">诸葛亮（181）</a>
+                        </div>
+                        <div style="display: flex; position: absolute; top: calc(((4100 + 570) / 7100) * 100%);">
+                            <span class="timeline-line" style="width: 20px;"></span>
+                            <a class="timeline-item" href="" target="blank">默罕默德（570）</a>
+                        </div>
+                        <div style="display: flex; position: absolute; top: calc(((4100 + 1096) / 7100) * 100%);">
+                            <span class="timeline-line" style="width: 20px;"></span>
+                            <a class="timeline-item" href="" target="blank">牛津大学（1096）</a>
+                        </div>
+                        <div id="light-timeline">
+                            <span class="timeline-line" style="width: 20px;"></span>
+                            <a class="timeline-item" href="" target="blank">电灯出现（1879）</a>
+                        </div>
+                        <div id="car-timeline">
+                            <span class="timeline-line" style="width: 180px;"></span>
+                            <a class="timeline-item" href="" target="blank">汽车出现（1886）</a>
+                        </div>
+                        <div id="fly-timeline">
+                            <span class="timeline-line" style="width: 340px;"></span>
+                            <a class="timeline-item" href="" target="blank">飞机出现（1903）</a>
+                        </div>
+                        <div id="fly-timeline">
+                            <span class="timeline-line" style="width: 500px; top: calc(((4100 + 1990) / 7100) * 100%);"></span>
+                            <a class="timeline-item" href="" target="blank">万维网（1990）</a>
+                        </div>
+                        <div style="display: flex; position: absolute; top: 100%">
+                            <span class="timeline-line" style="width: 20px;"></span>
+                            <a class="timeline-item" href="" target="blank">公元3000年</a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section id="nav-2">
+                <div id="map"></div>
+            </section>
+        </nav>
+        <main>
+            <article>
+                <section id="main">
+                    <style>
+                        #main {
+                            width: 95%;
+                            padding: 10px;
+                            border-radius: 5px;
+                            border: 1px solid #ddd;                            
+                        }                        
+                    </style>
+                    <section name="main-title">
+                        <style>
+                            #main-title {
+                                /* 容器 */
+                                width: 100%;
+                                padding: 20px 0;
+                                /* 容器内 */
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                font-size: 20px;
+                            }
+                        </style>
+                        <div id="main-title">地球人类文明</div>
+                    </section>
+                    <section name="main-tab">
+                        <style>
+                            #main-tab {
+                                width: 100%;
+                                padding: 1vw 0;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border-bottom: 1px dotted #ddd;
+                            }
+                            #main-tab div {
+                                width: 20%;
+                                padding: 10px 10px;
+                                margin: 0 10px;
+                                color: #fff;
+                                border-radius: 5px;
+                                background-color: #EB8E55;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                            #main-tab-2 {
+                                display: flex;
+                                padding: 20px 0;
+                                border-bottom: 1px dotted #ddd;
+                            }
+                            #main-tab-2 div {
+                                width: 20%;
+                                padding: 5px 5px;
+                                margin: 0 10px;
+                                color: #fff;
+                                font-size: 12px;
+                                border-radius: 5px;
+                                background-color: #EB8E55;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                        </style>
+                        <div id="main-tab">
+                            <div onclick="changeTabRange(-5000)">-5000 ~ -1000</div>
+                            <div onclick="changeTabRange(-999)">-999 ~ 0</div>
+                            <div onclick="changeTabRange(1)">1 ~ 1000</div>
+                            <div onclick="changeTabRange(1001)">1001 ~ 2000</div>
+                            <div onclick="changeTabRange(2000)">2000 ~ </div>
+                        </div>
+                        <section id="main-tab-2" style="display: none;">
+                            <div>1001 ~ 1100</div>
+                            <div>1101 ~ 1200</div>
+                            <div>1201 ~ 1300</div>
+                            <div>1301 ~ 1400</div>
+                            <div>1401 ~ 1500</div>
+                            <div>1501 ~ 1600</div>
+                            <div>1601 ~ 1700</div>
+                            <div>1701 ~ 1800</div>
+                            <div>1801 ~ 1900</div>
+                            <div>1901 ~ 2000</div>
+                        </section>
+                    </section>
+                    <section name="item-list">
+                        <style>
+                            #item-list {
+                                padding: 20px;
+                            }
+                            /* 列表项样式 */
+                            .range {
+                                margin: 2vw 0;
+                                padding: 1vw;
+                                background-color: #EB8E55;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                color: #fff;
+                                border-radius: 5px;
+                            }
+                            .item {
+                                width: 100%;
+                                height: 80px;
+                                position: relative;
+                            }
+                            .item:last-child .itemLeftLine {
+                                display: none;
+                            }
+                            .itemLeft {
+                                position: relative;
+                                display: flex;
+                            }
+                            .itemLeftPoint {
+                                display: inline-block;
+                                width: 5px;
+                                height: 5px;
+                                color: #1677ff;
+                                border: 3px solid transparent;
+                                border-color: #1677ff;
+                                border-radius: 50%;
+                            }
+                            .itemLeftLine {
+                                position: absolute;
+                                left: 5px;
+                                top: 11px;
+                                width: 1px;
+                                height: 69px;
+                                background-color: #ddd;
+                            }
+                            .itemRight {
+                                position: absolute;
+                                left: 50px;
+                                top: -2px;
+                            }
+                            .itemRightTime {
+                                padding: 0 1vw;
+                                background-color: rgb(255, 192, 203);
+                                font-size: 16px;
+                                border-radius: 5px;
+                            }
+                            .itemRightLocation {
+                                padding: 0 1vw;
+                                background-color: rgb(255, 250, 240);
+                                border-radius: 5px;
+                            }
+                            .itemRightPeople {
+                                padding: 0 1vw;
+                                background-color: #d3d3d3;
+                                border-radius: 5px;
+                            }
+                            .itemRightEvent {
+                                padding: 0 1vw;
+                                background-color: #f5f5ff;
+                                margin-left: 5px;
+                                border-radius: 5px;
+                            }
+                        </style>
+                        <div id="item-list"></div>
+                    </section>
+                </section>
+            </article>
+            <aside>
+                <section id="city">
+                    <style>
+                        #city {
+                            width: 85%;
+                            border-radius: 5px;
+                            background-color: #fff;
+                            border: 1px solid #ddd;
+                            padding: 1vw;
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-items: center;
+                        }
+                        .city-item {
+                            margin: 5px;
+                            padding: 10px 20px;
+                            color: #fff;
+                            background-color: #1677ff;
+                            border-radius: 5px;
+                        }
+                    </style>
+                    <a class="city-item" target="_blank" href="">
+                        耶路撒冷
+                    </a>
+                    <a class="city-item" target="_blank" href="">
+                        伊斯坦布尔
+                    </a>
+                    <!-- 
+
+                    <a class="city-item" target="_blank" href="">
+                        耶路撒冷
+                    </a>
+                    <a class="city-item" target="_blank" href="">
+                        伊斯坦布尔
+                    </a> -->
+                </section>
+                <!-- <section id="recommend">
+                    <style>
+                        #recommend {
+                            width: 85%;
+                            border-radius: 5px;
+                            background-color: #fff;
+                            border: 1px solid #ddd;
+                            padding: 2vw 0;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                        .recommend-item {
+                            width: 80%;
+                            margin: 5px 0;
+                            padding: 10px 0 10px 20px;
+                            color: #fff;
+                            background-color: #EB8E55;
+                            border-radius: 5px;
+                        }
+                    </style>
+                    <a class="recommend-item" target="_blank" href="https://www.yuque.com/guchenlong/scvtw0/gmpagg3tdxihucho?singleDoc# 《古埃及（-3150 ~ 639，3789 年）》">
+                        古埃及（-3150 ~ 639，3789 年）
+                    </a>
+                    <a class="recommend-item" target="_blank" href="https://www.yuque.com/guchenlong/scvtw0/wzfy1eyytsdcq1oq?singleDoc# 《古希腊（-2000 ~ -146，1854 年）》">
+                        古希腊（-2000 ~ -146，1854 年）
+                    </a>
+                    <a class="recommend-item" target="_blank" href="https://www.yuque.com/guchenlong/scvtw0/zumud2ggsulnpg7y?singleDoc# 《马其顿王国（-808 ~ -168，640 年）》">
+                        马其顿王国（-808 ~ -168，640 年）
+                    </a>
+                    <a class="recommend-item" target="_blank" href="https://www.yuque.com/guchenlong/scvtw0/ogg4grbfuraf0vn5?singleDoc# 《古罗马（-753 ~ 1453，2206 年）》">
+                        古罗马（-753 ~ 1453，2206 年）
+                    </a>
+                    <a class="recommend-item" target="_blank" href="https://www.yuque.com/guchenlong/scvtw0/acmralrvps50ouf4?singleDoc# 《古印度（-600 ~ 800，1400 年）》">
+                        古印度（-600 ~ 800，1400 年）
+                    </a>
+                    <a class="recommend-item" target="_blank" href="https://www.yuque.com/guchenlong/scvtw0/mm65fgwekro221yo?singleDoc# 《波斯帝国（-550 ~ -330，220 年）》">
+                        波斯帝国（-550 ~ -330，220 年）
+                    </a>
+                    <a class="recommend-item" target="_blank" href="https://www.yuque.com/guchenlong/scvtw0/kbmqo03ca0m6ntqd?singleDoc# 《奥斯曼帝国（1299 ~ 1923，624 年）》">
+                        奥斯曼帝国（1299 ~ 1923，624 年）
+                    </a>                    
+                </section> -->
+            </aside>
+        </main>
+        <footer></footer>
+    </body>
+    <script src="./data.js" async></script>
+    <script src="./index.js" async></script>
+</html>
