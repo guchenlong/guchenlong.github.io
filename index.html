@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>首页</title>
+        <meta name="keywords" content="图片压缩" />
+		<meta name="description" content="图片压缩" />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="./common/js/base.js"></script>
+        <script src="./common/components/left_navigation/left_navigation.js"></script>
+        <link rel="stylesheet" href="./common/css/base.css" />
+        <style>
+            #page {
+                width: 100%;
+                min-height: 100vh;
+                display: flex;
+            }
+            #left {
+                width: 10vw;
+                padding: 2vw;
+                background-color: #f5eded;
+            }
+            #right {
+                flex: 1;
+            }
+        </style>
     </head>
     <body>
-        <div>
-            <a href="pages/compress/image/index.html">图片压缩</a><br />
-            <a href="pages/compress/font/index.html">字体压缩</a><br />
-            <a href="pages/format/json/index.html">JSON 格式化</a><br />
+        <div id="page">
+            <div id="left"></div>
+            <div id="right"></div>
         </div>
         <script>
-            // window.location.href = "https://guchenlong.github.io/pages/compress/image/index.html";
+            renderLeftNavigation();
         </script>
     </body>
 </html>
