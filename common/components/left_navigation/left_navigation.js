@@ -1,5 +1,5 @@
-function renderLeftNavigation() {  // 渲染 - 左侧导航栏
-    let left = document.getElementById("left");
+function render_left_navigation() {  // 渲染 - 左侧导航栏
+    let page_left = document.getElementById("page_left");
 
     const list = [
         { "title": "首页", "link": "/" },
@@ -18,7 +18,9 @@ function renderLeftNavigation() {  // 渲染 - 左侧导航栏
         a.href = item.link;
         a.innerText = item.title;
         let br = document.createElement("br");
-        left.appendChild(a);
-        left.appendChild(br);
+        let br1 = document.createElement("br");
+        page_left.appendChild(a);
+        page_left.appendChild(br);
+        page_left.appendChild(br1);
     }
 }

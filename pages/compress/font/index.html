@@ -9,12 +9,19 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="../../../common/js/base.js"></script>
+		<script src="../../../common/components/left_navigation/left_navigation.js"></script>
 		<link rel="stylesheet" href="../../../common/css/base.css" />
 	</head>
 	<body>
 		<div id="page">
-			字体压缩
-            <input type="file" id="font-upload" accept=".ttf,.otf" />
-		</div>
+            <div id="page_left"></div>
+            <div id="page_right">
+				字体压缩
+            	<input type="file" id="font-upload" accept=".ttf,.otf" />
+			</div>
+        </div>
+		<script>
+            render_left_navigation(); // 渲染 - 左侧导航栏
+        </script>
 	</body>
 </html>

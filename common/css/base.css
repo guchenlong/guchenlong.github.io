@@ -11,3 +11,21 @@ a {
 button {
     border: none;
 }
+
+/* 页面布局 */
+#page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+#page_left {
+    width: 10vw;
+    padding: 2vw;
+    background-color: #f5eded;
+}
+
+#page_right {
+    padding: 2vw;
+    flex: 1;
+}
