@@ -8,63 +8,14 @@
 		<meta name="description" content="图片压缩" />
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script>
-			var _hmt = _hmt || [];
-			(function() {
-				var hm = document.createElement("script");
-				hm.src = "https://hm.baidu.com/hm.js?50c6c1ceac5a4df01e7db17eb06290a9";
-				var s = document.getElementsByTagName("script")[0]; 
-				s.parentNode.insertBefore(hm, s);
-			})();
-		</script>
+		<script src="../../../common/js/base.js"></script>
+		<script src="./js/index.js"></script>
+		<link rel="stylesheet" href="../../../common/css/base.css" />
+		<link rel="stylesheet" href="./css/index.css" />
 	</head>
 	<body>
-		<style>
-			* {
-				margin: 0;
-				padding: 0;
-			}
-			#page {
-				width: 100vw;
-				min-height: 100vh;
-			}
-		</style>
 		<div id="page">
 			<div id="page_line1">
-				<style>
-					#page_line1 {
-						padding: 2vw 0;
-						display: flex;
-						align-items: center;
-						justify-content: space-around;
-						width: 100%;
-					}
-					#page_line1_left {
-						display: flex;
-						align-items: center;
-						justify-content: center;
-						width: 20vw;
-						height: 150px;
-						background: rgba(125, 165, 255, 1);
-						border-radius: 5px;
-						position: relative;
-						color: #fff;
-					}
-					#file_input {
-						opacity: 0;
-						position: absolute;
-						width: 100%;
-						height: 100%;
-					}
-					#page_line1_right {
-						display: flex;
-						align-items: center;
-						justify-content: center;
-						flex-direction: column;
-						width: 30vw;
-						border-radius: 5px;
-					}
-				</style>
 				<div id="page_line1_left">
 					图片压缩
 					<input id="file_input" type="file" accept="image/*" />
@@ -74,146 +25,7 @@
 					<div id="input_image_size"></div>
 				</div>
 			</div>
-			<div id="page_line2">
-				<style>
-					#page_line2 {
-						margin-top: 20px;
-						width: 100%;
-						display: flex;
-						align-items: center;
-						justify-content: center;
-						flex-direction: column;
-					}
-					.item {
-						padding: 20px 0;
-						width: 80%;
-						display: flex;
-						align-items: center;
-						justify-content: space-around;
-						border-bottom: 1px solid #ddd;
-					}
-					.item_image {
-						width: 100px;
-						margin-top: 1vw;
-						border-radius: 5px;
-					}
-					.item_button {
-						background: rgba(125, 165, 255, 1);
-    					padding: .5vw 2vw;
-						border: none;
-						border-radius: 5px;
-						color: #fff;
-					}
-				</style>
-			</div>
+			<div id="page_line2"></div>
 		</div>
-		<script>
-			window.onload = function() {
-				var file_input = document.getElementById("file_input");
-				file_input.addEventListener("change", function() {
-					// 清除元素
-					document.getElementById("input_image").innerHTML = "";
-					document.getElementById("input_image_size").innerText = "";
-					// 压缩图片
-					var file = this.files[0];
-					const file_size = file.size;
-					const input_image_size = document.getElementById("input_image_size");
-                	input_image_size.innerText = `${file_size / 1000} kb`;
-
-					var reader = new FileReader();
-					reader.readAsDataURL(file);
-					reader.onload = function(e) {
-						var img = new Image();
-						img.src = e.target.result;
-						img.onload = function() {
-							var canvas = document.createElement("canvas");
-							var ctx = canvas.getContext("2d");
-							var max_width = 800;
-							var max_height = 600;
-							var width = img.width;
-							var height = img.height;
-							canvas.width = width;
-							canvas.height = height;
-							ctx.drawImage(img, 0, 0, width, height);
-							compress_image(canvas, file_size);  // 压缩 - 图片
-
-							// createElement(`<img src="" style="" />`)
-
-							// 渲染-输入元素
-							var base64 = canvas.toDataURL("image/jpeg", 0.8);
-							const input_image = document.getElementById("input_image");
-							input_image.src = base64;
-						}
-					}
-				});
-			}
-
-			function compress_image(canvas, file_size) {
-                const list = ["webp", "jpeg", "png"];
-
-                for (let i = 0; i < list.length; i++) {
-                    let item = list[i];
-                    let data_url = canvas.toDataURL(`image/${item}`);  // 格式压缩
-                    let blob = dataURItoBlob(data_url);
-                    render_element(item, blob, data_url, file_size)
-                }
-
-                function dataURItoBlob(dataURI) {
-                    // 将Base64编码的URI转换为二进制数据
-                    const byteString = atob(dataURI.split(',')[1]);
-                    // 分离出MIME类型和文件数据
-                    const mimeString = dataURI.split(',')[0].split(':')[1].split(';')[0];
-                    // 创建8位无符号整型数组来存储数据
-                    const ab = new ArrayBuffer(byteString.length);
-                    const ia = new Uint8Array(ab);
-                    for (let i = 0; i < byteString.length; i++) {
-                        ia[i] = byteString.charCodeAt(i);
-                    }
-                    // 创建Blob对象
-                    return new Blob([ia], {type: mimeString});
-                }
-
-                // 渲染 - 元素
-                function render_element(item, blob, data_url, file_size) {
-					const parent = document.getElementById("page_line2");
-					// <div class="item">
-						// <img src="data_url" class="item_image" />
-						// <span>`${item} size: ${blob.size / 1000} kb `</span>
-						// <button onclick="download_image(data_url, item)">下载</button>
-					// </div>
-                    let div_element = document.createElement("div");
-                    div_element.classList.add("item");
-                    // 图片
-                    let img_element = document.createElement("img");
-                    img_element.src = data_url;
-                    img_element.classList.add("item_image");
-                    div_element.appendChild(img_element);
-                    // 类型 大小
-                    let span_element = document.createElement("span");
-                    span_element.innerText = `${blob.size / 1000} kb`;
-                    div_element.appendChild(span_element);
-                    // 下载
-                    let button_element = document.createElement("button");
-					button_element.classList.add("item_button");
-                    button_element.innerText = `${item} 节省 ${(file_size - blob.size) / 1000} kb`;
-                    button_element.onclick = function() {
-                        download_image(data_url, item);  // 下载 - 图片
-                    }
-                    div_element.appendChild(button_element);
-                    // 加入父元素
-                    parent.appendChild(div_element);
-                }
-
-                // 下载 - 图片
-                function download_image(data_url, item) {
-                    const a = document.createElement("a");
-                    a.href = data_url;
-                    a.download = `download_image.${item}`;
-                    document.body.appendChild(a);
-                    a.click();
-                    document.body.removeChild(a);
-                }
-            }
-		</script>
 	</body>
 </html>

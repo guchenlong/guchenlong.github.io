@@ -1,0 +1,10 @@
+- 图片压缩
+  - avif
+  - webp
+  - jpeg
+  - png
+  - gif
+  - svg
+  - ico
+- 图片格式
+- 图片大小
