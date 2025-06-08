@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Compression</title>
+    <script src="https://unpkg.com/ffmpeg.js/dist/ffmpeg.min.js"></script>
+</head>
+<body>
+    <input id="file_input" type="file" />
+    <video id="video" controls width="320" height="240">
+        <source id="video_source" src="/Users/guchenlong/Downloads/mda-qm945542vvbx6idz.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <canvas id="canvas" style="display:none;"></canvas>
+    <!-- <button onclick="compressVideo()">Compress Video</button> -->
+    <!-- <a id="downloadLink" href="#" download="compressed-video.mp4">Download Compressed Video</a> -->
+ 
+    <script>
+        // const { createFFmpeg, fetchFile } = FFmpeg;
+        // const ffmpeg = createFFmpeg({ log: true }); // Create an instance of FFmpeg object with logging enabled for debugging purposes.
+        // await ffmpeg.load(); // Load ffmpeg into the web worker. This is an async operation and must be awaited before proceeding.
+        // ffmpeg.FS('writeFile', 'input.mp4', await fetchFile(inputFile)); // Write the input file to the virtual filesystem of ffmpeg.js.
+        // await ffmpeg.run('-i', 'input.mp4', '-b:v', '1M', 'output.mp4'); // Run ffmpeg command to compress the video to 1M bitrate and save as output.mp4 in the virtual filesystem.
+        // const data = ffmpeg.FS('readFile', 'output.mp4'); // Read the compressed video from the filesystem and get its data as a Uint8Array.
+        // const blob = new Blob([data.buffer], { type: 'video/mp4' }); // Convert
+
+        window.onload = function() {
+            var file_input = document.getElementById("file_input");
+            file_input.addEventListener("change", function() {
+                const file = this.files[0];
+                const file_size = file.size;
+                console.log("file", file);
+                console.log("file size", file.size / 1000, "kb");
+
+                var reader = new FileReader();
+                reader.readAsDataURL(file);
+                reader.onload = function(e) {
+                    console.log('reader', reader)
+
+                    // 使用HTML5 video元素加载视频
+                    const video = document.getElementById('video');
+                    video.src = e.target.result;
+
+                    const frames = [];
+
+                    // 当视频可以播放时，开始捕获帧
+                    video.addEventListener('loadeddata', () => {
+                        // 创建canvas来捕获视频帧
+                        const canvas = document.createElement('canvas');
+                        canvas.width = video.videoWidth;
+                        canvas.height = video.videoHeight;
+                        const ctx = canvas.getContext('2d');
+
+                        // 捕获视频帧的函数
+                        function captureFrame() {
+                            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+                            // 处理canvas的内容，例如压缩
+                            frames.push(canvas.toDataURL('image/webp', 0.8)); // Capture as WebP with quality 0.8
+                            setTimeout(captureFrame, 1000 / 30); // Capture every 33ms (30 FPS)
+                        }
+
+                        captureFrame();
+                        // 定时捕获帧
+                        // setInterval(captureFrame, 1000 / 30); // 30fps
+                        console.log('frames', frames)
+
+                        // canvas.toBlob(frames => {
+                        //     // 使用MediaRecorder录制Blob对象
+                        //     const stream = canvas.captureStream();
+                        //     const options = { mimeType: 'video/webm; codecs=vp9' };
+                        //     const mediaRecorder = new MediaRecorder(stream, options);
+                        //     const chunks = [];
+
+                        //     mediaRecorder.addEventListener('dataavailable', event => {
+                        //         chunks.push(event.data);
+                        //     });
+
+                        //     mediaRecorder.addEventListener('stop', () => {
+                        //         const videoBlob = new Blob(chunks, { type: 'video/webm' });
+                        //         const videoURL = URL.createObjectURL(videoBlob);
+                        //         // 处理或保存视频文件
+                        //     });
+
+                        //     mediaRecorder.start();
+                        // }, 'video/webm');
+
+                        // const url = URL.createObjectURL(frames);
+                        // const link = document.createElement('a');
+                        // link.href = url;
+                        // link.download = 'compressed_video.webm';
+                        // document.body.appendChild(link);
+                        // link.click();
+                        // document.body.removeChild(link);
+                        // URL.revokeObjectURL(url);
+
+
+                        // // 创建Blob对象
+                        // const blob = new Blob(frames, { type: 'video/webm' });
+                        // // 创建链接并触发下载
+                        // const url = URL.createObjectURL(blob);
+                        // const link = document.createElement('a');
+                        // link.href = url;
+                        // link.download = 'compressed_video.webm';
+                        // document.body.appendChild(link);
+                        // link.click();
+                        // document.body.removeChild(link);
+                    });
+
+                    
+                }
+            });
+        }
+
+        function downloadCompressedVideo() {
+            const frames = document.querySelectorAll('#canvas img'); // Assuming you have a way to save these as images or frames
+            // This is a placeholder for how you might handle the frames, typically you'd use a library to stitch them back into a video.
+            // For simplicity, you could use a library like ffmpeg.js or similar to stitch them back together.
+        }
+    </script>
+</body>
+</html>
