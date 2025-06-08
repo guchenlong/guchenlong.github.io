@@ -51,6 +51,7 @@
 						display: flex;
 						align-items: center;
 						justify-content: center;
+						flex-direction: column;
 						width: 30vw;
 						border-radius: 5px;
 					}
@@ -59,7 +60,10 @@
 					图片压缩
 					<input id="file_input" type="file" accept="image/*" />
 				</div>
-				<div id="page_line1_right"></div>
+				<div id="page_line1_right">
+					<img id="input_image" src="" style="height: 100px;" />
+					<div id="input_image_size"></div>
+				</div>
 			</div>
 			<div id="page_line2">
 				<style>
@@ -84,6 +88,13 @@
 						margin-top: 1vw;
 						border-radius: 5px;
 					}
+					.item_button {
+						background: rgba(125, 165, 255, 1);
+    					padding: .5vw 2vw;
+						border: none;
+						border-radius: 5px;
+						color: #fff;
+					}
 				</style>
 			</div>
 		</div>
@@ -92,9 +103,14 @@
 				var file_input = document.getElementById("file_input");
 				file_input.addEventListener("change", function() {
 					// 清除元素
-					document.getElementById("page_line1_right").innerHTML = "";
+					document.getElementById("input_image").innerHTML = "";
+					document.getElementById("input_image_size").innerText = "";
 					// 压缩图片
 					var file = this.files[0];
+					const file_size = file.size;
+					const input_image_size = document.getElementById("input_image_size");
+                	input_image_size.innerText = `${file_size / 1000} kb`;
+
 					var reader = new FileReader();
 					reader.readAsDataURL(file);
 					reader.onload = function(e) {
@@ -110,30 +126,27 @@
 							canvas.width = width;
 							canvas.height = height;
 							ctx.drawImage(img, 0, 0, width, height);
-							compress_image(canvas);  // 压缩 - 图片
+							compress_image(canvas, file_size);  // 压缩 - 图片
 
 							// createElement(`<img src="" style="" />`)
 
 							// 渲染-输入元素
 							var base64 = canvas.toDataURL("image/jpeg", 0.8);
-							var img_tag = document.createElement("img");
-							img_tag.src = base64;
-							// img_tag.style.width = "20vw";
-							img_tag.style.height = "100px";
-							document.getElementById("page_line1_right").appendChild(img_tag);
+							const input_image = document.getElementById("input_image");
+							input_image.src = base64;
 						}
 					}
 				});
 			}
 
-			function compress_image(canvas) {
+			function compress_image(canvas, file_size) {
                 const list = ["webp", "jpeg", "png"];
 
                 for (let i = 0; i < list.length; i++) {
                     let item = list[i];
                     let data_url = canvas.toDataURL(`image/${item}`);  // 格式压缩
                     let blob = dataURItoBlob(data_url);
-                    render_element(item, blob, data_url)
+                    render_element(item, blob, data_url, file_size)
                 }
 
                 function dataURItoBlob(dataURI) {
@@ -152,7 +165,7 @@
                 }
 
                 // 渲染 - 元素
-                function render_element(item, blob, data_url) {
+                function render_element(item, blob, data_url, file_size) {
 					const parent = document.getElementById("page_line2");
 					// <div class="item">
 						// <img src="data_url" class="item_image" />
@@ -168,11 +181,12 @@
                     div_element.appendChild(img_element);
                     // 类型 大小
                     let span_element = document.createElement("span");
-                    span_element.innerText = `size: ${blob.size / 1000} kb `;
+                    span_element.innerText = `${blob.size / 1000} kb`;
                     div_element.appendChild(span_element);
                     // 下载
                     let button_element = document.createElement("button");
-                    button_element.innerText = `${item} 下载`;
+					button_element.classList.add("item_button");
+                    button_element.innerText = `${item} 节省 ${(file_size - blob.size) / 1000} kb`;
                     button_element.onclick = function() {
                         download_image(data_url, item);  // 下载 - 图片
                     }
