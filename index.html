@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>首页 - | 压缩工具 | 图片压缩工具 | 字体压缩工具 | 视频压缩工具 | 顾晨龙的个人站</title>
-        <meta name="keywords" content="压缩工具, 图片压缩工具, 字体压缩工具, 视频压缩工具, 顾晨龙的个人站" />
-		<meta name="description" content="压缩工具, 图片压缩工具, 字体压缩工具, 视频压缩工具, 顾晨龙的个人站" />
+	<head>
+		<title>图片压缩工具 - 压缩工具 - 顾晨龙的个人站</title>
+		<meta name="keywords" content="图片压缩工具, 图片压缩, 压缩工具, 顾晨龙的个人站" />
+		<meta name="description" content="图片压缩工具, 图片压缩, 压缩工具, 顾晨龙的个人站" />
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="./common/js/base.js"></script>
-        <script src="./common/components/left_navigation/left_navigation.js"></script>
-        <link rel="stylesheet" href="./common/css/base.css" />
-        <style>
-            .item {
-                display: inline-block;
-                width: 15vw;
-                height: 5vw;
-                border: 1px solid rgba(125, 165, 255, 1);
-                margin: 1vw;
-                text-align: center;
-                line-height: 5vw;
-                border-radius: 10px;
-                color: rgba(125, 165, 255, 1);
-                font-size: 18px;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="page">
+		<script src="./pages/compress/image/js/index.js"></script>
+		<script src="./common/components/left_navigation/left_navigation.js"></script>
+		<link rel="stylesheet" href="./common/css/base.css" />
+		<link rel="stylesheet" href="./pages/compress/image/css/index.css" />
+	</head>
+	<body>
+		<div id="page">
             <div id="page_left"></div>
             <div id="page_right">
-                <a href="/pages/compress/image/index.html" class="item">图片压缩工具</a>
-                <a href="/pages/compress/font/index.html" class="item">字体压缩工具</a>
-                <a href="/pages/compress/video/index.html" class="item">视频压缩工具</a>
-                <a href="/pages/format/json/index.html" class="item">JSON 格式化工具</a>
-            </div>
+				<div id="page_line1">
+					<div id="page_line1_left">
+						图片上传
+						<input id="file_input" type="file" accept="image/*" />
+					</div>
+					<div id="page_line1_center">
+						<div class="page_line1_center_item">
+							质量调整：
+                            <input type="range" id="image_quality_input" min="0" max="1" value="1" step="0.1" />
+						</div>
+						<div class="page_line1_center_item">
+							大小调整：
+                            <input type="range" id="image_size_input" min="0" max="1" value="1" step="0.1" />
+						</div>
+						<div id="compress_image_button" onclick="compress_image()">压缩</div>
+					</div>
+					<div id="page_line1_right">
+						<img id="input_image" src="" style="height: 100px;" />
+						<div id="input_image_size"></div>
+					</div>
+				</div>
+				<div id="page_line2"></div>
+                <!-- <div class="document">
+                    <div>知识库</div>
+                    <div>图片类型：webp, avif, jpeg, png, gif, svg, bmp, tiff, psd, ico, raw, jxr, wdp, heif, in, webp, jpeg-xr, jxl, djvu, dng, tga, icns, heic, ico, cur, pcx, psd, svg, ai, eps, pdf, ps, eps, svg, tif, tiff, psd, ppt, pptx, xcf, xls, xlsx, doc, docx, odt, ods, odp, ppt, pptx, xls, xlsx, csv, tsv, json, xml, yaml, ini, conf, properties, yml, md, txt, log, ini, conf, properties, yml, md, txt, log, </div>
+                </div> -->
+			</div>
         </div>
-        <script>
-            render_left_navigation(); // 渲染 - 左侧导航栏
-        </script>
-    </body>
+	</body>
+	<script>
+        render_left_navigation(); // 渲染 - 左侧导航栏
+	</script>
 </html>

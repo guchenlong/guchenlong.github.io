@@ -77,10 +77,10 @@ function compress_image() {
         img.onload = function() {
             canvas = document.createElement("canvas");
             var ctx = canvas.getContext("2d");
-            canvas.width = img.width / size;
-            canvas.height = img.height / size;
+            canvas.width = img.width * size;
+            canvas.height = img.height * size;
 
-            ctx.drawImage(img, 0, 0, img_width / size, img_height / size);
+            ctx.drawImage(img, 0, 0, img_width * size, img_height * size);
             base64 = canvas.toDataURL(`image/${item}`, get_image_quality());
 
             let blob = dataURItoBlob(base64);
@@ -125,7 +125,7 @@ function compress_image() {
         // 下载 <button onclick="download_image(data_url, item)">下载</button>
         let button_element = document.createElement("button");
         button_element.classList.add("item_button");
-        button_element.innerText = `${item} 节省 ${(file_size - blob.size) / 1000} kb_${((file_size - blob.size) / file_size).toFixed(4)}`;
+        button_element.innerText = `${item} 节省 ${(file_size - blob.size) / 1000} kb ${((file_size - blob.size) / file_size).toFixed(4)}`;
         button_element.onclick = function() {
             download_image(base64, item);  // 下载 - 图片
         }
