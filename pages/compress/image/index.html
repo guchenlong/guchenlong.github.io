@@ -20,8 +20,19 @@
             <div id="page_right">
 				<div id="page_line1">
 					<div id="page_line1_left">
-						图片压缩
+						图片上传
 						<input id="file_input" type="file" accept="image/*" />
+					</div>
+					<div id="page_line1_center">
+						<div class="page_line1_center_item">
+							质量调整：
+							<input id="image_quality_input" type="text" />
+						</div>
+						<div class="page_line1_center_item">
+							大小缩小的倍数：
+							<input id="image_size_input" type="text" />
+						</div>
+						<div class="page_line1_center_item" onclick="compress_image()">压缩</div>
 					</div>
 					<div id="page_line1_right">
 						<img id="input_image" src="" style="height: 100px;" />

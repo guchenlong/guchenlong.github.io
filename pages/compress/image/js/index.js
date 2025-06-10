@@ -1,9 +1,14 @@
+let canvas;
+let file_size;
+let img_width;
+let img_height;
+
 window.onload = function() {
     var file_input = document.getElementById("file_input");
     file_input.addEventListener("change", function() {
         // 压缩图片
         const file = this.files[0];
-        const file_size = file.size;
+        file_size = file.size;
 
         clearElement();  // 清除元素
         renderInputImageSize(file_size);  // 渲染 - 输入元素
@@ -14,15 +19,15 @@ window.onload = function() {
             var img = new Image();
             img.src = e.target.result;
             img.onload = function() {
-                var canvas = document.createElement("canvas");
+                img_width = img.width;
+                img_height = img.height;
+                canvas = document.createElement("canvas");
                 var ctx = canvas.getContext("2d");
-                canvas.width = img.width;
-                canvas.height = img.height;
-                ctx.drawImage(img, 0, 0, img.width, img.height);
-                var base64 = canvas.toDataURL("image/jpeg", 0.8);
-
+                canvas.width = img_width;
+                canvas.height = img_height;
+                ctx.drawImage(img, 0, 0, img_width, img_height);
+                var base64 = canvas.toDataURL("image/jpeg", 1);
                 renderInputImage(base64);  // 渲染 - 输入元素
-                compress_image(canvas, file_size);  // 压缩 - 图片
             }
         }
 
@@ -43,14 +48,44 @@ window.onload = function() {
     });
 }
 
-function compress_image(canvas, file_size) {
+// 获取图片质量
+function get_image_quality() {
+    var image_quality_input = document.getElementById("image_quality_input").value || .9;
+    console.log('image_quality_input', image_quality_input);
+    return image_quality_input;
+}
+
+// 获取图片尺寸
+function get_image_size() {
+    var image_size_input = document.getElementById("image_size_input").value || 1;
+    console.log('image_size_input', image_size_input);
+    return image_size_input;
+}
+
+// 压缩图片
+function compress_image() {
     const list = ["webp", "jpeg", "png"];
+
+    let quality = get_image_quality();
+    let size = get_image_size();
 
     for (let i = 0; i < list.length; i++) {
         let item = list[i];
-        let data_url = canvas.toDataURL(`image/${item}`);  // 格式压缩
-        let blob = dataURItoBlob(data_url);
-        render_element(item, blob, data_url, file_size)
+        let base64 = canvas.toDataURL(`image/${item}`, quality);  // 格式压缩
+        var img = new Image();
+        img.src = base64;
+        img.onload = function() {
+            canvas = document.createElement("canvas");
+            var ctx = canvas.getContext("2d");
+            canvas.width = img.width / size;
+            canvas.height = img.height / size;
+
+            ctx.drawImage(img, 0, 0, img_width / size, img_height / size);
+            base64 = canvas.toDataURL(`image/${item}`, get_image_quality());
+
+            let blob = dataURItoBlob(base64);
+            render_element(item, blob, base64, file_size)
+        }
     }
 
     function dataURItoBlob(dataURI) {
@@ -69,7 +104,7 @@ function compress_image(canvas, file_size) {
     }
 
     // 渲染 - 元素
-    function render_element(item, blob, data_url, file_size) {
+    function render_element(item, blob, base64, file_size) {
         // <div class="item">
             // <img src="data_url" class="item_image" />
             // <span>`${item} size: ${blob.size / 1000} kb `</span>
@@ -78,9 +113,9 @@ function compress_image(canvas, file_size) {
         const parent = document.getElementById("page_line2");
         let div_element = document.createElement("div");
         div_element.classList.add("item");
-        // 图片 <img src="data_url" class="item_image" />
+        // 图片 <img src="base64" class="item_image" />
         let img_element = document.createElement("img");
-        img_element.src = data_url;
+        img_element.src = base64;
         img_element.classList.add("item_image");
         div_element.appendChild(img_element);
         // 类型 大小 <span>`${item} size: ${blob.size / 1000} kb `</span>
@@ -92,7 +127,7 @@ function compress_image(canvas, file_size) {
         button_element.classList.add("item_button");
         button_element.innerText = `${item} 节省 ${(file_size - blob.size) / 1000} kb_${((file_size - blob.size) / file_size).toFixed(4)}`;
         button_element.onclick = function() {
-            download_image(data_url, item);  // 下载 - 图片
+            download_image(base64, item);  // 下载 - 图片
         }
         div_element.appendChild(button_element);
         // 加入父元素
