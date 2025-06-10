@@ -1,17 +1,12 @@
 /* line 1 */
 #page_line1 {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
 }
 #page_line1_left {
   color: #333333;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20vw;
-  height: 120px;
+  height: 80px;
   border-radius: 5px;
   position: relative;
   border: 1px dashed rgba(125, 165, 255, 1);
@@ -23,7 +18,6 @@
   height: 100%;
 }
 #page_line1_center {
-  width: 20vw;
 }
 .page_line1_center_item {
     color: #333333;
@@ -34,6 +28,9 @@
     align-items: center;
     justify-content: space-around;
     border-radius: 5px;
+}
+.page_line1_center_item input {
+  width: 50vw;
 }
 #compress_image_button {
   background-color: rgba(125, 165, 255, 1);
@@ -46,11 +43,11 @@
   border-radius: 5px;
 }
 #page_line1_right {
+  margin: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 20vw;
   border-radius: 5px;
 }
 #input_image {
@@ -72,7 +69,8 @@
 }
 .item {
   padding: 10px 0;
-  width: 80%;
+  width: 100%;
+  /* max-width: 1000px; */
   display: flex;
   align-items: center;
   justify-content: space-around;

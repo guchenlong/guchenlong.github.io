@@ -1,4 +1,10 @@
 function render_left_navigation() {  // 渲染 - 左侧导航栏
+    console.log(window.innerWidth)
+
+    if (window.innerWidth < 1000) {
+        return;
+    }
+
     let page_left = document.getElementById("page_left");
 
     const list = [

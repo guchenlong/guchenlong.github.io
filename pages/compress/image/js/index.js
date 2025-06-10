@@ -64,6 +64,7 @@ function get_image_size() {
 
 // 压缩图片
 function compress_image() {
+    document.getElementById("page_line2").innerHTML = "";  // 清除元素
     const list = ["webp", "jpeg", "png"];
 
     let quality = get_image_quality();
@@ -125,7 +126,8 @@ function compress_image() {
         // 下载 <button onclick="download_image(data_url, item)">下载</button>
         let button_element = document.createElement("button");
         button_element.classList.add("item_button");
-        button_element.innerText = `${item} 节省 ${(file_size - blob.size) / 1000} kb ${((file_size - blob.size) / file_size).toFixed(4)}`;
+        // button_element.innerText = `${item} 节省 ${(file_size - blob.size) / 1000} kb ${((file_size - blob.size) / file_size).toFixed(4)}`;
+        button_element.innerText = `${item}`;
         button_element.onclick = function() {
             download_image(base64, item);  // 下载 - 图片
         }
