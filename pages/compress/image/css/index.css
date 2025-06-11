@@ -30,7 +30,7 @@
     border-radius: 5px;
 }
 .page_line1_center_item input {
-  width: 50vw;
+  width: 40vw;
 }
 #compress_image_button {
   background-color: rgba(125, 165, 255, 1);
@@ -87,4 +87,9 @@
   border: none;
   border-radius: 5px;
   color: #fff;
+}
+/* document */
+.document {
+  padding: 1vw;
+  border: 1px dashed rgba(125, 165, 255, 1);
 }
