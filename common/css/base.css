@@ -28,6 +28,7 @@ button {
 #page_right {
     padding: 2vw;
     max-width: 1000px;
+    min-width: 40vw;
 }
 
 #page_right_2 {
