@@ -68,13 +68,14 @@
   flex-direction: column;
 }
 .item {
+  margin: 5px 0;
   padding: 10px 0;
   width: 100%;
-  /* max-width: 1000px; */
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-bottom: 1px solid #ddd;
+  border: 1px dashed rgba(125, 165, 255, 1);
+  border-radius: 5px;
 }
 .item_image {
   width: 100px;
@@ -90,6 +91,8 @@
 }
 /* document */
 .document {
+  margin-top: 50px;
   padding: 1vw;
   border: 1px dashed rgba(125, 165, 255, 1);
+  border-radius: 5px;
 }
