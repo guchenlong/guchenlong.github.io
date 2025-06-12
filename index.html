@@ -33,21 +33,35 @@
 						<div id="compress_image_button" onclick="compress_image()">压缩</div>
 					</div>
 					<div id="page_line1_right">
-						<img id="input_image" src="" style="max-height: 100px;" />
+						<img id="input_image" src="" />
 						<div id="input_image_size"></div>
 					</div>
 				</div>
 				<div id="page_line2"></div>
                 <div class="document">
-					<h2 style="text-align: center;">图片压缩</h2><br />
-                    <div>图片本身存在冗余信息，是我们选择使用图片压缩的原因。</div>
-                    <div>图片的压缩可以从三个方向入手：图片质量，图片大小，图片格式。</div>
-					<br />
-					<div>图片质量：通过降低图片的质量，从减小图片的大小。</div>
-					<div>图片尺寸：通过降低图片的尺寸，从减小图片的大小。</div>
-					<div>图片格式：通过改变图片的格式，从减小图片的大小。</div>
-					<br />
-					<div>图片格式比较复杂，涉及图片压缩算法的演进，但新的算法同样也会带来厂商支持不完全的问题。</div>
+					<div class="document_content">
+						<div id="document_content_title">图片压缩</div><br />
+						<div>图片存在冗余信息，是我们使用图片压缩的原因。</div><br />
+						<div>图片压缩可以从以下三个方向干预：</div>
+						<div>- 1. 图片质量：降低图片的质量</div>
+						<div>- 2. 图片尺寸：缩小图片的尺寸</div>
+						<div>- 3. 图片格式：改变图片的格式（图片压缩算法的演进）</div>
+						<br />
+						<div>我们先来了解下图片格式的演进：</div>
+						<div>- 1985: PCX</div>
+						<div>- 1986: TIFF</div>
+						<div>- 1989: GIF</div>
+						<div>- 1994: JPEG</div>
+						<div>- 1995: BMP</div>
+						<div>- 1995: PNG (无损压缩 LZ77 派生算法)</div>
+						<div>- 1998: EXIF</div>
+						<div>- 2000: JPEG2000 (使用了多尺度 Wavelet Transform (小波变换)进行图像表达) 算术编码器</div>
+						<div>- 2010: WEBP (VP8 视频编码格式)</div>
+						<div>- 2014: BPG</div>
+						<div>- 2015: HEIF</div>
+						<div>- 2019: AVIF (免费的视频编码 AV1)</div>
+						<br />
+					</div>
                 </div>
 			</div>
             <div id="page_right_2"></div>

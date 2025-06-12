@@ -2,7 +2,7 @@
 #page_line1 {
 }
 #page_line1_left {
-  color: #333333;
+  color: dodgerblue;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,7 +20,7 @@
 #page_line1_center {
 }
 .page_line1_center_item {
-    color: #333333;
+    color: dodgerblue;
     border: 1px dashed rgba(125, 165, 255, 1);
     margin: 10px 0;
     padding: 10px;
@@ -47,14 +47,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   border-radius: 5px;
 }
 #input_image {
   border-radius: 5px;
+  max-width: 30vw;
+  max-height: 100px;
 }
 #input_image_size {
-  margin-top: 10px;
+  margin-left: 2vw;
   color: rgba(125, 165, 255, 1);
 }
 
@@ -79,7 +80,6 @@
 }
 .item_image {
   width: 100px;
-  margin-top: 1vw;
   border-radius: 5px;
 }
 .item_button {
@@ -91,8 +91,27 @@
 }
 /* document */
 .document {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 50px;
-  padding: 1vw;
   border: 1px dashed rgba(125, 165, 255, 1);
   border-radius: 5px;
+}
+
+.document_content {
+  width: 96%;
+  padding: 1vw 0;
+}
+
+#document_content_title {
+  font-size: x-large;
+  text-align: center;
+}
+
+.document_content div {
+  text-indent: 2em;
+  margin: 5px 0px;
+  color: gray;
 }

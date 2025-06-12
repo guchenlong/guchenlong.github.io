@@ -19,13 +19,21 @@ button {
     display: flex;
 }
 
-#page_left {
-    width: 10vw;
-    padding: 2vw;
-    background-color: ghostwhite;
+@media screen and (min-width: 1000px) {
+    #page_left {
+        padding: 2vw;
+        background-color: ghostwhite;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #page_left {
+        /* 移动端不展示左侧栏 */
+    }
 }
 
 #page_right {
+    margin-top: 30px;
     padding: 2vw;
     max-width: 1000px;
     min-width: 40vw;
