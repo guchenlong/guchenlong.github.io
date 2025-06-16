@@ -21,7 +21,7 @@ button {
 
 @media screen and (min-width: 1000px) {
     #page_left {
-        padding: 2vw;
+        padding: 1vw;
         background-color: ghostwhite;
     }
 }
@@ -43,4 +43,11 @@ button {
     flex: 1;
     width: 10vw;
     background: ghostwhite;
+}
+
+.left_navigation_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1vw 0;
 }

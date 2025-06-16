@@ -1,7 +1,7 @@
 // 添加 script 文件
 (function() {
     const srcList = [
-        "../../../../common/js/_.js",
+        // "../../../../common/js/_.js",
         "../../../../common/js/base.js",
         "../../../../common/components/left_navigation/left_navigation.js"
     ];

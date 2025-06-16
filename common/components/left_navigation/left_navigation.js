@@ -23,13 +23,26 @@ function render_left_navigation() {
     }
 
     function render_element(item) {  // 渲染 - 左侧导航栏 - 元素
-        let a = document.createElement("a");
-        a.href = item.link;
-        a.innerText = item.title;
-        let br = document.createElement("br");
-        let br1 = document.createElement("br");
+        
+        // let a = document.createElement("a");
+        // a.href = item.link;
+        // a.innerText = item.title;
+
+        let a = _create_element({
+            tag: "a",
+            className: "left_navigation_item",
+            href: item.link,
+            innerText: item.title,
+        });
+
+        // let br = _create_element({
+
+        // })
+
+        // let br = document.createElement("br");
+        // let br1 = document.createElement("br");
         page_left.appendChild(a);
-        page_left.appendChild(br);
-        page_left.appendChild(br1);
+        // page_left.appendChild(br);
+        // page_left.appendChild(br1);
     }
 }
