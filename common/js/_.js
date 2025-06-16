@@ -1,3 +1,4 @@
+
 // 创建元素
 function _create_element(obj) {
     const element = document.createElement(obj.tag);
