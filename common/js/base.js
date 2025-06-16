@@ -1,5 +1,6 @@
-// 百度统计
-(function() {
+// 初始化 - 百度统计
+function init_baidu_statistics() {
+    console.log("init baidu statistics");
     if (window.location.hostname === "guchenlong.github.io") {
         // 仅线上生效
         var _hmt = _hmt || [];
@@ -10,4 +11,4 @@
             s.parentNode.insertBefore(hm, s);
         })();
     }
-})();
+}

@@ -6,16 +6,13 @@
 		<meta name="description" content="图片压缩工具, 图片压缩, 压缩工具, 顾晨龙的个人站" />
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="./common/js/base.js"></script>
-		<script src="./pages/compress/image/js/index.js"></script>
-		<script src="./common/components/left_navigation/left_navigation.js"></script>
-		<link rel="stylesheet" href="./common/css/base.css" />
 		<link rel="stylesheet" href="./pages/compress/image/css/index.css" />
+		<script src="./pages/compress/image/js/index.js"></script>
 	</head>
 	<body>
 		<div id="page">
             <div id="page_left"></div>
-            <div id="page_right">
+            <div id="page_center">
 				<div id="page_line1">
 					<div id="page_line1_left">
 						图片上传
@@ -38,6 +35,7 @@
 					</div>
 				</div>
 				<div id="page_line2"></div>
+				<!-- 图片压缩 文档 -->
                 <div class="document">
 					<div class="document_content">
 						<div id="document_content_title">图片压缩</div><br />
@@ -45,29 +43,32 @@
 						<div>图片压缩可以从以下三个方向干预：</div>
 						<div>- 1. 图片质量：降低图片的质量</div>
 						<div>- 2. 图片尺寸：缩小图片的尺寸</div>
-						<div>- 3. 图片格式：改变图片的格式（图片压缩算法的演进）</div>
+						<div>- 3. 图片格式：改变图片的格式（图片压缩算法的发展）</div>
 						<br />
-						<div>我们先来了解下图片格式的演进：</div>
-						<div>- 1985: PCX</div>
-						<div>- 1986: TIFF</div>
-						<div>- 1989: GIF</div>
-						<div>- 1994: JPEG</div>
-						<div>- 1995: BMP</div>
-						<div>- 1995: PNG (无损压缩 LZ77 派生算法)</div>
-						<div>- 1998: EXIF</div>
-						<div>- 2000: JPEG2000 (使用了多尺度 Wavelet Transform (小波变换)进行图像表达) 算术编码器</div>
-						<div>- 2010: WEBP (VP8 视频编码格式)</div>
-						<div>- 2014: BPG</div>
-						<div>- 2015: HEIF</div>
-						<div>- 2019: AVIF (免费的视频编码 AV1)</div>
+						<div>我们先来了解下随着压缩算法的发展带来的图片格式的演进：</div>
+						<div>
+							<mark>- 1952: 算法_哈夫曼编码</mark>
+						</div>
+						<div>
+							<mark>- 1977: 算法_LZ77编码</mark>
+						</div>
+						<div>- 1985: 格式_PCX</div>
+						<div>- 1986: 格式_TIFF</div>
+						<div>- 1989: 格式_GIF</div>
+						<div>- 1994: 格式_JPEG</div>
+						<div>- 1995: 格式_BMP</div>
+						<div>- 1995: 格式_PNG</div>
+						<div>- 1998: 格式_EXIF</div>
+						<div>- 2000: 格式_JPEG2000 (使用了多尺度 Wavelet Transform (小波变换)进行图像表达) 算术编码器</div>
+						<div>- 2010: 格式_WEBP (VP8 视频编码格式)</div>
+						<div>- 2014: 格式_BPG</div>
+						<div>- 2015: 格式_HEIF</div>
+						<div>- 2019: 格式_AVIF (免费的视频编码 AV1)</div>
 						<br />
 					</div>
                 </div>
 			</div>
-            <div id="page_right_2"></div>
+            <div id="page_right"></div>
         </div>
 	</body>
-	<script>
-        render_left_navigation(); // 渲染 - 左侧导航栏
-	</script>
 </html>

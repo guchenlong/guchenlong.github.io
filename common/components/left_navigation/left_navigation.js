@@ -1,4 +1,5 @@
-function render_left_navigation() {  // 渲染 - 左侧导航栏
+// 渲染 - 左侧导航栏
+function render_left_navigation() {
     console.log(window.innerWidth)
 
     if (window.innerWidth < 1000) {

@@ -32,14 +32,14 @@ button {
     }
 }
 
-#page_right {
+#page_center {
     margin-top: 30px;
     padding: 2vw;
     max-width: 1000px;
     min-width: 40vw;
 }
 
-#page_right_2 {
+#page_right {
     flex: 1;
     width: 10vw;
     background: ghostwhite;
