@@ -46,26 +46,101 @@
 						<div>- 2. 图片尺寸：缩小图片的尺寸</div>
 						<div>- 3. 图片格式：改变图片的格式（图片压缩算法的发展）</div>
 						<br />
-						<div>我们先来了解下随着压缩算法的发展带来的图片格式的演进：</div>
-						<div>
-							<mark>- 1952: 算法_哈夫曼编码</mark>
+						<div style="border: 1px dashed rgba(125, 165, 255, 1); padding: 1vw;">
+							<div>我们先来了解下随着压缩算法的发展带来的图片格式的演进：</div>
+							<div>
+								<mark>- 1952: 算法_哈夫曼编码</mark>
+							</div>
+							<div>
+								<mark>- 1977: 算法_LZ77编码</mark>
+							</div>
+							<div>- 1985: 格式_PCX</div>
+							<div>- 1986: 格式_TIFF</div>
+							<div>- 1989: 格式_GIF</div>
+							<div>- 1994: 格式_JPEG</div>
+							<div>- 1995: 格式_BMP</div>
+							<div>- 1995: 格式_PNG</div>
+							<div>- 1998: 格式_EXIF</div>
+							<div>
+								<mark>- 1998.11: MPEG-4</mark>
+							</div>
+							<div>- 2000: 格式_JPEG2000 (使用了多尺度 Wavelet Transform (小波变换)进行图像表达) 算术编码器</div>
+							<div>
+								<mark>- 2010: VP8/VP9</mark>
+							</div>
+							<div>- 2010: 格式_WEBP (VP8 视频编码格式)</div>
+							<div>- 2014: 格式_BPG</div>
+							<div>- 2015: 格式_HEIF</div>
+							<div>
+								<mark>- 2018.6: AV1</mark>
+							</div>
+							<div>- 2019: 格式_AVIF (免费的视频编码 AV1)</div>
+							<!-- <div>H.264</div>
+							<div>H.265</div> -->
+							
+							<!-- </div> -->
+							<br />
+							<!-- 算法 -->
+							<div style="border: 1px dashed rgba(125, 165, 255, 1)">
+								<div id="document_content_title">算法: 哈夫曼编码</div><br />
+								<div>- 1、字符按出现次数，从多到少排序</div>
+								<div>- 2、次数从小到大，自下往上构建哈夫曼树</div>
+								<div>- 3、带权路径编码哈夫曼树</div>
+								<pre style="background: beige;overflow: scroll;"><code>
+		let str = 'eqweqwewewqerewrczxcsdfserew';
+		function hfm() {
+			// 1、对输入进行个数统计
+			// 2、构建哈夫曼树
+			// 3、输出
+		}
+		let str = 'ABAACDC';
+		function hfm(str) {
+			// 1、获取字符出现次数
+			let newArray = getNewArray(str);
+			console.log('getNewArray', newArray);
+			// 2、构建哈夫曼树
+			buildHfmTree(newArray);
+			// 3、输出最终编码
+		}
+		function getNewArray(str) {  // 获取 [{ 'a': 1 }, {'b': 2} ... ] 这样的数组
+			let strArr = [];
+			for (let i = 0; i < str.length; i++) {  // 遍历 - 传入字符串
+				let item = str[i];
+				if (strArr.length == 0) {  // 第一项直接 push 到新数组
+					strArr.push({ name: item, value: 1 });
+				} else {
+					let strArrHasItem = false;  // 是否有当前项
+					for (let j = 0; j <= strArr.length; j++) {  // 遍历 - 新数组
+						if (item == strArr[j]?.name) {  // 数组有这个值
+							strArr[j].value = strArr[j].value + 1;
+							strArrHasItem = true;
+						}
+					}
+					if (strArrHasItem) {
+					} else {  // 遍历结束，没有这个值，数组后 push 
+						strArr.push({ name: item, value: 1 });
+					}
+				}
+			}
+			return strArr;
+		}
+		function buildHfmTree(arr) {  // 构建哈夫曼树
+			// 1、对出现次数从小到大排序
+		}
+		hfm(str);
+								</code></pre>
+							</div>
+							<div style="border: 1px dashed rgba(125, 165, 255, 1)">
+								算法: LZ77 编码
+								<div>- 1、</div>
+								<div>- 2、</div>
+							</div>
+							<div style="border: 1px dashed rgba(125, 165, 255, 1)">
+								算法: 计数编码
+								<div>- 1、</div>
+								<div>- 2、</div>
+							</div>
 						</div>
-						<div>
-							<mark>- 1977: 算法_LZ77编码</mark>
-						</div>
-						<div>- 1985: 格式_PCX</div>
-						<div>- 1986: 格式_TIFF</div>
-						<div>- 1989: 格式_GIF</div>
-						<div>- 1994: 格式_JPEG</div>
-						<div>- 1995: 格式_BMP</div>
-						<div>- 1995: 格式_PNG</div>
-						<div>- 1998: 格式_EXIF</div>
-						<div>- 2000: 格式_JPEG2000 (使用了多尺度 Wavelet Transform (小波变换)进行图像表达) 算术编码器</div>
-						<div>- 2010: 格式_WEBP (VP8 视频编码格式)</div>
-						<div>- 2014: 格式_BPG</div>
-						<div>- 2015: 格式_HEIF</div>
-						<div>- 2019: 格式_AVIF (免费的视频编码 AV1)</div>
-						<br />
 					</div>
                 </div>
 			</div>

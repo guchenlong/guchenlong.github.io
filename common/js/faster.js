@@ -1,3 +1,4 @@
+// faster.js 提效工具
 
 // 创建元素
 function _create_element(obj) {
