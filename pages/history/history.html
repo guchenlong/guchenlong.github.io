@@ -3,9 +3,15 @@
     <head>
         <title>时间的旅程</title>
         <meta charset="utf-8" />
-        <meta name="Keywords" content="时间的旅程,宇宙,银河系,太阳系,地球,地球人类,地球人类文明"/>
-        <meta name="Description" content="时间的旅程"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <meta
+            name="Keywords"
+            content="时间的旅程,宇宙,银河系,太阳系,地球,地球人类,地球人类文明"
+        />
+        <meta name="Description" content="时间的旅程" />
+        <meta
+            name="viewport"
+            content="width=device-width,initial-scale=1,maximum-scale=1"
+        />
         <meta name="baidu-site-verification" content="code-LV2b2fEFzP" />
         <style>
             * {
@@ -60,15 +66,19 @@
                 border-top: 1px dashed #ddd;
             }
         </style>
-        <script type="text/javascript" src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=xNpgc1RY38Qcft5THljMzKk7WUNxPTft"></script>
+        <script
+            type="text/javascript"
+            src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=xNpgc1RY38Qcft5THljMzKk7WUNxPTft"
+        ></script>
         <script>
             // 百度统计
             var _hmt = _hmt || [];
-            (function() {
-              var hm = document.createElement("script");
-              hm.src = "https://hm.baidu.com/hm.js?a1feafc5031bed40102853c48ab5bfc0";
-              var s = document.getElementsByTagName("script")[0]; 
-              s.parentNode.insertBefore(hm, s);
+            (function () {
+                var hm = document.createElement("script");
+                hm.src =
+                    "https://hm.baidu.com/hm.js?a1feafc5031bed40102853c48ab5bfc0";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
             })();
 
             // 百度地图
@@ -77,13 +87,11 @@
                 var point = new BMapGL.Point(116.404, 39.915);
                 map.centerAndZoom(point, 0);
                 map.enableScrollWheelZoom(true);
-            }, 500)
+            }, 500);
         </script>
     </head>
     <body>
-        <header>
-            时间的旅程
-        </header>
+        <header>时间的旅程</header>
         <nav>
             <style>
                 #nav-1 {
@@ -129,17 +137,23 @@
                 #galaxy-timeline {
                     display: flex;
                     position: absolute;
-                    top: calc(((13817000000 - 12000000000) / 13817000000) * 100%);
+                    top: calc(
+                        ((13817000000 - 12000000000) / 13817000000) * 100%
+                    );
                 }
                 #solarSystem-timeline {
                     display: flex;
                     position: absolute;
-                    top: calc(((13817000000 - 5000000000) / 13817000000) * 100%);
+                    top: calc(
+                        ((13817000000 - 5000000000) / 13817000000) * 100%
+                    );
                 }
                 #earth-timeline {
                     display: flex;
                     position: absolute;
-                    top: calc(((13817000000 - 4570000000) / 13817000000) * 100%);
+                    top: calc(
+                        ((13817000000 - 4570000000) / 13817000000) * 100%
+                    );
                 }
                 #earthPeople-timeline {
                     display: flex;
@@ -172,39 +186,87 @@
                     <div id="timeline-box-1">
                         <div id="timeline"></div>
                         <div id="universe-timeline">
-                            <span class="timeline-line" style="width: 20px;"></span>
-                            <a class="timeline-item" href="" target="blank">宇宙（-138，1700，0000）</a>
+                            <span
+                                class="timeline-line"
+                                style="width: 20px"
+                            ></span>
+                            <a class="timeline-item" href="" target="blank"
+                                >宇宙（-138，1700，0000）</a
+                            >
                         </div>
                         <div id="galaxy-timeline">
-                            <span class="timeline-line" style="width: 20px;"></span>
-                            <a class="timeline-item" href="" target="blank">银河系（-120，0000，0000）</a>
+                            <span
+                                class="timeline-line"
+                                style="width: 20px"
+                            ></span>
+                            <a class="timeline-item" href="" target="blank"
+                                >银河系（-120，0000，0000）</a
+                            >
                         </div>
                         <div id="solarSystem-timeline">
-                            <span class="timeline-line"  style="width: 20px;"></span>
-                            <a class="timeline-item" href="" target="blank">太阳系（-50，0000，0000）</a>
+                            <span
+                                class="timeline-line"
+                                style="width: 20px"
+                            ></span>
+                            <a class="timeline-item" href="" target="blank"
+                                >太阳系（-50，0000，0000）</a
+                            >
                         </div>
                         <div id="earth-timeline">
-                            <span class="timeline-line" style="width: 250px;"></span>
-                            <a class="timeline-item" href="" target="blank">地球（-45，7000，0000）</a>
+                            <span
+                                class="timeline-line"
+                                style="width: 250px"
+                            ></span>
+                            <a class="timeline-item" href="" target="blank"
+                                >地球（-45，7000，0000）</a
+                            >
                         </div>
-                        <div style="display: flex; position: absolute; top: calc(((13817000000 - 4425000000) / 13817000000) * 100%);">
-                            <span class="timeline-line" style="width: 470px;"></span>
-                            <a class="timeline-item" href="" target="blank">月球（-44，2500，0000）</a>
+                        <div
+                            style="
+                                display: flex;
+                                position: absolute;
+                                top: calc(
+                                    ((13817000000 - 4425000000) / 13817000000) *
+                                        100%
+                                );
+                            "
+                        >
+                            <span
+                                class="timeline-line"
+                                style="width: 470px"
+                            ></span>
+                            <a class="timeline-item" href="" target="blank"
+                                >月球（-44，2500，0000）</a
+                            >
                         </div>
                         <div id="earthPeople-timeline">
-                            <span class="timeline-line" style="width: 20px;"></span>
-                            <a class="timeline-item" href="" target="blank">地球人类（-533，2000）</a>
+                            <span
+                                class="timeline-line"
+                                style="width: 20px"
+                            ></span>
+                            <a class="timeline-item" href="" target="blank"
+                                >地球人类（-533，2000）</a
+                            >
                         </div>
                         <div id="earthPeopleCivilization-timeline">
-                            <span class="timeline-line" style="width: 260px;"></span>
-                            <a class="timeline-item" href="" target="blank" style="background-color:lightslategrey;">地球人类文明（-4100）</a>
+                            <span
+                                class="timeline-line"
+                                style="width: 260px"
+                            ></span>
+                            <a
+                                class="timeline-item"
+                                href=""
+                                target="blank"
+                                style="background-color: lightslategrey"
+                                >地球人类文明（-4100）</a
+                            >
                         </div>
                     </div>
                 </section>
                 <section id="timeline-right">
                     <style>
                         #timeline-box-2 .timeline-item {
-                            background-color:lightslategrey;
+                            background-color: lightslategrey;
                         }
                         #light-timeline {
                             display: flex;
@@ -224,61 +286,184 @@
                     </style>
                     <div id="timeline-box-2">
                         <div id="timeline"></div>
-                        <div style="display: flex; position: absolute; top: 0;">
-                            <span class="timeline-line" style="width: 20px;"></span>
-                            <a class="timeline-item" href="" target="blank">美索不达米亚文明（-4100）</a>
+                        <div style="display: flex; position: absolute; top: 0">
+                            <span
+                                class="timeline-line"
+                                style="width: 20px"
+                            ></span>
+                            <a class="timeline-item" href="" target="blank"
+                                >美索不达米亚文明（-4100）</a
+                            >
                         </div>
-                        <div style="display: flex; position: absolute; top: calc(((4100 - 2690) / 7100) * 100%);">
-                            <span class="timeline-line" style="width: 20px;"></span>
-                            <a class="timeline-item" href="" target="blank">埃及金字塔（-2690）</a>
+                        <div
+                            style="
+                                display: flex;
+                                position: absolute;
+                                top: calc(((4100 - 2690) / 7100) * 100%);
+                            "
+                        >
+                            <span
+                                class="timeline-line"
+                                style="width: 20px"
+                            ></span>
+                            <a class="timeline-item" href="" target="blank"
+                                >埃及金字塔（-2690）</a
+                            >
                         </div>
-                        <div style="display: flex; position: absolute; top: calc(((4100 - 1772) / 7100) * 100%);">
-                            <span class="timeline-line" style="width: 20px;"></span>
-                            <a class="timeline-item" href="" target="blank">汉谟拉比法典（-1772）</a>
+                        <div
+                            style="
+                                display: flex;
+                                position: absolute;
+                                top: calc(((4100 - 1772) / 7100) * 100%);
+                            "
+                        >
+                            <span
+                                class="timeline-line"
+                                style="width: 20px"
+                            ></span>
+                            <a class="timeline-item" href="" target="blank"
+                                >汉谟拉比法典（-1772）</a
+                            >
                         </div>
-                        <div style="display: flex; position: absolute; top: calc(((4100 - 1046) / 7100) * 100%);">
-                            <span class="timeline-line" style="width: 20px;"></span>
-                            <a class="timeline-item" href="" target="blank">武王伐纣（-1046）</a>
+                        <div
+                            style="
+                                display: flex;
+                                position: absolute;
+                                top: calc(((4100 - 1046) / 7100) * 100%);
+                            "
+                        >
+                            <span
+                                class="timeline-line"
+                                style="width: 20px"
+                            ></span>
+                            <a class="timeline-item" href="" target="blank"
+                                >武王伐纣（-1046）</a
+                            >
                         </div>
-                        <div style="display: flex; position: absolute; top: calc(((4100 - 399) / 7100) * 100%);">
-                            <span class="timeline-line" style="width: 20px;"></span>
-                            <a class="timeline-item" href="" target="blank">苏格拉底（-399）</a>
+                        <div
+                            style="
+                                display: flex;
+                                position: absolute;
+                                top: calc(((4100 - 399) / 7100) * 100%);
+                            "
+                        >
+                            <span
+                                class="timeline-line"
+                                style="width: 20px"
+                            ></span>
+                            <a class="timeline-item" href="" target="blank"
+                                >苏格拉底（-399）</a
+                            >
                         </div>
-                        <div style="display: flex; position: absolute; top: calc(((4100 - 100) / 7100) * 100%);">
-                            <span class="timeline-line" style="width: 160px;"></span>
-                            <a class="timeline-item" href="" target="blank">凯撒（-100）</a>
+                        <div
+                            style="
+                                display: flex;
+                                position: absolute;
+                                top: calc(((4100 - 100) / 7100) * 100%);
+                            "
+                        >
+                            <span
+                                class="timeline-line"
+                                style="width: 160px"
+                            ></span>
+                            <a class="timeline-item" href="" target="blank"
+                                >凯撒（-100）</a
+                            >
                         </div>
-                        <div style="display: flex; position: absolute; top: calc(((4100 + 181) / 7100) * 100%);">
-                            <span class="timeline-line" style="width: 280px;"></span>
-                            <a class="timeline-item" href="" target="blank">诸葛亮（181）</a>
+                        <div
+                            style="
+                                display: flex;
+                                position: absolute;
+                                top: calc(((4100 + 181) / 7100) * 100%);
+                            "
+                        >
+                            <span
+                                class="timeline-line"
+                                style="width: 280px"
+                            ></span>
+                            <a class="timeline-item" href="" target="blank"
+                                >诸葛亮（181）</a
+                            >
                         </div>
-                        <div style="display: flex; position: absolute; top: calc(((4100 + 570) / 7100) * 100%);">
-                            <span class="timeline-line" style="width: 20px;"></span>
-                            <a class="timeline-item" href="" target="blank">默罕默德（570）</a>
+                        <div
+                            style="
+                                display: flex;
+                                position: absolute;
+                                top: calc(((4100 + 570) / 7100) * 100%);
+                            "
+                        >
+                            <span
+                                class="timeline-line"
+                                style="width: 20px"
+                            ></span>
+                            <a class="timeline-item" href="" target="blank"
+                                >默罕默德（570）</a
+                            >
                         </div>
-                        <div style="display: flex; position: absolute; top: calc(((4100 + 1096) / 7100) * 100%);">
-                            <span class="timeline-line" style="width: 20px;"></span>
-                            <a class="timeline-item" href="" target="blank">牛津大学（1096）</a>
+                        <div
+                            style="
+                                display: flex;
+                                position: absolute;
+                                top: calc(((4100 + 1096) / 7100) * 100%);
+                            "
+                        >
+                            <span
+                                class="timeline-line"
+                                style="width: 20px"
+                            ></span>
+                            <a class="timeline-item" href="" target="blank"
+                                >牛津大学（1096）</a
+                            >
                         </div>
                         <div id="light-timeline">
-                            <span class="timeline-line" style="width: 20px;"></span>
-                            <a class="timeline-item" href="" target="blank">电灯出现（1879）</a>
+                            <span
+                                class="timeline-line"
+                                style="width: 20px"
+                            ></span>
+                            <a class="timeline-item" href="" target="blank"
+                                >电灯出现（1879）</a
+                            >
                         </div>
                         <div id="car-timeline">
-                            <span class="timeline-line" style="width: 180px;"></span>
-                            <a class="timeline-item" href="" target="blank">汽车出现（1886）</a>
+                            <span
+                                class="timeline-line"
+                                style="width: 180px"
+                            ></span>
+                            <a class="timeline-item" href="" target="blank"
+                                >汽车出现（1886）</a
+                            >
                         </div>
                         <div id="fly-timeline">
-                            <span class="timeline-line" style="width: 340px;"></span>
-                            <a class="timeline-item" href="" target="blank">飞机出现（1903）</a>
+                            <span
+                                class="timeline-line"
+                                style="width: 340px"
+                            ></span>
+                            <a class="timeline-item" href="" target="blank"
+                                >飞机出现（1903）</a
+                            >
                         </div>
                         <div id="fly-timeline">
-                            <span class="timeline-line" style="width: 500px; top: calc(((4100 + 1990) / 7100) * 100%);"></span>
-                            <a class="timeline-item" href="" target="blank">万维网（1990）</a>
+                            <span
+                                class="timeline-line"
+                                style="
+                                    width: 500px;
+                                    top: calc(((4100 + 1990) / 7100) * 100%);
+                                "
+                            ></span>
+                            <a class="timeline-item" href="" target="blank"
+                                >万维网（1990）</a
+                            >
                         </div>
-                        <div style="display: flex; position: absolute; top: 100%">
-                            <span class="timeline-line" style="width: 20px;"></span>
-                            <a class="timeline-item" href="" target="blank">公元3000年</a>
+                        <div
+                            style="display: flex; position: absolute; top: 100%"
+                        >
+                            <span
+                                class="timeline-line"
+                                style="width: 20px"
+                            ></span>
+                            <a class="timeline-item" href="" target="blank"
+                                >公元3000年</a
+                            >
                         </div>
                     </div>
                 </section>
@@ -295,8 +480,8 @@
                             width: 95%;
                             padding: 10px;
                             border-radius: 5px;
-                            border: 1px solid #ddd;                            
-                        }                        
+                            border: 1px solid #ddd;
+                        }
                     </style>
                     <section name="main-title">
                         <style>
@@ -329,7 +514,7 @@
                                 margin: 0 10px;
                                 color: #fff;
                                 border-radius: 5px;
-                                background-color: #EB8E55;
+                                background-color: #eb8e55;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
@@ -346,20 +531,24 @@
                                 color: #fff;
                                 font-size: 12px;
                                 border-radius: 5px;
-                                background-color: #EB8E55;
+                                background-color: #eb8e55;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
                             }
                         </style>
                         <div id="main-tab">
-                            <div onclick="changeTabRange(-5000)">-5000 ~ -1000</div>
+                            <div onclick="changeTabRange(-5000)">
+                                -5000 ~ -1000
+                            </div>
                             <div onclick="changeTabRange(-999)">-999 ~ 0</div>
                             <div onclick="changeTabRange(1)">1 ~ 1000</div>
-                            <div onclick="changeTabRange(1001)">1001 ~ 2000</div>
-                            <div onclick="changeTabRange(2000)">2000 ~ </div>
+                            <div onclick="changeTabRange(1001)">
+                                1001 ~ 2000
+                            </div>
+                            <div onclick="changeTabRange(2000)">2000 ~</div>
                         </div>
-                        <section id="main-tab-2" style="display: none;">
+                        <section id="main-tab-2" style="display: none">
                             <div>1001 ~ 1100</div>
                             <div>1101 ~ 1200</div>
                             <div>1201 ~ 1300</div>
@@ -381,7 +570,7 @@
                             .range {
                                 margin: 2vw 0;
                                 padding: 1vw;
-                                background-color: #EB8E55;
+                                background-color: #eb8e55;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
@@ -470,9 +659,7 @@
                             border-radius: 5px;
                         }
                     </style>
-                    <a class="city-item" target="_blank" href="">
-                        耶路撒冷
-                    </a>
+                    <a class="city-item" target="_blank" href=""> 耶路撒冷 </a>
                     <a class="city-item" target="_blank" href="">
                         伊斯坦布尔
                     </a>

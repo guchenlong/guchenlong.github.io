@@ -1,6 +1,6 @@
 // 渲染 - 左侧导航栏
 function render_left_navigation() {
-    console.log(window.innerWidth)
+    console.log(window.innerWidth);
 
     if (window.innerWidth < 1000) {
         return;
@@ -9,12 +9,12 @@ function render_left_navigation() {
     let page_left = document.getElementById("page_left");
 
     const list = [
-        { "title": "图片压缩", "link": "/" },
+        { title: "图片压缩", link: "/" },
         // { "title": "首页", "link": "/" },
         // { "title": "图片压缩", "link": "/pages/compress/image/index.html" },
         // { "title": "字体压缩", "link": "/pages/compress/font/index.html" },
-        { "title": "视频压缩", "link": "/pages/compress/video/index.html" },
-        { "title": "JSON 格式化", "link": "/pages/format/json/index.html" },
+        { title: "视频压缩", link: "/pages/compress/video/index.html" },
+        { title: "JSON 格式化", link: "/pages/format/json/index.html" },
     ];
 
     for (let i = 0; i < list.length; i++) {
@@ -22,8 +22,9 @@ function render_left_navigation() {
         render_element(item);
     }
 
-    function render_element(item) {  // 渲染 - 左侧导航栏 - 元素
-        
+    function render_element(item) {
+        // 渲染 - 左侧导航栏 - 元素
+
         // let a = document.createElement("a");
         // a.href = item.link;
         // a.innerText = item.title;
