@@ -1,92 +1,142 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>图片压缩工具 - 图片压缩 - 压缩工具 - 顾晨龙的个人站</title>
-		<meta name="keywords" content="图片压缩工具, 图片压缩, 压缩工具, 顾晨龙的个人站" />
-		<meta name="description" content="图片压缩工具, 图片压缩, 压缩工具, 顾晨龙的个人站" />
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="./pages/compress/image/css/index.css" />
-		<script src="./common/js/faster.js"></script>
-		<script src="./pages/compress/image/js/index.js"></script>
-	</head>
-	<body>
-		<div id="page">
+    <head>
+        <title>图片压缩工具 - 图片压缩 - 压缩工具 - 顾晨龙的个人站</title>
+        <meta
+            name="keywords"
+            content="图片压缩工具, 图片压缩, 压缩工具, 顾晨龙的个人站"
+        />
+        <meta
+            name="description"
+            content="图片压缩工具, 图片压缩, 压缩工具, 顾晨龙的个人站"
+        />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./pages/compress/image/css/index.css" />
+        <script src="./common/js/faster.js"></script>
+        <script src="./pages/compress/image/js/index.js"></script>
+    </head>
+    <body>
+        <div id="page">
             <div id="page_left"></div>
             <div id="page_center">
-				<div id="page_line1">
-					<div id="page_line1_left">
-						图片上传
-						<input id="file_input" type="file" accept="image/*" />
-					</div>
-					<div id="page_line1_center">
-						<div class="page_line1_center_item">
-							质量调整：
-                            <input type="range" id="image_quality_input" min="0" max="1" value="1" step="0.1" />
-						</div>
-						<div class="page_line1_center_item">
-							大小调整：
-                            <input type="range" id="image_size_input" min="0" max="1" value="1" step="0.1" />
-						</div>
-						<div id="compress_image_button" onclick="compress_image()">压缩</div>
-					</div>
-					<div id="page_line1_right">
-						<img id="input_image" src="" />
-						<div id="input_image_size"></div>
-					</div>
-				</div>
-				<div id="page_line2"></div>
-				<!-- 图片压缩 文档 -->
+                <div id="page_line1">
+                    <div id="page_line1_left">
+                        图片上传
+                        <input id="file_input" type="file" accept="image/*" />
+                    </div>
+                    <div id="page_line1_center">
+                        <div class="page_line1_center_item">
+                            质量调整：
+                            <input
+                                type="range"
+                                id="image_quality_input"
+                                min="0"
+                                max="1"
+                                value="1"
+                                step="0.1"
+                            />
+                        </div>
+                        <div class="page_line1_center_item">
+                            大小调整：
+                            <input
+                                type="range"
+                                id="image_size_input"
+                                min="0"
+                                max="1"
+                                value="1"
+                                step="0.1"
+                            />
+                        </div>
+                        <div
+                            id="compress_image_button"
+                            onclick="compress_image()"
+                        >
+                            压缩
+                        </div>
+                    </div>
+                    <div id="page_line1_right">
+                        <img id="input_image" src="" />
+                        <div id="input_image_size"></div>
+                    </div>
+                </div>
+                <div id="page_line2"></div>
+                <!-- 图片压缩 文档 -->
                 <div class="document">
-					<div class="document_content">
-						<div id="document_content_title">图片压缩</div><br />
-						<div>图片存在冗余信息，是我们使用图片压缩的原因。</div><br />
-						<div>图片压缩可以从以下三个方向干预：</div>
-						<div>- 1. 图片质量：降低图片的质量</div>
-						<div>- 2. 图片尺寸：缩小图片的尺寸</div>
-						<div>- 3. 图片格式：改变图片的格式（图片压缩算法的发展）</div>
-						<br />
-						<div style="border: 1px dashed rgba(125, 165, 255, 1); padding: 1vw;">
-							<div>我们先来了解下随着压缩算法的发展带来的图片格式的演进：</div>
-							<div>
-								<mark>- 1952: 算法_哈夫曼编码</mark>
-							</div>
-							<div>
-								<mark>- 1977: 算法_LZ77编码</mark>
-							</div>
-							<div>- 1985: 格式_PCX</div>
-							<div>- 1986: 格式_TIFF</div>
-							<div>- 1989: 格式_GIF</div>
-							<div>- 1994: 格式_JPEG</div>
-							<div>- 1995: 格式_BMP</div>
-							<div>- 1995: 格式_PNG</div>
-							<div>- 1998: 格式_EXIF</div>
-							<div>
-								<mark>- 1998.11: MPEG-4</mark>
-							</div>
-							<div>- 2000: 格式_JPEG2000 (使用了多尺度 Wavelet Transform (小波变换)进行图像表达) 算术编码器</div>
-							<div>
-								<mark>- 2010: VP8/VP9</mark>
-							</div>
-							<div>- 2010: 格式_WEBP (VP8 视频编码格式)</div>
-							<div>- 2014: 格式_BPG</div>
-							<div>- 2015: 格式_HEIF</div>
-							<div>
-								<mark>- 2018.6: AV1</mark>
-							</div>
-							<div>- 2019: 格式_AVIF (免费的视频编码 AV1)</div>
-							<!-- <div>H.264</div>
+                    <div class="document_content">
+                        <div id="document_content_title">图片压缩</div>
+                        <br />
+                        <div>图片存在冗余信息，是我们使用图片压缩的原因。</div>
+                        <br />
+                        <div>图片压缩可以从以下三个方向干预：</div>
+                        <div>- 1. 图片质量：降低图片的质量</div>
+                        <div>- 2. 图片尺寸：缩小图片的尺寸</div>
+                        <div>
+                            - 3. 图片格式：改变图片的格式（图片压缩算法的发展）
+                        </div>
+                        <br />
+                        <div
+                            style="
+                                border: 1px dashed rgba(125, 165, 255, 1);
+                                padding: 1vw;
+                            "
+                        >
+                            <div>
+                                我们先来了解下随着压缩算法的发展带来的图片格式的演进：
+                            </div>
+                            <div>
+                                <mark>- 1952: 算法_哈夫曼编码</mark>
+                            </div>
+                            <div>
+                                <mark>- 1977: 算法_LZ77编码</mark>
+                            </div>
+                            <div>- 1985: 格式_PCX</div>
+                            <div>- 1986: 格式_TIFF</div>
+                            <div>- 1989: 格式_GIF</div>
+                            <div>- 1994: 格式_JPEG</div>
+                            <div>- 1995: 格式_BMP</div>
+                            <div>- 1995: 格式_PNG</div>
+                            <div>- 1998: 格式_EXIF</div>
+                            <div>
+                                <mark>- 1998.11: MPEG-4</mark>
+                            </div>
+                            <div>
+                                - 2000: 格式_JPEG2000 (使用了多尺度 Wavelet
+                                Transform (小波变换)进行图像表达) 算术编码器
+                            </div>
+                            <div>
+                                <mark>- 2010: VP8/VP9</mark>
+                            </div>
+                            <div>- 2010: 格式_WEBP (VP8 视频编码格式)</div>
+                            <div>- 2014: 格式_BPG</div>
+                            <div>- 2015: 格式_HEIF</div>
+                            <div>
+                                <mark>- 2018.6: AV1</mark>
+                            </div>
+                            <div>- 2019: 格式_AVIF (免费的视频编码 AV1)</div>
+                            <!-- <div>H.264</div>
 							<div>H.265</div> -->
-							
-							<!-- </div> -->
-							<br />
-							<!-- 算法 -->
-							<div style="border: 1px dashed rgba(125, 165, 255, 1)">
-								<div id="document_content_title">算法: 哈夫曼编码</div><br />
-								<div>- 1、字符按出现次数，从多到少排序</div>
-								<div>- 2、次数从小到大，自下往上构建哈夫曼树</div>
-								<div>- 3、带权路径编码哈夫曼树</div>
-								<pre style="background: beige;overflow: scroll;"><code>
+
+                            <!-- </div> -->
+                            <br />
+                            <!-- 算法 -->
+                            <div
+                                style="
+                                    border: 1px dashed rgba(125, 165, 255, 1);
+                                "
+                            >
+                                <div id="document_content_title">
+                                    算法: 哈夫曼编码
+                                </div>
+                                <br />
+                                <div>- 1、字符按出现次数，从多到少排序</div>
+                                <div>
+                                    - 2、次数从小到大，自下往上构建哈夫曼树
+                                </div>
+                                <div>- 3、带权路径编码哈夫曼树</div>
+                                <pre
+                                    style="background: beige; overflow: scroll"
+                                ><code>
 		let str = 'eqweqwewewqerewrczxcsdfserew';
 		function hfm() {
 			// 1、对输入进行个数统计
@@ -129,22 +179,30 @@
 		}
 		hfm(str);
 								</code></pre>
-							</div>
-							<div style="border: 1px dashed rgba(125, 165, 255, 1)">
-								算法: LZ77 编码
-								<div>- 1、</div>
-								<div>- 2、</div>
-							</div>
-							<div style="border: 1px dashed rgba(125, 165, 255, 1)">
-								算法: 计数编码
-								<div>- 1、</div>
-								<div>- 2、</div>
-							</div>
-						</div>
-					</div>
+                            </div>
+                            <div
+                                style="
+                                    border: 1px dashed rgba(125, 165, 255, 1);
+                                "
+                            >
+                                算法: LZ77 编码
+                                <div>- 1、</div>
+                                <div>- 2、</div>
+                            </div>
+                            <div
+                                style="
+                                    border: 1px dashed rgba(125, 165, 255, 1);
+                                "
+                            >
+                                算法: 计数编码
+                                <div>- 1、</div>
+                                <div>- 2、</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-			</div>
+            </div>
             <div id="page_right"></div>
         </div>
-	</body>
+    </body>
 </html>
