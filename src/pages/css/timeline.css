@@ -26,11 +26,13 @@
 
 .item-title {
     position: absolute;
-    top: -25px;
+    top: -23px;
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: rgb(243, 241, 184);
+    font-size: 14px;
+    background-color: rgb(246 246 224);
+    color: cornflowerblue;
 }
 
 .item-1 {

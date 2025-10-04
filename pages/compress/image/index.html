@@ -2,48 +2,59 @@
 <!-- 图片压缩页 -->
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>图片压缩工具 - 压缩工具 - 顾晨龙的个人站</title>
-		<meta name="keywords" content="图片压缩工具, 图片压缩, 压缩工具, 顾晨龙的个人站" />
-		<meta name="description" content="图片压缩工具, 图片压缩, 压缩工具, 顾晨龙的个人站" />
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="../../../common/js/base.js"></script>
-		<script src="./js/index.js"></script>
-		<script src="../../../common/components/left_navigation/left_navigation.js"></script>
-		<link rel="stylesheet" href="../../../common/css/base.css" />
-		<link rel="stylesheet" href="./css/index.css" />
-	</head>
-	<body>
-		<div id="page">
+    <head>
+        <title>图片压缩工具 - 压缩工具 - 顾晨龙的个人站</title>
+        <meta
+            name="keywords"
+            content="图片压缩工具, 图片压缩, 压缩工具, 顾晨龙的个人站"
+        />
+        <meta
+            name="description"
+            content="图片压缩工具, 图片压缩, 压缩工具, 顾晨龙的个人站"
+        />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="../../../common/js/base.js"></script>
+        <script src="./js/index.js"></script>
+        <script src="../../../common/components/left_navigation/left_navigation.js"></script>
+        <link rel="stylesheet" href="../../../common/css/base.css" />
+        <link rel="stylesheet" href="./css/index.css" />
+    </head>
+    <body>
+        <div id="page">
             <div id="page_left"></div>
             <div id="page_right">
-				<div id="page_line1">
-					<div id="page_line1_left">
-						图片上传
-						<input id="file_input" type="file" accept="image/*" />
-					</div>
-					<div id="page_line1_center">
-						<div class="page_line1_center_item">
-							质量调整：
-							<input id="image_quality_input" type="text" />
-						</div>
-						<div class="page_line1_center_item">
-							大小缩小的倍数：
-							<input id="image_size_input" type="text" />
-						</div>
-						<div class="page_line1_center_item" onclick="compress_image()">压缩</div>
-					</div>
-					<div id="page_line1_right">
-						<img id="input_image" src="" style="height: 100px;" />
-						<div id="input_image_size"></div>
-					</div>
-				</div>
-				<div id="page_line2"></div>
-			</div>
+                <div id="page_line1">
+                    <div id="page_line1_left">
+                        图片上传
+                        <input id="file_input" type="file" accept="image/*" />
+                    </div>
+                    <div id="page_line1_center">
+                        <div class="page_line1_center_item">
+                            质量调整：
+                            <input id="image_quality_input" type="text" />
+                        </div>
+                        <div class="page_line1_center_item">
+                            大小缩小的倍数：
+                            <input id="image_size_input" type="text" />
+                        </div>
+                        <div
+                            class="page_line1_center_item"
+                            onclick="compress_image()"
+                        >
+                            压缩
+                        </div>
+                    </div>
+                    <div id="page_line1_right">
+                        <img id="input_image" src="" style="height: 100px" />
+                        <div id="input_image_size"></div>
+                    </div>
+                </div>
+                <div id="page_line2"></div>
+            </div>
         </div>
-	</body>
-	<script>
+    </body>
+    <script>
         render_left_navigation(); // 渲染 - 左侧导航栏
-	</script>
+    </script>
 </html>
