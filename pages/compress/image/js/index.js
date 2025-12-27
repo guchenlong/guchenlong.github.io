@@ -1,5 +1,5 @@
 // 添加 script 文件
-(function() {
+(function () {
     const srcList = [
         // "../../../../common/js/_.js",
         "../../../../common/js/base.js",
@@ -17,7 +17,7 @@ let file_size;
 let img_width;
 let img_height;
 
-window.onload = function() {
+window.onload = function () {
     init_baidu_statistics();  // 初始化 - 百度统计
     render_left_navigation();  // 渲染 - 左侧导航栏
     listenerInputChange();  // 监听 - 输入元素
@@ -25,21 +25,21 @@ window.onload = function() {
 
 // 监听 - 输入元素
 function listenerInputChange() {
-var file_input = _get_id("file_input");
-    file_input.addEventListener("change", function() {
+    var file_input = _get_id("file_input");
+    file_input.addEventListener("change", function () {
         // 压缩图片
         const file = this.files[0];
         file_size = file.size;
 
         clearElement();  // 清除元素
         renderInputImageSize(file_size);  // 渲染 - 输入元素
-        
+
         var reader = new FileReader();
         reader.readAsDataURL(file);
-        reader.onload = function(e) {
+        reader.onload = function (e) {
             var img = new Image();
             img.src = e.target.result;
-            img.onload = function() {
+            img.onload = function () {
                 img_width = img.width;
                 img_height = img.height;
                 canvas = _create_element({
@@ -92,7 +92,7 @@ function compress_image() {
         let base64 = canvas.toDataURL(`image/${item}`, quality);  // 格式压缩
         var img = new Image();
         img.src = base64;
-        img.onload = function() {
+        img.onload = function () {
             canvas = _create_element({
                 tag: 'canvas',
                 width: img.width * size,
@@ -118,7 +118,7 @@ function compress_image() {
             ia[i] = byteString.charCodeAt(i);
         }
         // 创建Blob对象
-        return new Blob([ia], {type: mimeString});
+        return new Blob([ia], { type: mimeString });
     }
 
     // 渲染 - 元素
@@ -134,7 +134,7 @@ function compress_image() {
                         src: base64,
                     },
                     {
-                        tag:'span',
+                        tag: 'span',
                         className: 'item_span',
                         // innerText: `${item} size: ${blob.size / 1000} kb `,
                         innerText: `${blob.size / 1000} kb `,
@@ -144,7 +144,7 @@ function compress_image() {
                         className: 'item_button',
                         innerText: `${item}`,
                         // `${item} 节省 ${(file_size - blob.size) / 1000} kb ${((file_size - blob.size) / file_size).toFixed(4)}`;
-                        onclick: function() {
+                        onclick: function () {
                             download_image(base64, item);  // 下载 - 图片
                         }
                     },
