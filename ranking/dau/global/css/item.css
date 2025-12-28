@@ -27,7 +27,6 @@ article .item {
 article .item-line1 {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     margin: 1vw;
 }
 
@@ -36,10 +35,24 @@ article .item-line1 .ranking {
     width: 10vw;
     text-align: center;
     border-radius: 1vw;
+    margin: 0 2vw;
 }
 
 article .item-line1 .icon {
     width: 10vw;
+    margin: 0 2vw;
+}
+
+article .item-line1 .name {
+    flex: 1;
+    width: 10vw;
+    text-align: center;
+}
+
+article .item-line1 .number {
+    width: 15vw;
+    margin-right: 2vw;
+    color: red;
 }
 
 article .item-line2 {
