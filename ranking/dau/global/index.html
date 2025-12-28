@@ -17,7 +17,8 @@
         <!-- 10 亿 + -->
         <article>
             <div class="title">10 亿 +</div>
-            <section class="item">
+            <!-- 1、TikTok -->
+            <section class="item" onclick="openApp('TikTok')">
                 <div class="item-line1">
                     <div class="ranking">1</div>
                     <img class="icon" src="./images/tiktok_icon.png" />
@@ -25,6 +26,20 @@
                     <div class="number">10 亿 +</div>
                 </div>
                 <div class="item-line2">
+                    <!-- 10 亿 / 80 亿 = 0.125 -->
+                    <progress class="ranklist-item-right-progress" max="1" value="0.125"></progress>
+                </div>
+            </section>
+            <!-- 2、Google Search -->
+            <section class="item" onclick="openApp('Google Search')">
+                <div class="item-line1">
+                    <div class="ranking">2</div>
+                    <img class="icon" src="./images/google_icon.png" />
+                    <div class="name">Google Search</div>
+                    <div class="number">10 亿 +</div>
+                </div>
+                <div class="item-line2">
+                    <!-- 10 亿 / 80 亿 = 0.125 -->
                     <progress class="ranklist-item-right-progress" max="1" value="0.125"></progress>
                 </div>
             </section>
@@ -32,36 +47,66 @@
         <!-- 5 亿 + -->
         <article>
             <div class="title">5 亿 +</div>
-            <section class="item">
+            <!-- 3、Facebook -->
+            <section class="item" onclick="openApp('Facebook')">
                 <div class="item-line1">
-                    <div class="ranking">1</div>
-                    <div class="icon">icon</div>
-                    <div class="name">TikTok</div>
-                    <div class="number">10 亿 +</div>
+                    <div class="ranking">3</div>
+                    <img class="icon" src="./images/facebook_icon.png" />
+                    <div class="name">Facebook</div>
+                    <div class="number">8.5 亿</div>
                 </div>
                 <div class="item-line2">
-                    <progress class="ranklist-item-right-progress" max="1" value="0.125"></progress>
+                    <!-- 8.5 亿 / 80 亿 = 0.10625 -->
+                    <progress class="ranklist-item-right-progress" max="1" value="0.10625"></progress>
+                </div>
+            </section>
+            <!-- 4、WhatsApp -->
+            <section class="item" onclick="openApp('WhatsApp')">
+                <div class="item-line1">
+                    <div class="ranking">4</div>
+                    <img class="icon" src="./images/whatsapp_icon.png" />
+                    <div class="name">WhatsApp</div>
+                    <div class="number">6.3 亿</div>
+                </div>
+                <div class="item-line2">
+                    <!-- 6.3 亿 / 80 亿 = 0.07875 -->
+                    <progress class="ranklist-item-right-progress" max="1" value="0.07875"></progress>
+                </div>
+            </section>
+            <!-- 5、YouTube -->
+            <section class="item" onclick="openApp('YouTube')">
+                <div class="item-line1">
+                    <div class="ranking">5</div>
+                    <img class="icon" src="./images/youtube_icon.png" />
+                    <div class="name">YouTube</div>
+                    <div class="number">5.8 亿</div>
+                </div>
+                <div class="item-line2">
+                    <!-- 5.8 亿 / 80 亿 = 0.0725 -->
+                    <progress class="ranklist-item-right-progress" max="1" value="0.0725"></progress>
                 </div>
             </section>
         </article>
         <!-- 1 亿 + -->
         <article>
             <div class="title">1 亿 +</div>
-            <section class="item">
+            <!-- 6、Instagram -->
+            <section class="item" onclick="openApp('Instagram')">
                 <div class="item-line1">
-                    <div class="ranking">1</div>
-                    <div class="icon">icon</div>
-                    <div class="name">TikTok</div>
-                    <div class="number">10 亿 +</div>
+                    <div class="ranking">6</div>
+                    <img class="icon" src="./images/instagram_icon.png" />
+                    <div class="name">Instagram</div>
+                    <div class="number">4.7 亿</div>
                 </div>
                 <div class="item-line2">
-                    <progress class="ranklist-item-right-progress" max="1" value="0.125"></progress>
+                    <!-- 4.7 亿 / 80 亿 = 0.05875 -->
+                    <progress class="ranklist-item-right-progress" max="1" value="0.05875"></progress>
                 </div>
             </section>
         </article>
         <!-- 0.5 亿 + -->
         <article>
-            <div class="title">1 亿 +</div>
+            <div class="title">0.5 亿 +</div>
             <section class="item">
                 <div class="item-line1">
                     <div class="ranking">1</div>
@@ -76,7 +121,7 @@
         </article>
         <!-- 0.1 亿 + -->
         <article>
-            <div class="title">1 亿 +</div>
+            <div class="title">0.1 亿 +</div>
             <section class="item">
                 <div class="item-line1">
                     <div class="ranking">1</div>
@@ -91,6 +136,7 @@
         </article>
     </main>
     <!-- <footer>footer</footer> -->
+    <script src="./js/common.js"></script>
 </body>
 
 </html>
