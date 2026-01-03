@@ -1,0 +1,16 @@
+main {
+    width: 100%;
+}
+
+.title {
+    margin: 10px;
+    text-align: center;
+}
+
+#map {
+    display: flex;
+    width: 97%;
+    margin: 0 auto;
+    height: 40vw;
+    border-radius: 5px;
+}

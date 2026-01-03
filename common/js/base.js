@@ -1,5 +1,6 @@
 window.onload = function () {
     initBaiduStatistics(); // 初始化 百度统计
+    // initHeaderComponent(); // 初始化 头部 组件
 }
 
 // 初始化 百度统计
