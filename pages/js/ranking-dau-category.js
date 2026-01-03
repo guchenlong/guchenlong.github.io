@@ -17,6 +17,7 @@ function renderHeaderTime() {
     }, 1000)
 }
 
+
 // 渲染 - 底部 - 组件
 function renderFooter(type) {
     const footerElement = document.querySelector("footer")
