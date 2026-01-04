@@ -35,6 +35,7 @@ article {
 
 .box {
     margin: 5px;
+    width: 80%;
 }
 
 .box-title {
@@ -49,4 +50,27 @@ article {
 
 .box-item {
     margin: 5px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-item-ranking {
+    padding: 5px;
+    color: red;
+}
+
+.box-item-name {
+    padding: 5px;
+}
+
+.box-item-count {
+    padding: 5px;
+}
+
+.box-item-country {
+    padding: 5px;
 }

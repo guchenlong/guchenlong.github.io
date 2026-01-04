@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>北京</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="AI 日活 排行榜" />
+    <meta name="description" content="AI 日活 排行榜" />
+    <link rel="stylesheet" href="../../common/css/common.css" />
+    <link rel="stylesheet" href="./shanghai/shanghai.css" />
+    <script src="../../common/js/base.js"></script>
+    <script src="./shanghai/shanghai.js"></script>
+    <script type="text/javascript"
+        src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=xNpgc1RY38Qcft5THljMzKk7WUNxPTft"></script>
+    <script>
+        // 百度地图
+        setTimeout(() => {
+            var map = new BMapGL.Map("map");
+            var point = new BMapGL.Point(121.48053886017651, 31.235929042252014);
+            map.centerAndZoom(point, 0);
+            map.enableScrollWheelZoom(true);
+        }, 500);
+    </script>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="title">北京</div>
+        <article>
+            <div id="map"></div>
+        </article>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
