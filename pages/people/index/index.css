@@ -24,7 +24,8 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: yellow;
+    background-color: rgb(246, 246, 228);
+    font-size: 12px;
 }
 
 .right {
@@ -33,4 +34,24 @@ section {
 
 .item {
     margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(246, 246, 228);
+}
+
+.item-time {
+    width: 25%;
+    font-size: 12px;
+}
+
+.item-name {
+    width: 25%;
+    font-size: 15px;
+}
+
+.item-mark {
+    flex: 1;
+    font-size: 12px;
 }
