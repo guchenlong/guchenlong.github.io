@@ -2,8 +2,15 @@
 <html>
 
 <head>
-    <title>首页 | 顾晨龙的个人站</title>
+    <!-- 编码 -->
     <meta charset="UTF-8">
+    <!-- title, keywords, description -->
+    <title>首页 | 顾晨龙的个人站</title>
+    <meta title="keywords" content="首页 | 顾晨龙的个人站" />
+    <meta title="description" content="首页 | 顾晨龙的个人站" />
+    <!-- 移动端缩放 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+    <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="./index/index.css" />
 </head>
 
@@ -121,6 +128,22 @@
         </aside>
     </main>
     <script>
+        window.onload = function () {
+            initBaiduTongji(); // 百度统计 上报
+        }
+
+        // 百度统计 上报
+        function initBaiduTongji() {
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?625b644748b71c4eec887e2a8ba80945";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        }
+
+        // 跳转 页面
         function jumpTo(url) {
             window.open(url);
         }
