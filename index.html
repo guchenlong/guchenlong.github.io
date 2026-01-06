@@ -2,103 +2,129 @@
 <html>
 
 <head>
-    <title>顾晨龙的个人站</title>
-    <meta title="keywords" content="顾晨龙的个人站" />
-    <meta title="description" content="顾晨龙的个人站" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
-    <link rel="stylesheet" href="./common/css/common.css" />
-    <link rel="stylesheet" href="./index.css" />
-    <script src="./common/js/base.js"></script>
+    <title>首页 | 顾晨龙的个人站</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./index/index.css" />
 </head>
 
 <body>
-    <header></header>
+    <header onclick="jumpTo('./index.html')">顾晨龙的个人站</header>
+    <nav>首页</nav>
     <main>
-        <article class="box">
-            <div class="box-left">工具</div>
-            <div class="box-right">
-                <div class="item">
-                    <a href="./pages/tools/format/json.html">JSON 格式化</a>
-                </div>
-                <div class="item">
-                    <a href="./pages/tools/compress/video.html">视频压缩工具</a>
-                </div>
-                <div class="item">
-                    <a href="./pages/tools/compress/font.html">字体 压缩工具</a>
-                </div>
-                <div class="item">
-                    <a href="./pages/tools/compress/image.html">图片 压缩工具</a>
-                </div>
-        </article>
-        <article class="box">
-            <div class="box-left">日活 排行榜</div>
-            <div class="box-right">
-                <div class="item">
-                    <a href="./pages/ranking/dau/global.html">全球 日活 排行榜</a>
-                </div>
-                <div class="item">
-                    <a href="./pages/ranking/dau/china.html">中国 日活 排行榜</a>
-                </div>
-                <div class="item">
-                    <a href="./pages/ranking/dau/category.html">分类 日活 排行榜</a>
-                </div>
-                <div class="item">
-                    <a href="./pages/ranking/dau/ai.html">ai 日活 排行榜</a>
-                </div>
+        <aside id="left-aside">
+            <div class="aside-box">工具
+                <div>JSON 格式化 工具</div>
+                <div>图片压缩 工具</div>
+                <div>字体压缩 工具</div>
+                <div>视频压缩 工具</div>
             </div>
+        </aside>
+        <article>
+            <section>
+                <div class="article-left">
+                    ~ -1000
+                </div>
+                <div class="article-right">
+                    <!-- <div class="item">
+                        <div class="item-when">299 ~ 325</div>
+                        <div class="item-where">长安【河南·洛阳】</div>
+                        <div class="item-who">司马绍</div>
+                        <div class="item-what">《举目见日，不见长安》</div>
+                    </div> -->
+                </div>
+            </section>
+            <section>
+                <div class="article-left">
+                    -999 ~ 0
+                </div>
+                <div class="article-right">
+                    <!-- <div class="item">
+                        <div class="item-when">299 ~ 325</div>
+                        <div class="item-where">长安【河南·洛阳】</div>
+                        <div class="item-who">司马绍</div>
+                        <div class="item-what">《举目见日，不见长安》</div>
+                    </div> -->
+                </div>
+            </section>
+            <section>
+                <div class="article-left">
+                    1 ~ 1000
+                </div>
+                <div class="article-right">
+                    <div class="item">
+                        <div class="item-when">299 ~ 325</div>
+                        <div class="item-where">长安【河南·洛阳】</div>
+                        <div class="item-who">司马绍</div>
+                        <div class="item-what">《举目见日，不见长安》</div>
+                    </div>
+                    <div class="item">
+                        <div class="item-when">650 ~ 676/684</div>
+                        <div class="item-where">长安【陕西·西安】</div>
+                        <div class="item-who" onclick="jumpTo('./pages/people/wang-bo.html')">王勃</div>
+                        <div class="item-what">《滕王阁序》</div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="article-left">
+                    1001 ~ 2000
+                </div>
+                <div class="article-right">
+                    <div class="item">
+                        <div class="item-when">1103 ~ 1142</div>
+                        <div class="item-where">临安【浙江·杭州】</div>
+                        <div class="item-who">岳飞</div>
+                        <div class="item-what">《满江红·怒发冲冠》</div>
+                    </div>
+                    <div class="item">
+                        <div class="item-when">1507.01.06 ~ 1571.02.07</div>
+                        <div class="item-where">昆山【江苏·苏州·昆山】</div>
+                        <div class="item-who" onclick="jumpTo('./pages/people/gui-you-guang.html')">归有光</div>
+                        <div class="item-what">《项脊轩志》</div>
+                    </div>
+                    <div class="item">
+                        <div class="item-when">1655.01.19 ~ 1685.07.01</div>
+                        <div class="item-where" onclick="jumpTo('./index.html')">北京【北京】</div>
+                        <div class="item-who">纳兰性德</div>
+                        <div class="item-what">《浣溪沙·谁念西风独自凉》</div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="article-left">
+                    2001 ~
+                </div>
+                <div class="article-right">
+                    <!-- <div class="item">
+                        <div class="item-when">1655.01.19 ~ 1685.07.01</div>
+                        <div class="item-where" onclick="jumpTo('./pages/people/index.html')">北京【北京】</div>
+                        <div class="item-who">纳兰性德</div>
+                        <div class="item-what">《浣溪沙·谁念西风独自凉》</div>
+                    </div> -->
+                </div>
+            </section>
         </article>
-        <article class="box">
-            <div class="box-left">城市 排行榜</div>
-            <div class="box-right">
-                <div class="item">
-                    <a href="./pages/ranking/city/gdp.html">城市 GDP 排行榜</a>
-                </div>
-                <div class="item">
-                    <a href="./pages/ranking/city/gdp-precapita.html">城市 人均 GDP 排行榜</a>
-                </div>
-                <div class="item">
-                    <a href="./pages/ranking/city/people.html">城市 人口 排行榜</a>
-                </div>
+        <aside id="right-aside">
+            <div class="aside-box">
+                日活 排行榜
+                <div>全球 日活 排行榜</div>
+                <div>中国 日活 排行榜</div>
+                <div>分类 日活 排行榜</div>
+                <div>ai 日活 排行榜</div>
             </div>
-        </article>
-        <article class="box">
-            <div class="box-left">历史</div>
-            <div class="box-right">
-                <div class="item">
-                    <a href="./pages/history/timeline.html">时间轴</a>
-                </div>
-                <div class="item">
-                    <a href="./pages/history/time-travel.html">时间 的旅程</a>
-                </div>
+            <div class="aside-box">
+                城市 排行榜
+                <div>城市 GDP 排行榜</div>
+                <div>城市 人均 GDP 排行榜</div>
+                <div>城市 人口 排行榜</div>
             </div>
-        </article>
-        <article class="box">
-            <div class="box-left">城市</div>
-            <div class="box-right">
-                <div class="item">
-                    <a href="./pages/city/shang-hai.html">上海</a>
-                </div>
-                <div class="item">
-                    <a href="./pages/city/bei-jing.html">北京</a>
-                </div>
-            </div>
-        </article>
-        <article class="box">
-            <div class="box-left"><a href="./pages/people/index.html">人物</a></div>
-            <div class="box-right">
-                <div class="item">
-                    <a href="./pages/people/wang-bo.html">王勃</a>
-                </div>
-                <div class="item">
-                    <a href="./pages/people/gui-you-guang.html">归有光</a>
-                </div>
-            </div>
-        </article>
+        </aside>
     </main>
-    <!-- <footer>footer</footer> -->
-    <script src="./common/components/headerComponent.js"></script>
-    <!-- <script src="./pages/js/index.js"></script> -->
+    <script>
+        function jumpTo(url) {
+            window.open(url);
+        }
+    </script>
 </body>
 
 </html>
