@@ -1,6 +1,13 @@
+/* index.html layout 样式 */
+
 * {
     margin: 0;
     padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
 }
 
 body {
@@ -8,6 +15,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: rgb(247, 247, 241);
 }
 
 header {
@@ -26,13 +34,12 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background: rgb(249, 249, 223); */
 }
 
 main {
     width: 96%;
-    min-height: calc(100vh - 80px);
     display: flex;
+    margin: 20px 0;
 }
 
 #left-aside {
@@ -51,6 +58,7 @@ main {
     padding: 5px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    font-size: 15px;
 }
 
 .aside-box div {
@@ -58,59 +66,4 @@ main {
     padding-left: 20px;
     color: #666464;
     font-size: 15px;
-}
-
-article {
-    flex: 1;
-    width: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-}
-
-section {
-    width: 90%;
-    display: flex;
-    margin: 5px 0;
-    border-radius: 5px;
-    padding: 5px;
-    border: 1px solid #ddd;
-}
-
-.article-left {
-    width: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgb(247, 247, 241);
-}
-
-.article-right {
-    width: 90%;
-}
-
-.item {
-    margin: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    display: flex;
-    font-size: 13px;
-    background: rgb(247, 247, 241);
-}
-
-.item-when {
-    width: 20%;
-}
-
-.item-where {
-    width: 25%;
-}
-
-.item-who {
-    width: 10%;
-}
-
-.item-what {
-    flex: 1;
 }
