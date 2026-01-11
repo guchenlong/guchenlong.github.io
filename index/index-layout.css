@@ -42,14 +42,22 @@ main {
     margin: 20px 0;
 }
 
+@media screen and (max-width: 1000px) {
+    #left-aside {
+        display: none;
+    }
+
+    #right-aside {
+        display: none;
+    }
+}
+
 #left-aside {
-    width: 15%;
-    /* background: rgb(249, 249, 223); */
+    width: 12%;
 }
 
 #right-aside {
-    width: 15%;
-    /* background: rgb(249, 249, 223); */
+    width: 12%;
 }
 
 .aside-box {
@@ -65,5 +73,5 @@ main {
     margin: 5px 0;
     padding-left: 20px;
     color: #666464;
-    font-size: 15px;
+    font-size: 12px;
 }
