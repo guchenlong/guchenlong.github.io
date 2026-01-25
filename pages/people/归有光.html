@@ -11,15 +11,15 @@
     <!-- 移动端缩放 -->
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="./gui-you-guang/gui-you-guang.css" />
-    <script src="../../common/js/base.js"></script>
+    <link rel="stylesheet" type="text/css" href="./归有光/归有光.css" />
 </head>
 
 <body>
-    <header>归有光</header>
+    <header onclick="jumpTo('/')">顾晨龙的个人站</header>
     <main>
         <!-- 人物介绍 -->
         <article>
+            <section>归有光</section>
             <section>明朝，1507 ~ 1571（64岁），昆山人【江苏·苏州·昆山】</section>
         </article>
         <!-- 文章 -->
@@ -49,6 +49,12 @@
         </article>
     </main>
     <footer></footer>
+    <script src="../../common/js/common.js"></script>
+    <script>
+        window.onload = function () {
+            initBaiduTongji(); // 百度统计 上报
+        }
+    </script>
 </body>
 
 </html>
