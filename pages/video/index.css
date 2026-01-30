@@ -52,9 +52,8 @@ main {
     flex-direction: column;
 }
 
-
 .music-item {
-    padding: 10px;
+    padding: 5px;
     width: 70%;
     background: #fff;
     margin: 5px 0;
