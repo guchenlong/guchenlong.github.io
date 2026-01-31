@@ -28,6 +28,7 @@
   - o
   - p
     - `pardon` n. 原谅，宽恕
+    - `politics` n. 政治
   - q
   - r
   - s
