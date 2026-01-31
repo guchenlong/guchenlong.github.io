@@ -1,0 +1,48 @@
+# vocabulary
+
+- abcdefg
+  - a
+    - `article` n. 文章
+  - b
+  - c
+  - d
+  - e
+    - `excuse` v. 原谅
+  - f
+    - `fantstatic` adj. 好极了
+  - g
+    - `grammer` n. 语法
+- hijklmn
+  - h
+    - `handbag` n. 手提包
+  - i
+    - `is` v. be 动词现在时第三人称单数
+    - `it` pron. 它
+  - j
+  - k
+  - l
+  - m
+    - `me` pron. 我
+  - n
+- opqrst
+  - o
+  - p
+    - `pardon` n. 原谅，宽恕
+  - q
+  - r
+  - s
+  - t
+    - `thank you` v. 感谢
+    - `this` pron. 这
+- uvwxyz
+  - u
+  - v
+    - `very much` adverb. 非常地
+    - `vocabulary` n. 词汇
+  - w
+    - `word` n. 单词
+  - x
+  - y
+    - `yes` adv. 是的
+    - `your` adjective. 你的，你们的
+  - z
