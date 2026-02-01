@@ -2,55 +2,107 @@
 
 - abcdefg
   - a
+    - `am` v. be 动词现在时第一人称单数
+    - `American` adj. 美国的
+    - `are` v. be 动词现在时复数
     - `article` n. 文章
   - b
     - `book` n. 书
   - c
     - `car` n. 小汽车
+    - `Chinese` adj. 中国的；中国人
+    - `cloakroom` n. 衣帽存放处
     - `coat` n. 上衣，外衣
   - d
+    - `Daewoo` n. 大宇
+    - `daughter` n. 女儿
     - `dress` n. 连衣裙
   - e
+    - `engineer` n. 工程师
+    - `English` adj. 英国的
     - `excuse` v. 原谅
   - f
     - `fantstatic` adj. 好极了
+    - `Fiat` n. 菲亚特
+    - `five` num. 五
+    - `Ford` n. 福特
+    - `French` adj. 法国的；法国人
   - g
+    - `German` adj. 德国的；德国人
+    - `good` adj. 好的
     - `grammer` n. 语法
 - hijklmn
   - h
     - `handbag` n. 手提包
+    - `here` adv. 这里
     - `house` n. 房子
   - i
+    - `I` pron. 我
     - `is` v. be 动词现在时第三人称单数
     - `it` pron. 它
+    - `Italian` adj. 意大利的
   - j
+    - `Japanese` adj. 日本的；日本人
+    - `job` n. 工作
   - k
+    - `keyboard` n. 电脑键盘
+    - `Korean` adj. 韩国的；韩国人
   - l
   - m
+    - `make` n. 牌号
     - `me` pron. 我
+    - `meet` v. 遇见
+    - `Mercedes` n. 梅赛德斯
+    - `Mini` n. 迷你
+    - `Miss` 小姐
+    - `morning` n. 早晨
+    - `Mr.` 先生
+    - `my` adjective. 我的
   - n
+    - `name` n. 名字
+    - `nationality` n. 国籍
+    - `new` adj. 新的
+    - `nice` adj. 美好的
+    - `number` n. 号码
 - opqrst
   - o
+    - `operator` n. 操作员
   - p
     - `pardon` n. 原谅，宽恕
     - `pen` n. 钢笔
     - `pencil` n. 铅笔
+    - `Peugeot` n. 标致
+    - `please` int. 请
     - `politics` n. 政治
   - q
   - r
   - s
+    - `school` n. 学校
     - `shirt` n. 衬衣
+    - `sir` n. 先生
     - `skirt` n. 裙子
+    - `son` n. 儿子
+    - `sorry` adj. 对不起的
+    - `student` n. 学生
+    - `suit` n. 一套衣服
+    - `Swedish` adj. 瑞典的
   - t
+    - `teacher` n. 老师
     - `thank you` v. 感谢
     - `this` pron. 这
+    - `ticket` n. 票
+    - `too` adv. 也
+    - `Toyota` n. 丰田
 - uvwxyz
   - u
+    - `umbrella` n. 雨伞
   - v
     - `very much` adverb. 非常地
     - `vocabulary` n. 词汇
+    - `Volvo` n. 沃尔沃
   - w
     - `watch` n. 手表
+    - `what` adj. & pron. 什么
     - `word` n. 单词
   - x
   - y
