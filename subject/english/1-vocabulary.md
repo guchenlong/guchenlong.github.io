@@ -2,20 +2,25 @@
 
 - abcdefg
   - a
+    - `air hostess` 空中小姐
     - `am` v. be 动词现在时第一人称单数
     - `American` adj. 美国的
     - `are` v. be 动词现在时复数
     - `article` n. 文章
   - b
     - `book` n. 书
+    - `busy` adj. 忙的
   - c
     - `car` n. 小汽车
     - `Chinese` adj. 中国的；中国人
+    - `clean` adj. 干净的
     - `cloakroom` n. 衣帽存放处
     - `coat` n. 上衣，外衣
+    - `cold` adj. 冷的
   - d
     - `Daewoo` n. 大宇
     - `daughter` n. 女儿
+    - `dirty` adj. 脏的
     - `dress` n. 连衣裙
   - e
     - `engineer` n. 工程师
@@ -23,19 +28,28 @@
     - `excuse` v. 原谅
   - f
     - `fantstatic` adj. 好极了
+    - `fat` adj. 胖的
     - `Fiat` n. 菲亚特
+    - `fine` adj. 美好的
     - `five` num. 五
     - `Ford` n. 福特
     - `French` adj. 法国的；法国人
   - g
     - `German` adj. 德国的；德国人
     - `good` adj. 好的
+    - `goodbye` int. 再见
     - `grammer` n. 语法
 - hijklmn
   - h
+    - `hairdresser` n. 理发师
     - `handbag` n. 手提包
+    - `hello` int. 喂
     - `here` adv. 这里
+    - `hi` int. 喂，嗨
+    - `hot` adj. 热的
     - `house` n. 房子
+    - `housewife` n. 家庭妇女
+    - `how` adv. 怎样
   - i
     - `I` pron. 我
     - `is` v. be 动词现在时第三人称单数
@@ -48,11 +62,14 @@
     - `keyboard` n. 电脑键盘
     - `Korean` adj. 韩国的；韩国人
   - l
+    - `lazy` adj. 懒的
   - m
     - `make` n. 牌号
     - `me` pron. 我
+    - `mechanic` n. 机械师
     - `meet` v. 遇见
     - `Mercedes` n. 梅赛德斯
+    - `milkman` n. 送牛奶的人
     - `Mini` n. 迷你
     - `Miss` 小姐
     - `morning` n. 早晨
@@ -64,8 +81,10 @@
     - `new` adj. 新的
     - `nice` adj. 美好的
     - `number` n. 号码
+    - `nurse` n. 护士
 - opqrst
   - o
+    - `old` adj. 老的
     - `operator` n. 操作员
   - p
     - `pardon` n. 原谅，宽恕
@@ -73,12 +92,17 @@
     - `pencil` n. 铅笔
     - `Peugeot` n. 标致
     - `please` int. 请
+    - `policeman` n. 警察
+    - `policewoman` n. 女警察
     - `politics` n. 政治
+    - `postman` n. 邮递员
   - q
   - r
   - s
     - `school` n. 学校
+    - `see` v. 看见
     - `shirt` n. 衬衣
+    - `short` adj. 矮的
     - `sir` n. 先生
     - `skirt` n. 裙子
     - `son` n. 儿子
@@ -87,10 +111,15 @@
     - `suit` n. 一套衣服
     - `Swedish` adj. 瑞典的
   - t
+    - `tall` adj. 高的
+    - `taxi driver` 出租汽车司机
     - `teacher` n. 老师
     - `thank you` v. 感谢
+    - `thanks` int. 谢谢
+    - `thin` adj. 瘦的
     - `this` pron. 这
     - `ticket` n. 票
+    - `today` adv. 今天
     - `too` adv. 也
     - `Toyota` n. 丰田
 - uvwxyz
@@ -102,10 +131,13 @@
     - `Volvo` n. 沃尔沃
   - w
     - `watch` n. 手表
+    - `well` adj. 身体好的
     - `what` adj. & pron. 什么
+    - `woman` n. 女人
     - `word` n. 单词
   - x
   - y
     - `yes` adv. 是的
+    - `yound` adj. 年轻的
     - `your` adjective. 你的，你们的
   - z
