@@ -4,8 +4,12 @@
   - a
     - `article` n. 文章
   - b
+    - `book` n. 书
   - c
+    - `car` n. 小汽车
+    - `coat` n. 上衣，外衣
   - d
+    - `dress` n. 连衣裙
   - e
     - `excuse` v. 原谅
   - f
@@ -15,6 +19,7 @@
 - hijklmn
   - h
     - `handbag` n. 手提包
+    - `house` n. 房子
   - i
     - `is` v. be 动词现在时第三人称单数
     - `it` pron. 它
@@ -28,10 +33,14 @@
   - o
   - p
     - `pardon` n. 原谅，宽恕
+    - `pen` n. 钢笔
+    - `pencil` n. 铅笔
     - `politics` n. 政治
   - q
   - r
   - s
+    - `shirt` n. 衬衣
+    - `skirt` n. 裙子
   - t
     - `thank you` v. 感谢
     - `this` pron. 这
@@ -41,6 +50,7 @@
     - `very much` adverb. 非常地
     - `vocabulary` n. 词汇
   - w
+    - `watch` n. 手表
     - `word` n. 单词
   - x
   - y
