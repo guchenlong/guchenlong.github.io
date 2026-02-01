@@ -7,51 +7,83 @@
     - `American` adj. 美国的
     - `are` v. be 动词现在时复数
     - `article` n. 文章
+    - `assistant` n. 助手
   - b
+    - `big` adj. 大的
+    - `black` adj. 黑色的
+    - `blouse` n. 女衬衫
+    - `blue` adj. 蓝色的
     - `book` n. 书
+    - `boy` n. 男孩
+    - `brother` n. 兄，弟
+    - `brown` adj. 棕色的
     - `busy` adj. 忙的
   - c
     - `car` n. 小汽车
+    - `carpet` n. 地毯
+    - `case` n. 箱子
+    - `catch` v. 抓住
+    - `children` n. 孩子们
     - `Chinese` adj. 中国的；中国人
     - `clean` adj. 干净的
     - `cloakroom` n. 衣帽存放处
     - `coat` n. 上衣，外衣
     - `cold` adj. 冷的
+    - `colour` n. 颜色
+    - `come` v. 来
+    - `customs` n. 海关
   - d
     - `Daewoo` n. 大宇
+    - `Danish` adj. 丹麦的
     - `daughter` n. 女儿
     - `dirty` adj. 脏的
+    - `dog` n. 狗
     - `dress` n. 连衣裙
+    - `Dutch` adj. 荷兰的
   - e
+    - `employee` n. 雇员
     - `engineer` n. 工程师
     - `English` adj. 英国的
     - `excuse` v. 原谅
   - f
     - `fantstatic` adj. 好极了
     - `fat` adj. 胖的
+    - `father` n. 父亲
     - `Fiat` n. 菲亚特
     - `fine` adj. 美好的
     - `five` num. 五
     - `Ford` n. 福特
     - `French` adj. 法国的；法国人
+    - `friend` n. 朋友
   - g
     - `German` adj. 德国的；德国人
+    - `girl` n. 女孩，姑娘
     - `good` adj. 好的
     - `goodbye` int. 再见
     - `grammer` n. 语法
+    - `grandfather` n. 祖父
+    - `grandmother` n. 祖母
+    - `green` adj. 绿色的
+    - `grey` adj. 灰色的
 - hijklmn
   - h
     - `hairdresser` n. 理发师
     - `handbag` n. 手提包
+    - `hard-working` adj. 勤奋的
+    - `hat` n. 帽子
+    - `heavy` adj. 重的
     - `hello` int. 喂
+    - `her` adjective. 她的
     - `here` adv. 这里
     - `hi` int. 喂，嗨
+    - `his` adjective. 他的
     - `hot` adj. 热的
     - `house` n. 房子
     - `housewife` n. 家庭妇女
     - `how` adv. 怎样
   - i
     - `I` pron. 我
+    - `ice cream` n. 冰淇淋
     - `is` v. be 动词现在时第三人称单数
     - `it` pron. 它
     - `Italian` adj. 意大利的
@@ -63,8 +95,13 @@
     - `Korean` adj. 韩国的；韩国人
   - l
     - `lazy` adj. 懒的
+    - `light` adj. 轻的
+    - `long` adj. 长的
+    - `lovely` adj. 可爱的
   - m
     - `make` n. 牌号
+    - `man` n. 男人
+    - `matter` n. 事情
     - `me` pron. 我
     - `mechanic` n. 机械师
     - `meet` v. 遇见
@@ -73,23 +110,32 @@
     - `Mini` n. 迷你
     - `Miss` 小姐
     - `morning` n. 早晨
+    - `mother` n. 母亲
     - `Mr.` 先生
+    - `mum` n. 妈妈
     - `my` adjective. 我的
   - n
     - `name` n. 名字
     - `nationality` n. 国籍
     - `new` adj. 新的
     - `nice` adj. 美好的
+    - `Norwegian` adj. 挪威的
     - `number` n. 号码
     - `nurse` n. 护士
 - opqrst
   - o
+    - `office` n. 办公室
+    - `officer` n. 官员
     - `old` adj. 老的
+    - `open` adj. 开着的
     - `operator` n. 操作员
+    - `orange` adj. 橙色的
   - p
     - `pardon` n. 原谅，宽恕
+    - `passport` n. 护照
     - `pen` n. 钢笔
     - `pencil` n. 铅笔
+    - `perhaps` adv. 大概
     - `Peugeot` n. 标致
     - `please` int. 请
     - `policeman` n. 警察
@@ -98,13 +144,24 @@
     - `postman` n. 邮递员
   - q
   - r
+    - `red` adj. 红色的
+    - `right` adj. 好，可以
+    - `Russian` adj. 俄罗斯的
   - s
+    - `sales rep` 推销员
+    - `same` adj. 相同的
     - `school` n. 学校
     - `see` v. 看见
     - `shirt` n. 衬衣
+    - `shoe` n. 鞋子
     - `short` adj. 矮的
+    - `shut` adj. 关着的
     - `sir` n. 先生
+    - `sister` n. 姐，妹
+    - `sit down` 坐下
     - `skirt` n. 裙子
+    - `small` adj. 小的
+    - `smart` adj. 漂亮的
     - `son` n. 儿子
     - `sorry` adj. 对不起的
     - `student` n. 学生
@@ -116,15 +173,21 @@
     - `teacher` n. 老师
     - `thank you` v. 感谢
     - `thanks` int. 谢谢
+    - `these` pron. 这些
     - `thin` adj. 瘦的
+    - `thirsty` adj. 渴的
     - `this` pron. 这
     - `ticket` n. 票
+    - `tie` n. 领带
+    - `tired` adj. 累的
     - `today` adv. 今天
     - `too` adv. 也
+    - `tourist` n. 旅游者
     - `Toyota` n. 丰田
 - uvwxyz
   - u
     - `umbrella` n. 雨伞
+    - `upstairs` adj. 楼上
   - v
     - `very much` adverb. 非常地
     - `vocabulary` n. 词汇
@@ -133,10 +196,13 @@
     - `watch` n. 手表
     - `well` adj. 身体好的
     - `what` adj. & pron. 什么
+    - `white` adj. 白色的
+    - `whose` pron. 谁的
     - `woman` n. 女人
     - `word` n. 单词
   - x
   - y
+    - `yellow` adj. 黄色的
     - `yes` adv. 是的
     - `yound` adj. 年轻的
     - `your` adjective. 你的，你们的

@@ -1,0 +1,25 @@
+# Lesson 17、How do you do?
+
+## 文章
+
+> MR. JACKSON: Come and meet our employees, Mr. Richards.
+> MR. RICHARDS: Thank you, Mr. Jackson.
+> MR. JACKSON: This is Nicola Grey, and this is Calaire Taylor.
+> MR. RICHARDS: How do you do?
+> MR. RICHARDS: Those women are very hard-working. What are their jobs?
+> MR. JACKSON: They're keyboard operators.
+> MR. JACKSON: This is Michael Baker, and this is Jeremy Short.
+> MR. RICHARDS: How do you do?
+> MR. RICHARDS: They aren't very busy! What are their jobs?
+> MR. JACKSON: They're sales reps. They're very lazy.
+> MR. RICHARDS: Who is this young man?
+> MR. JACKSON: This is Jim. He's our office assistant.
+
+## 单词
+
+- `employee` n. 雇员
+- `hard-working` adj. 勤奋的
+- `sales rep` 推销员
+- `man` n. 男人
+- `office` n. 办公室
+- `assistant` n. 助手
