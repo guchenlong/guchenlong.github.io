@@ -9,11 +9,15 @@
     - `article` n. 文章
     - `assistant` n. 助手
   - b
+    - `bed` n. 床
     - `big` adj. 大的
     - `black` adj. 黑色的
     - `blouse` n. 女衬衫
     - `blue` adj. 蓝色的
+    - `blunt` adj. 钝的
     - `book` n. 书
+    - `bottle` n. 瓶子
+    - `box` n. 盒子
     - `boy` n. 男孩
     - `brother` n. 兄，弟
     - `brown` adj. 棕色的
@@ -25,23 +29,31 @@
     - `catch` v. 抓住
     - `children` n. 孩子们
     - `Chinese` adj. 中国的；中国人
+    - `cigarette` n. 香烟
     - `clean` adj. 干净的
     - `cloakroom` n. 衣帽存放处
     - `coat` n. 上衣，外衣
     - `cold` adj. 冷的
     - `colour` n. 颜色
     - `come` v. 来
+    - `cooker` n. 炉子
+    - `cup` n. 茶杯
+    - `cupboard` n. 食橱
     - `customs` n. 海关
   - d
     - `Daewoo` n. 大宇
     - `Danish` adj. 丹麦的
     - `daughter` n. 女儿
+    - `desk` n. 课桌
     - `dirty` adj. 脏的
     - `dog` n. 狗
     - `dress` n. 连衣裙
+    - `dressing table` 梳妆台
     - `Dutch` adj. 荷兰的
   - e
+    - `electric` adj. 带电的
     - `employee` n. 雇员
+    - `empty` adj. 空的
     - `engineer` n. 工程师
     - `English` adj. 英国的
     - `excuse` v. 原谅
@@ -52,12 +64,17 @@
     - `Fiat` n. 菲亚特
     - `fine` adj. 美好的
     - `five` num. 五
+    - `floor` n. 地板
     - `Ford` n. 福特
+    - `fork` n. 叉子
     - `French` adj. 法国的；法国人
     - `friend` n. 朋友
+    - `full` adj. 满的
   - g
     - `German` adj. 德国的；德国人
     - `girl` n. 女孩，姑娘
+    - `give` v. 给
+    - `glass` n. 杯子
     - `good` adj. 好的
     - `goodbye` int. 再见
     - `grammer` n. 语法
@@ -84,6 +101,7 @@
   - i
     - `I` pron. 我
     - `ice cream` n. 冰淇淋
+    - `in` prep. 在...里
     - `is` v. be 动词现在时第三人称单数
     - `it` pron. 它
     - `Italian` adj. 意大利的
@@ -92,13 +110,19 @@
     - `job` n. 工作
   - k
     - `keyboard` n. 电脑键盘
+    - `kitchen` n. 厨房
+    - `knife` n. 刀子
     - `Korean` adj. 韩国的；韩国人
   - l
+    - `large` adj. 大的
     - `lazy` adj. 懒的
+    - `left` n. 左边
     - `light` adj. 轻的
+    - `little` adj. 小的
     - `long` adj. 长的
     - `lovely` adj. 可爱的
   - m
+    - `magazine` n. 杂志
     - `make` n. 牌号
     - `man` n. 男人
     - `matter` n. 事情
@@ -106,27 +130,33 @@
     - `mechanic` n. 机械师
     - `meet` v. 遇见
     - `Mercedes` n. 梅赛德斯
+    - `middle` n. 中间
     - `milkman` n. 送牛奶的人
     - `Mini` n. 迷你
     - `Miss` 小姐
     - `morning` n. 早晨
     - `mother` n. 母亲
     - `Mr.` 先生
+    - `Mrs.` 夫人
     - `mum` n. 妈妈
     - `my` adjective. 我的
   - n
     - `name` n. 名字
     - `nationality` n. 国籍
     - `new` adj. 新的
+    - `newspaper` n. 报纸
     - `nice` adj. 美好的
     - `Norwegian` adj. 挪威的
     - `number` n. 号码
     - `nurse` n. 护士
 - opqrst
   - o
+    - `of` (属于)...的
     - `office` n. 办公室
     - `officer` n. 官员
     - `old` adj. 老的
+    - `on` prep. 在...上
+    - `one` pron. 一个
     - `open` adj. 开着的
     - `operator` n. 操作员
     - `orange` adj. 橙色的
@@ -137,6 +167,7 @@
     - `pencil` n. 铅笔
     - `perhaps` adv. 大概
     - `Peugeot` n. 标致
+    - `plate` n. 盘子
     - `please` int. 请
     - `policeman` n. 警察
     - `policewoman` n. 女警察
@@ -145,13 +176,17 @@
   - q
   - r
     - `red` adj. 红色的
-    - `right` adj. 好，可以
+    - `refrigerator` n. 电冰箱
+    - `right` adj. 好，可以; n. 右边
+    - `room` n. 房间
     - `Russian` adj. 俄罗斯的
   - s
     - `sales rep` 推销员
     - `same` adj. 相同的
     - `school` n. 学校
     - `see` v. 看见
+    - `sharp` adj. 尖的，锋利的
+    - `shelf` n. 架子；搁板
     - `shirt` n. 衬衣
     - `shoe` n. 鞋子
     - `short` adj. 矮的
@@ -164,13 +199,17 @@
     - `smart` adj. 漂亮的
     - `son` n. 儿子
     - `sorry` adj. 对不起的
+    - `spoon` n. 勺子
+    - `stereo` n. 立体声音响
     - `student` n. 学生
     - `suit` n. 一套衣服
     - `Swedish` adj. 瑞典的
   - t
+    - `table` n. 桌子
     - `tall` adj. 高的
     - `taxi driver` 出租汽车司机
     - `teacher` n. 老师
+    - `television` n. 电视机
     - `thank you` v. 感谢
     - `thanks` int. 谢谢
     - `these` pron. 这些
@@ -179,6 +218,7 @@
     - `this` pron. 这
     - `ticket` n. 票
     - `tie` n. 领带
+    - `tin` n. 罐头
     - `tired` adj. 累的
     - `today` adv. 今天
     - `too` adv. 也
@@ -196,6 +236,8 @@
     - `watch` n. 手表
     - `well` adj. 身体好的
     - `what` adj. & pron. 什么
+    - `where` adv. 在哪里
+    - `which` 哪一个
     - `white` adj. 白色的
     - `whose` pron. 谁的
     - `woman` n. 女人
