@@ -3,29 +3,40 @@
 - abcdefg
   - a
     - `across` prep. 横过
+    - `aeroplane` n. 飞机
     - `after` prep. 在...之后
     - `air` v. 使...通风
     - `air hostess` 空中小姐
+    - `along` prep. 沿着
     - `am` v. be 动词现在时第一人称单数
     - `American` adj. 美国的
+    - `another` det. 另一个
     - `are` v. be 动词现在时复数
     - `armchair` n. 扶手椅
     - `article` n. 文章
     - `assistant` n. 助手
   - b
+    - `bank` n. 河岸
+    - `basket` n. 篮子
     - `bed` n. 床
     - `bedroom` n. 卧室
+    - `beside` prep. 在...旁边
+    - `between` prep. 在…之间
     - `big` adj. 大的
     - `black` adj. 黑色的
     - `blouse` n. 女衬衫
     - `blue` adj. 蓝色的
     - `blunt` adj. 钝的
+    - `boat` n. 船
+    - `bone` n. 骨头
     - `book` n. 书
     - `bottle` n. 瓶子
     - `box` n. 盒子
     - `boy` n. 男孩
+    - `bridge` n. 桥
     - `brother` n. 兄，弟
     - `brown` adj. 棕色的
+    - `building` n. 大楼
     - `busy` adj. 忙的
   - c
     - `car` n. 小汽车
@@ -36,15 +47,18 @@
     - `children` n. 孩子们
     - `Chinese` adj. 中国的；中国人
     - `cigarette` n. 香烟
-    - `clean` adj. 干净的
+    - `clean` adj. 干净的; v. 清洗
     - `climb` v. 爬
     - `cloakroom` n. 衣帽存放处
     - `clothes` n. 衣服
+    - `cloud` n. 云
     - `coat` n. 上衣，外衣
     - `cold` adj. 冷的
     - `colour` n. 颜色
     - `come` v. 来
+    - `cook` v. 做
     - `cooker` n. 炉子
+    - `cry` v. 哭，喊
     - `cup` n. 茶杯
     - `cupboard` n. 食橱
     - `customs` n. 海关
@@ -52,15 +66,18 @@
     - `Daewoo` n. 大宇
     - `Danish` adj. 丹麦的
     - `daughter` n. 女儿
+    - `day` n. 日子
     - `desk` n. 课桌
     - `dirty` adj. 脏的
     - `dog` n. 狗
     - `door` n. 门
     - `dress` n. 连衣裙
     - `dressing table` 梳妆台
+    - `drink` v. 喝
     - `dust` v. 掸掉灰尘
     - `Dutch` adj. 荷兰的
   - e
+    - `eat` v. 吃
     - `electric` adj. 带电的
     - `employee` n. 雇员
     - `empty` adj. 空的; v. 倒空
@@ -68,6 +85,7 @@
     - `English` adj. 英国的
     - `excuse` v. 原谅
   - f
+    - `family` n. 家庭(成员)
     - `fantstatic` adj. 好极了
     - `fat` adj. 胖的
     - `father` n. 父亲
@@ -75,6 +93,7 @@
     - `fine` adj. 美好的
     - `five` num. 五
     - `floor` n. 地板
+    - `fly` v. 飞
     - `Ford` n. 福特
     - `fork` n. 叉子
     - `French` adj. 法国的；法国人
@@ -105,6 +124,7 @@
     - `her` adjective. 她的
     - `here` adv. 这里
     - `hi` int. 喂，嗨
+    - `hill` n. 小山
     - `his` adjective. 他的
     - `hot` adj. 热的
     - `house` n. 房子
@@ -114,12 +134,14 @@
     - `I` pron. 我
     - `ice cream` n. 冰淇淋
     - `in` prep. 在...里
+    - `into` prep. 进入
     - `is` v. be 动词现在时第三人称单数
     - `it` pron. 它
     - `Italian` adj. 意大利的
   - j
     - `Japanese` adj. 日本的；日本人
     - `job` n. 工作
+    - `jump` v. 跳
   - k
     - `keyboard` n. 电脑键盘
     - `kitchen` n. 厨房
@@ -129,6 +151,7 @@
     - `large` adj. 大的
     - `lazy` adj. 懒的
     - `left` n. 左边
+    - `letter` n. 信
     - `light` adj. 轻的
     - `little` adj. 小的
     - `living room` 客厅
@@ -140,10 +163,12 @@
     - `man` n. 男人
     - `matter` n. 事情
     - `me` pron. 我
+    - `meal` n. 饭
     - `mechanic` n. 机械师
     - `meet` v. 遇见
     - `Mercedes` n. 梅赛德斯
     - `middle` n. 中间
+    - `milk` n. 牛奶
     - `milkman` n. 送牛奶的人
     - `Mini` n. 迷你
     - `Miss` 小姐
@@ -168,6 +193,7 @@
 - opqrst
   - o
     - `of` (属于)...的
+    - `off` prep. 离开
     - `office` n. 办公室
     - `officer` n. 官员
     - `old` adj. 老的
@@ -177,13 +203,16 @@
     - `open` adj. 开着的; v. 打开
     - `operator` n. 操作员
     - `orange` adj. 橙色的
+    - `over` prep. 跨越
   - p
     - `pardon` n. 原谅，宽恕
+    - `park` n. 公园
     - `passport` n. 护照
     - `pen` n. 钢笔
     - `pencil` n. 铅笔
     - `perhaps` adv. 大概
     - `Peugeot` n. 标致
+    - `photograph` n. 照片
     - `picture` n. 图画
     - `plate` n. 盘子
     - `please` int. 请
@@ -199,6 +228,7 @@
     - `red` adj. 红色的
     - `refrigerator` n. 电冰箱
     - `right` adj. 好，可以; n. 右边
+    - `river` n. 河
     - `room` n. 房间
     - `run` v. 跑
     - `Russian` adj. 俄罗斯的
@@ -209,7 +239,10 @@
     - `see` v. 看见
     - `sharp` adj. 尖的，锋利的
     - `sharpen` v. 削尖
+    - `shave` v. 刮脸
     - `shelf` n. 架子；搁板
+    - `shine` v. 照耀
+    - `ship` n. 轮船
     - `shirt` n. 衬衣
     - `shoe` n. 鞋子
     - `short` adj. 矮的
@@ -218,6 +251,8 @@
     - `sister` n. 姐，妹
     - `sit down` 坐下
     - `skirt` n. 裙子
+    - `sky` n. 天空
+    - `sleep` v. 睡觉
     - `small` adj. 小的
     - `smart` adj. 漂亮的
     - `son` n. 儿子
@@ -226,12 +261,15 @@
     - `stereo` n. 立体声音响
     - `student` n. 学生
     - `suit` n. 一套衣服
+    - `sun` n. 太阳
     - `sweep` v. 扫
     - `Swedish` adj. 瑞典的
+    - `swim` v. 游泳
   - t
     - `table` n. 桌子
     - `take off` 脱掉
     - `tall` adj. 高的
+    - `tap` n. (水)龙头
     - `taxi driver` 出租汽车司机
     - `teacher` n. 老师
     - `television` n. 电视机
@@ -247,12 +285,14 @@
     - `tired` adj. 累的
     - `today` adv. 今天
     - `too` adv. 也
+    - `tooth` n. 牙齿
     - `tourist` n. 旅游者
     - `Toyota` n. 丰田
     - `tree` n. 树
     - `trousers` n. 长裤
     - `turn on` 开（电灯）
     - `turn off` 关（电灯）
+    - `type` v. 打字
 - uvwxyz
   - u
     - `umbrella` n. 雨伞
@@ -260,13 +300,19 @@
     - `untidy` adj. 乱的
     - `upstairs` adj. 楼上
   - v
+    - `valley` n. 山谷
     - `very much` adverb. 非常地
+    - `village` n. 村庄
     - `vocabulary` n. 词汇
     - `Volvo` n. 沃尔沃
   - w
+    - `wait` v. 等
     - `wall` n. 墙
+    - `walk` v. 走路
     - `wardrobe` n. 衣柜
+    - `wash` v. 洗
     - `watch` n. 手表
+    - `water` n. 水
     - `well` adj. 身体好的
     - `what` adj. & pron. 什么
     - `where` adv. 在哪里
@@ -274,7 +320,9 @@
     - `white` adj. 白色的
     - `who` pron. 谁
     - `whose` pron. 谁的
+    - `wife` n. 妻子
     - `window` n. 窗户
+    - `with` prep. 和...在一起
     - `woman` n. 女人
     - `word` n. 单词
   - x
