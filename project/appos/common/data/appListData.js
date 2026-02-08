@@ -24,6 +24,7 @@ const appListData = [
         "icon": "./common/images/icons/淘宝_icon.png",
         "name": "淘宝",
         "ranking": 3,
+        "urlScheme": "taobao://",
         "users": "7.2 亿 +",
     },
     {
@@ -32,6 +33,7 @@ const appListData = [
         "icon": "./common/images/icons/支付宝_icon.png",
         "name": "支付宝",
         "ranking": 4,
+        "urlScheme": "alipays://",
         "users": "4.5 亿 +",
     },
     {
@@ -40,6 +42,7 @@ const appListData = [
         "icon": "./common/images/icons/高德地图_icon.png",
         "name": "高德地图",
         "ranking": 5,
+        "urlScheme": "amapuri://",
         "users": "3.9 亿+",
     },
     {
@@ -48,6 +51,7 @@ const appListData = [
         "icon": "./common/images/icons/QQ_icon.png",
         "name": "QQ",
         "ranking": 6,
+        "urlScheme": "qq://",
         "users": "3.2 亿+",
     },
     {
@@ -56,6 +60,7 @@ const appListData = [
         "icon": "./common/images/icons/快手_icon.png",
         "name": "快手",
         "ranking": 7,
+        "urlScheme": "com.ss.android.ugc.aweme://",
         "users": "3.0 亿+",
     },
     {
@@ -64,6 +69,7 @@ const appListData = [
         "icon": "./common/images/icons/百度_icon.png",
         "name": "百度",
         "ranking": 8,
+        "urlScheme": "baiduboxapp://",
         "users": "3.0 亿",
     },
     {
@@ -72,6 +78,7 @@ const appListData = [
         "icon": "./common/images/icons/拼多多_icon.png",
         "name": "拼多多",
         "ranking": 9,
+        "urlScheme": "pinduoduo://",
         "users": "3.0 亿",
     },
     {
@@ -80,6 +87,7 @@ const appListData = [
         "icon": "./common/images/icons/美团_icon.png",
         "name": "美团",
         "ranking": 10,
+        "urlScheme": "meituan://",
         "users": "2.5 亿",
     },
     {
@@ -88,6 +96,7 @@ const appListData = [
         "icon": "./common/images/icons/百度地图_icon.png",
         "name": "百度地图",
         "ranking": 11,
+        "urlScheme": "baidumap://",
         "users": "2.3 亿",
     },
     {
@@ -96,6 +105,7 @@ const appListData = [
         "icon": "./common/images/icons/京东_icon.png",
         "name": "京东",
         "ranking": 12,
+        "urlScheme": "jdmobile://",
         "users": "2.1 亿",
     },
     {
@@ -104,6 +114,7 @@ const appListData = [
         "icon": "./common/images/icons/微博_icon.png",
         "name": "微博",
         "ranking": 13,
+        "urlScheme": "sinaweibo://",
         "users": "1.9 亿",
     },
     {
@@ -112,6 +123,7 @@ const appListData = [
         "icon": "./common/images/icons/微博_icon.png",
         "name": "微博",
         "ranking": 13,
+        "urlScheme": "sinaweibo://",
         "users": "1.9 亿",
     },
     {
@@ -120,6 +132,7 @@ const appListData = [
         "icon": "./common/images/icons/腾讯视频_icon.png",
         "name": "腾讯视频",
         "ranking": 14,
+        "urlScheme": "qqvideo://",
         "users": "1.7 亿",
     },
     {
@@ -128,6 +141,7 @@ const appListData = [
         "icon": "./common/images/icons/爱奇艺_icon.png",
         "name": "爱奇艺",
         "ranking": 15,
+        "urlScheme": "iqiyi://",
         "users": "1.6 亿",
     },
     {
@@ -136,6 +150,7 @@ const appListData = [
         "icon": "./common/images/icons/搜狗输入法_icon.png",
         "name": "搜狗输入法",
         "ranking": 16,
+        "urlScheme": "sogouinput://",
         "users": "1.5 亿+",
     },
     {
@@ -144,6 +159,7 @@ const appListData = [
         "icon": "./common/images/icons/QQ浏览器_icon.png",
         "name": "QQ浏览器",
         "ranking": 17,
+        "urlScheme": "mqqbrowser://",
         "users": "1.4 亿+",
     },
     {
@@ -152,6 +168,7 @@ const appListData = [
         "icon": "./common/images/icons/今日头条_icon.png",
         "name": "今日头条",
         "ranking": 18,
+        "urlScheme": "ttbrowser://",
         "users": "1.3 亿+",
     },
     {
@@ -160,6 +177,7 @@ const appListData = [
         "icon": "./common/images/icons/金山办公_icon.png",
         "name": "WPS Office",
         "ranking": 19,
+        "urlScheme": "wps.all://",
         "users": "1.2 亿+",
     },
     {
@@ -168,6 +186,7 @@ const appListData = [
         "icon": "./common/images/icons/小红书_icon.png",
         "name": "小红书",
         "ranking": 20,
+        "urlScheme": "xiaohei://",
         "users": "1.1 亿+",
     }
 ];
