@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- 编码 -->
+    <meta charset="UTF-8">
+    <!-- title, keywords, description -->
+    <title>guos ranking</title>
+    <meta title="keywords" content="" />
+    <meta title="description" content="" />
+    <!-- 移动端缩放 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./common/css/guos-common.css" />
+    <style>
+        section {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <article id="app-list"></article>
+    </main>
+    <footer></footer>
+
+    <script src="./common/components/app-component.js"></script>
+    <script src="./common/components/footer-component.js"></script>
+    <script src="./common/data/appListData.js"></script>
+    <script>
+        window.onload = function () {
+            init();
+        }
+
+        // let appList = [
+        //     { ranking: '1', name: "微信", icon: "", company: "腾讯", users: "8.5 亿+", features: "社交通讯 + 小程序生态" },
+        //     { ranking: '2', name: "抖音", company: "字节跳动", users: "7.2 亿+", features: "短视频 + 直播 + 电商" },
+        //     { ranking: '3', name: "淘宝", company: "阿里巴巴", users: "4.8 亿+", features: "电商平台" },
+        //     { ranking: '4', name: "支付宝", company: "阿里巴巴", users: "4.5 亿+", features: "支付 + 生活服务" },
+        //     { ranking: '5', name: "高德地图", company: "阿里巴巴", users: "3.9 亿+", features: "导航 + 出行服务" },
+        //     { ranking: '6', name: "QQ", company: "腾讯", users: "3.2 亿+", features: "即时通讯（年轻群体）" },
+        //     { ranking: '7', name: "快手", company: "快手科技", users: "3.0 亿+", features: "短视频 + 直播" },
+        //     { ranking: '8', name: "百度", company: "百度", users: "2.8 亿+", features: "搜索 + 信息流" },
+        //     { ranking: '9', name: "拼多多", company: "拼多多", users: "2.7 亿+", features: "社交电商" },
+        //     { ranking: '10', name: "美团", company: "美团", users: "2.5 亿+", features: "本地生活 + 外卖" },
+        //     { ranking: '11', name: "百度地图", company: "百度", users: "2.3 亿+", features: "导航 + LBS服务" },
+        //     { ranking: '12', name: "京东", company: "京东集团", users: "2.1 亿+", features: "电商（自营物流）" },
+        //     { ranking: '13', name: "微博", company: "新浪微博", users: "1.9 亿+", features: "社交媒体 + 热点舆论" },
+        //     { ranking: '14', name: "腾讯视频", company: "腾讯", users: "1.7 亿+", features: "长视频平台" },
+        //     { ranking: '15', name: "爱奇艺", company: "百度系", users: "1.6 亿+", features: "长视频平台" },
+        //     { ranking: '16', name: "搜狗输入法", company: "腾讯（收购）", users: "1.5 亿+", features: "输入工具" },
+        //     { ranking: '17', name: "QQ浏览器", company: "腾讯", users: "1.4 亿+", features: "浏览器 + 信息流" },
+        //     { ranking: '18', name: "今日头条", company: "字节跳动", users: "1.3 亿+", features: "个性化新闻资讯" },
+        //     { ranking: '19', name: "WPS Office", company: "金山办公", users: "1.2 亿+", features: "办公文档" },
+        //     { ranking: '20', name: "小红书", company: "小红书", users: "1.1 亿+", features: "种草社区 + 电商" }
+        // ];
+
+        // 初始化
+        function init() {
+            initAppComponent(appListData);  // 初始化 app 组件
+            initFooterComponent();  // 初始化 footer 组件
+        }
+    </script>
+</body>
+
+</html>

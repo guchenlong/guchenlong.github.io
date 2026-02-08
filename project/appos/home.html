@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- 编码 -->
+    <meta charset="UTF-8">
+    <!-- title, keywords, description -->
+    <title>guos 首页</title>
+    <meta title="keywords" content="" />
+    <meta title="description" content="" />
+    <!-- 移动端缩放 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./common/css/guos-common.css" />
+    <style>
+        article {
+            margin: 10px 0;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: #efeded;
+            font-family: 'Fira Code', 'JetBrains Mono', 'Consolas', 'Courier New', monospace;
+        }
+
+        #time {}
+
+        #weather {}
+
+        #calculator {}
+    </style>
+</head>
+
+<body>
+    <main>
+        <!-- 时间 -->
+        <article id="time">
+            时间
+        </article>
+        <!-- 天气 -->
+        <!-- <article id="weather">
+            天气
+        </article> -->
+        <!-- 计算器 -->
+        <!-- <article id="calculator">
+            计算器
+        </article> -->
+        <!-- 全球 应用程序 个数 -->
+        <article id="app-count">
+            全球 应用程序 个数：510 ~ 580 万
+        </article>
+        <!-- 中国 应用程序 个数 -->
+        <article id="app-count">
+            中国 应用程序 个数：245 ~ 252 万
+        </article>
+    </main>
+    <footer></footer>
+
+    <script src="./common/components/footer-component.js"></script>
+    <script>
+        window.onload = function () {
+            init();
+        }
+
+        // 初始化
+        function init() {
+            initFooterComponent();  // 初始化 footer 组件
+            initTime();
+            initWeather();
+        }
+
+        // 初始化 时间
+        function initTime() {
+            let id = document.getElementById("time");
+            id.innerHTML = new Date().toLocaleString();
+            // 每秒更新一次
+            setInterval(function () {
+                id.innerHTML = new Date().toLocaleString();
+            }, 1000)
+        }
+
+        function initWeather() {
+            let id = document.getElementById("weather");
+            id.innerHTML = "晴，温度 25°C";
+        }
+    </script>
+</body>
+
+</html>
