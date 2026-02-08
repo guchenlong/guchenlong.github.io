@@ -5,9 +5,9 @@
     <!-- 编码 -->
     <meta charset="UTF-8">
     <!-- title, keywords, description -->
-    <title>guos 首页</title>
-    <meta title="keywords" content="" />
-    <meta title="description" content="" />
+    <title>首页 | appos</title>
+    <meta title="keywords" content="appos" />
+    <meta title="description" content="appos" />
     <!-- 移动端缩放 -->
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
     <!-- CSS -->
@@ -56,9 +56,11 @@
     </main>
     <footer></footer>
 
+    <script src="../../common/js/common.js"></script>
     <script src="./common/components/footer-component.js"></script>
     <script>
         window.onload = function () {
+            initBaiduTongji(); // 百度统计 上报
             init();
         }
 
@@ -66,7 +68,7 @@
         function init() {
             initFooterComponent();  // 初始化 footer 组件
             initTime();
-            initWeather();
+            // initWeather();
         }
 
         // 初始化 时间
@@ -79,10 +81,10 @@
             }, 1000)
         }
 
-        function initWeather() {
-            let id = document.getElementById("weather");
-            id.innerHTML = "晴，温度 25°C";
-        }
+        // function initWeather() {
+        //     let id = document.getElementById("weather");
+        //     id.innerHTML = "晴，温度 25°C";
+        // }
     </script>
 </body>
 

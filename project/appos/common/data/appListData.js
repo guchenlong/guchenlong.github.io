@@ -48,7 +48,7 @@ const appListData = [
     {
         "category": ["社交"],
         "company": "腾讯",
-        "icon": "./common/images/icons/QQ_icon.png",
+        "icon": "./common/images/icons/qq_icon.png",
         "name": "QQ",
         "ranking": 6,
         "urlScheme": "qq://",

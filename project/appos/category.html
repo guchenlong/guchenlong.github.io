@@ -5,7 +5,7 @@
     <!-- 编码 -->
     <meta charset="UTF-8">
     <!-- title, keywords, description -->
-    <title>guos category</title>
+    <title>分类 | appos</title>
     <meta title="keywords" content="" />
     <meta title="description" content="" />
     <!-- 移动端缩放 -->
@@ -16,35 +16,55 @@
         section {
             margin: 10px 0;
         }
+
+        .category-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
     </style>
 </head>
 
 <body>
     <main>
-        <article id="time">
-            <section>短视频（抖音，快手）8 亿</section>
-            <section>即时通讯（微信、QQ）7 亿</section>
-            <section>综合资讯（今日头条、腾讯新闻）3 亿</section>
-            <section>电商（淘宝、拼多多、京东）2.5 亿</section>
-            <section>生活服务（美团、大众点评、饿了么）2 亿</section>
-            <section>在线视频（爱奇艺、腾讯视频、优酷）1.2 亿</section>
-            <section>游戏（《王者荣耀》《原神》《和平精英》）1.2 亿</section>
-            <section>金融支付（支付宝、微信支付）1 亿</section>
-            <section>工具类（百度、高德地图、WPS、手机管家）1 亿</section>
-            <section>社交（非微信） 小红书、微博、B站 1亿</section>
-        </article>
+        <article id="category"></article>
     </main>
     <footer></footer>
 
+    <script src="../../common/js/common.js"></script>
     <script src="./common/components/footer-component.js"></script>
+    <script src="./common/data/categoryData.js"></script>
     <script>
         window.onload = function () {
+            initBaiduTongji(); // 百度统计 上报
             init();
         }
 
         // 初始化
         function init() {
             initFooterComponent();  // 初始化 footer 组件
+            initCategoryComponent();  // 初始化 category 组件
+        }
+
+        function initCategoryComponent() {
+            console.log(categoryData);
+            let categoryElement = document.getElementById("category");
+            categoryElement.innerHTML = "";
+            for (let i = 0; i < categoryData.length; i++) {
+                let section = document.createElement("section");
+                section.className = "category-section";
+                // 分类名称
+                categoryElement.innerHTML += "<div style='display: flex;'>" + categoryData[i].type + "</div>";
+                console.log(categoryData[i]);
+                let divs = categoryData[i].appList;
+                for (let j = 0; j < divs.length; j++) {
+                    let div = document.createElement("div");
+                    div.innerText = divs[j].name;
+                    div.style.color = "red";
+                    section.appendChild(div);
+                }
+                categoryElement.appendChild(section);
+            }
         }
 
     </script>

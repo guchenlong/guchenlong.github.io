@@ -34,17 +34,57 @@
     </main>
     <footer></footer>
 
+    <script src="../../common/js/common.js"></script>
     <script src="./common/components/app-component.js"></script>
     <script src="./common/components/footer-component.js"></script>
-    <script src="./common/data/appListData.js"></script>
     <script>
         window.onload = function () {
+            initBaiduTongji(); // 百度统计 上报
             init();
         }
 
+        let appListData = [
+            {
+                "category": ["浏览器"],
+                "company": "腾讯",
+                "icon": "./common/images/icons/qq浏览器_icon.png",
+                "name": "QQ浏览器",
+                "ranking": "",
+                "urlScheme": "mqqbrowser://",
+                "users": "1.4 亿+",
+            },
+            {
+                "category": ["浏览器"],
+                "company": "字节跳动",
+                "icon": "./common/images/icons/今日头条_icon.png",
+                "name": "今日头条",
+                "ranking": "",
+                "urlScheme": "ttbrowser://",
+                "users": "1.3 亿+",
+            },
+            {
+                "category": ["浏览器"],
+                "company": "金山办公",
+                "icon": "./common/images/icons/wps_icon.png",
+                "name": "WPS Office",
+                "ranking": "",
+                "urlScheme": "wps.all://",
+                "users": "1.2 亿+",
+            },
+            {
+                "category": ["浏览器"],
+                "company": "小红书",
+                "icon": "./common/images/icons/小红书_icon.png",
+                "name": "小红书",
+                "ranking": "",
+                "urlScheme": "xiaohei://",
+                "users": "1.1 亿+",
+            }
+        ];
+
         // 初始化
         function init() {
-            initAppComponent(appListData, 'recommend');  // 初始化 app 组件
+            initAppComponent(appListData);  // 初始化 app 组件
             initFooterComponent();  // 初始化 footer 组件
         }
 
