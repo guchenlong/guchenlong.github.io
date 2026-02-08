@@ -8,6 +8,10 @@ a {
     color: inherit;
 }
 
+main {
+    margin-bottom: 50px;
+}
+
 footer {
     position: fixed;
     bottom: 0;
@@ -19,13 +23,5 @@ footer {
     display: flex;
     justify-content: space-around;
     line-height: 40px;
-}
-
-.app-item {
-    width: 100%;
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background: #eeeded;
+    background: #fff;
 }

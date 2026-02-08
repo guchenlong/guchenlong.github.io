@@ -118,15 +118,6 @@ const appListData = [
         "users": "1.9 亿",
     },
     {
-        "category": ["社交"],
-        "company": "新浪微博",
-        "icon": "./common/images/icons/微博_icon.png",
-        "name": "微博",
-        "ranking": 13,
-        "urlScheme": "sinaweibo://",
-        "users": "1.9 亿",
-    },
-    {
         "category": ["视频"],
         "company": "腾讯",
         "icon": "./common/images/icons/腾讯视频_icon.png",
@@ -156,7 +147,7 @@ const appListData = [
     {
         "category": ["浏览器"],
         "company": "腾讯",
-        "icon": "./common/images/icons/QQ浏览器_icon.png",
+        "icon": "./common/images/icons/qq浏览器_icon.png",
         "name": "QQ浏览器",
         "ranking": 17,
         "urlScheme": "mqqbrowser://",
@@ -174,7 +165,7 @@ const appListData = [
     {
         "category": ["浏览器"],
         "company": "金山办公",
-        "icon": "./common/images/icons/金山办公_icon.png",
+        "icon": "./common/images/icons/wps_icon.png",
         "name": "WPS Office",
         "ranking": 19,
         "urlScheme": "wps.all://",
