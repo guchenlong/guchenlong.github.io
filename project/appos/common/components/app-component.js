@@ -3,7 +3,7 @@ function initAppComponent(appList) {
     appListElement.innerHTML = "";
     appList.forEach(app => {
         appListElement.innerHTML += `
-            <div class="app-item">
+            <div class="app-item" onclick="openApp('${app.urlScheme}')">
                 <p>${app.ranking} </p>
                 <img src="${app.icon}" style="width: 30px; height: 30px;">
                 <p>${app.name}</p>
@@ -11,4 +11,8 @@ function initAppComponent(appList) {
             </div>
         `;
     });
+}
+
+function openApp(urlScheme) {
+    window.location.href = urlScheme;
 }

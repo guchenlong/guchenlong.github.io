@@ -1,3 +1,4 @@
+// 包大小（初始大小，如今大小）
 const appListData = [
     {
         "category": ["社交", "小程序"],
@@ -5,6 +6,7 @@ const appListData = [
         "icon": "./common/images/icons/微信_icon.png",
         "name": "微信",
         "ranking": 1,
+        "urlScheme": "weixin://",
         "users": "8.5 亿 +",
     },
     {
@@ -13,6 +15,7 @@ const appListData = [
         "icon": "./common/images/icons/tiktok_icon.png",
         "name": "抖音",
         "ranking": 2,
+        "urlScheme": "snssdk1233://",
         "users": "7.2 亿 +",
     },
     {
