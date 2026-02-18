@@ -20,7 +20,9 @@
         .category-section {
             display: flex;
             align-items: center;
-            justify-content: space-around;
+            height: 50px;
+            background: #f5f4f4;
+            margin: 5px 0;
         }
     </style>
 </head>
@@ -54,19 +56,19 @@
                 let section = document.createElement("section");
                 section.className = "category-section";
                 // 分类名称
-                categoryElement.innerHTML += "<div style='display: flex;'>" + categoryData[i].type + "</div>";
+                section.innerHTML += "<div style='display: flex; margin-right: 10px;'>" + categoryData[i].type + "</div>";
                 console.log(categoryData[i]);
                 let divs = categoryData[i].appList;
                 for (let j = 0; j < divs.length; j++) {
                     let div = document.createElement("div");
                     div.innerText = divs[j].name;
                     div.style.color = "red";
+                    div.style.marginRight = "10px";
                     section.appendChild(div);
                 }
                 categoryElement.appendChild(section);
             }
         }
-
     </script>
 </body>
 
