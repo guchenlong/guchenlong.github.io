@@ -78,6 +78,10 @@ const indexLeftAside = [
             {
                 "title": "计算机科学",
                 "link": "./subject/computer-science/index.html"
+            },
+            {
+                "title": "经济学",
+                "link": ""
             }
         ]
     },
