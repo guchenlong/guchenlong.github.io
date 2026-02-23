@@ -261,6 +261,12 @@ const indexData = [
                 "thing": "上古四圣，中国司法鼻祖"
             },
             {
+                "time": "-2166 ~ -1991",
+                "location": "美索不达米亚·尼普尔",
+                "people": "亚伯拉罕",
+                "thing": "犹太教、基督教和伊斯兰教共同尊奉的族长"
+            },
+            {
                 "time": "-2113",
                 "location": "两河流域【伊拉克】",
                 "people": "乌尔纳姆",
@@ -341,6 +347,12 @@ const indexData = [
                 "thing": "伊尹病死"
             },
             {
+                "time": "-1300 ~ -612",
+                "location": "两河流域",
+                "people": "",
+                "thing": "亚述帝国"
+            },
+            {
                 "time": "-1046.01.20",
                 "location": "镐【陕西·西安】",
                 "people": "周武王·姬发",
@@ -370,6 +382,12 @@ const indexData = [
                 "people": "周平王",
                 "thing": "东周 春秋 建立",
                 "isMarked": true
+            },
+            {
+                "time": "-721 ~ -705",
+                "location": "两河流域·新亚述帝国",
+                "people": "萨尔贡二世【新亚述帝国君主】",
+                "thing": "",
             },
             {
                 "time": "-635 ~ -562",
