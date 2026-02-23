@@ -20,7 +20,7 @@ section {
 .article-left {
     width: 10%;
     display: flex;
-    padding-top: 10px;
+    padding: 5px 0;
     justify-content: center;
     background: #ffffff;
     border-radius: 5px;
