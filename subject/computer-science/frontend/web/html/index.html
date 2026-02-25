@@ -99,58 +99,39 @@
                         有利于开发和维护，语义化更具可读性，代码更好维护，与CSS3关系更和谐。</div>
                 </div>
             </section>
-            <section class="item">
+            <section class="item" style="background: rgb(233, 202, 202);">
                 <div class="item-left">html audio</div>
                 <div class="item-right">
                     <div class="item-right-item">audio 属性：autoplay【自动播放】</div>
-                    <div class="item-right-item">audio 方法</div>
+                    <div class="item-right-item">audio 属性：controls【是否显示默认控制条（控制按钮）】</div>
+                    <div class="item-right-item">audio 属性：loop【循环播放】</div>
+                    <div class="item-right-item">audio 属性：muted【静音】</div>
+                    <div class="item-right-item">audio 属性：preload【预加载】</div>
+                    <div class="item-right-item">audio 属性：src【音频文件的 URL】</div>
+                    <div class="item-right-item">audio 格式支持【OGG，MP3，WAV】</div>
+                    <div class="item-right-item">audio 属性：currentTime【用来获取或控制当前播放的时间，单位为s】</div>
+                    <div class="item-right-item">audio 属性：currentSrc【以字符串形式返回正在播放或已加载的文件】</div>
+                    <div class="item-right-item">audio 属性：duration【获取媒体文件的总时长，以s为单位，如果无法获取，返回NaN】</div>
+                    <div class="item-right-item">audio 属性：ended【如果媒体文件播放完毕返回true】</div>
+                    <div class="item-right-item">audio 属性：error【返回错误代码，为null的时候为正常。否则可以通过Music.error.code来获取具体的错误代码：
+                        1.用户终止 2.网络错误 3.解码错误 4.URL无效】</div>
+                    <div class="item-right-item">audio 属性：muted【用来获取或设置静音状态。值为boolean】</div>
+                    <div class="item-right-item">audio 属性：paused【如果媒体文件被暂停，那么paused属性返回true，反之则返回false】</div>
+                    <div class="item-right-item">audio 属性：startTime【返回起始播放时间】</div>
+                    <div class="item-right-item">audio 属性：volume【控制音量的属性值为0-1;0为音量最小，1为音量最大】</div>
+                    <div class="item-right-item">audio 函数：canPlayType(obj)【测试是否支持给定的Mini类型的文件】</div>
+                    <div class="item-right-item">audio 函数：load()【加载音频、视频软件】</div>
+                    <div class="item-right-item">audio 函数：play()【加载并播放音频、视频文件或重新播放暂停的的音频、视频】</div>
+                    <div class="item-right-item">audio 函数：pause()【暂停出于播放状态的音频、视频文件】</div>
+                    <div class="item-right-item">audio 事件：canplay【缓冲至目前可播放状态】</div>
+                    <div class="item-right-item">audio 事件：canplaythrough【歌曲已经载入完全完成】</div>
+                    <div class="item-right-item">audio 事件：ended【当前播放结束】</div>
+                    <div class="item-right-item">audio 事件：loadstart【客户端开始请求数据】</div>
+                    <div class="item-right-item">audio 事件：pause【pause()方法促发时】</div>
+                    <div class="item-right-item">audio 事件：play【play()和autoplay播放时】</div>
+                    <div class="item-right-item">audio 事件：progress【客户端正在请求数据（或者说正在缓冲）】</div>
+                    <div class="item-right-item">audio 事件：timeupdate【当前播放时间发生改变的时候。播放中常用的时间处理哦】</div>
                 </div>
-
-                <!-- 
-                audio常用属性
-
-                属性 属性值 注释
-                src url 播放的音乐的url地址（火狐只支持ogg的音乐，而IE9只支持MP3格式的音乐。chrome貌似全支持）
-                preload preload 预加载（在页面被加载时进行加载或者说缓冲音频），如果使用了autoplay的话那么该属性失效。
-                loop loop 循环播放
-                controls controls 是否显示默认控制条（控制按钮）
-                
-                audio音乐格式的支持
-
-                音频格式 Chrome Firefox IE9 Opera Safari
-                OGG √ √ √ × ×
-                MP3 √ × √ × √
-                WAV × √ × √ ×
-                audio属性
-
-                属性 注释
-                duration 获取媒体文件的总时长，以s为单位，如果无法获取，返回NaN
-                paused 如果媒体文件被暂停，那么paused属性返回true，反之则返回false
-                ended 如果媒体文件播放完毕返回true
-                muted 用来获取或设置静音状态。值为boolean
-                volume 控制音量的属性值为0-1;0为音量最小，1为音量最大
-                startTime 返回起始播放时间
-                error 返回错误代码，为uull的时候为正常。否则可以通过Music.error.code来获取具体的错误代码： 1.用户终止 2.网络错误 3.解码错误 4.URL无效
-                currentTime 用来获取或控制当前播放的时间，单位为s。
-                currentSrc 以字符串形式返回正在播放或已加载的文件
-                常用的控制用的函数：
-
-                函数 作用
-                load() 加载音频、视频软件
-                play() 加载并播放音频、视频文件或重新播放暂停的的音频、视频
-                pause() 暂停出于播放状态的音频、视频文件
-                canPlayType(obj) 测试是否支持给定的Mini类型的文件
-                常用audio的事件：
-
-                事件名称 事件作用
-                loadstart 客户端开始请求数据
-                progress 客户端正在请求数据（或者说正在缓冲）
-                play play()和autoplay播放时
-                pause pause()方法促发时
-                ended 当前播放结束
-                timeupdate 当前播放时间发生改变的时候。播放中常用的时间处理哦
-                canplaythrough 歌曲已经载入完全完成
-                canplay 缓冲至目前可播放状态。 -->
             </section>
         </article>
         <aside id="right-aside"></aside>
