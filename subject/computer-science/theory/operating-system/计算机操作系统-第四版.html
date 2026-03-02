@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- 编码 -->
+    <meta charset="UTF-8">
+    <!-- title, keywords, description -->
+    <title>计算机操作系统 | 顾晨龙的个人站</title>
+    <meta title="keywords" content="计算机操作系统 | 顾晨龙的个人站" />
+    <meta title="description" content="计算机操作系统 | 顾晨龙的个人站" />
+    <!-- 移动端缩放 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+
+<body>
+    <header>顾晨龙的个人站</header>
+    <nav>计算机操作系统</nav>
+    <main>
+        <aside id="left-aside">
+            <div class="item-right-item">第一章、操作系统引论</div>
+            <div class="item-right-item">第二章、进程的描述与控制</div>
+            <div class="item-right-item">第三章、处理机调度与死锁</div>
+            <div class="item-right-item">第四章、存储器管理</div>
+            <div class="item-right-item">第五章、虚拟存储器</div>
+            <div class="item-right-item">第六章、输入输出系统</div>
+            <div class="item-right-item">第七章、文件管理</div>
+            <div class="item-right-item">第八章、磁盘存储器的管理</div>
+            <div class="item-right-item">第九章、操作系统接口</div>
+            <div class="item-right-item">第十章、多处理机操作系统</div>
+            <div class="item-right-item">第十一章、多媒体操作系统</div>
+            <div class="item-right-item">第十二章、保护和安全</div>
+        </aside>
+        <article>
+            <section class="item">
+                <div class="item-left">第一章、操作系统引论</div>
+                <div class="item-right">
+                    <div class="item-right-item">
+                        1.1、操作系统的目标和作用
+                        <div style="margin-left: 40px;">操作系统（Operating System, OS）是配置在计算机硬件上的第一层软件，是对硬件系统的首次扩充。</div>
+                        <div class="inline-block">
+                            1.1.1、操作系统的目标
+                            <div class="inline-block">计算机系统上配置操作系统，其主要目标是：方便性，有效性，可扩充性和开放性。</div>
+                        </div>
+                        <div class="inline-block">
+                            1.1.2、操作系统的作用
+                            <div class="inline-block">1、OS 作为用户与计算机硬件系统之间的接口</div>
+                            <div class="inline-block">
+                                2、OS 作为计算机系统资源的管理者
+                                <div class="inline-block">处理机 管理：分配和控制处理机</div>
+                                <div class="inline-block">存储器 管理：内存的分配与回收</div>
+                                <div class="inline-block">I/O 设备 管理：I/O 设备 的分配（回收）与操作</div>
+                                <div class="inline-block">文件（数据和程序） 管理：对文件的存取，共享和保护</div>
+                            </div>
+                            <div class="inline-block">3、OS 实现了对计算机资源的抽象</div>
+                        </div>
+                        <div class="inline-block">1.1.3、推动操作系统发展的主要动力</div>
+                    </div>
+                    <div class="item-right-item">
+                        1.2、操作系统的发展过程
+                        <div class="inline-block">
+                            1.2.1、未配置操作系统的计算机系统
+                            <div class="inline-block">1、人工操作方式</div>
+                            <div class="inline-block">2、脱机输入/输出（Off-Line I/O）方式</div>
+                        </div>
+                        <div class="inline-block">
+                            1.2.2、单道批处理系统
+                            <div class="inline-block">1、单道批处理系统 的处理过程</div>
+                            <div class="inline-block">2、单道批处理系统 的缺点</div>
+                        </div>
+                        <div class="inline-block">
+                            1.2.3、多道批处理系统
+                            <div class="inline-block">1、多道程序设计的基本概念</div>
+                            <div class="inline-block">2、多道批处理系统的优缺点</div>
+                            <div class="inline-block">3、多道批处理系统需要解决的问题</div>
+                        </div>
+                        <div class="inline-block">
+                            1.2.4、分时系统
+                            <div class="inline-block">1、分时系统的引入</div>
+                            <div class="inline-block">2、分时系统实现中的关键问题</div>
+                            <div class="inline-block">3、分时系统的特征</div>
+                        </div>
+                        <div class="inline-block">
+                            1.2.5、实时系统
+                            <div class="inline-block">1、实时系统的类型</div>
+                            <div class="inline-block">2、实时任务的类型</div>
+                            <div class="inline-block">3、实时系统与分时系统特征的比较</div>
+                        </div>
+                        <div class="inline-block">1.2.6、微机操作系统的发展</div>
+                    </div>
+                    <div class="item-right-item">1.3、操作系统的基本特征</div>
+                    <div class="item-right-item">1.4、操作系统的主要功能</div>
+                    <div class="item-right-item">1.5、OS 结构设计</div>
+                </div>
+            </section>
+            <section class="item">
+                <div class="item-left">第二章、进程的描述与控制</div>
+                <div class="item-right">
+                    <div class="item-right-item">2.1、前趋图和程序执行</div>
+                    <div class="item-right-item">2.2、进程的描述</div>
+                    <div class="item-right-item">2.3、进程控制</div>
+                    <div class="item-right-item">2.4、进程同步</div>
+                    <div class="item-right-item">2.5、经典进程的同步问题</div>
+                    <div class="item-right-item">2.6、进程通信</div>
+                    <div class="item-right-item">2.7、线程（Threads）的基本概念</div>
+                    <div class="item-right-item">2.8、线程的实现</div>
+                </div>
+            </section>
+            <section class="item">
+                <div class="item-left">第三章、处理机调度与死锁</div>
+                <div class="item-right">
+                    <div class="item-right-item">3.1、处理机调度的层次和调度算法的目标</div>
+                    <div class="item-right-item">3.2、作业与作业调度</div>
+                    <div class="item-right-item">3.3、进程调度</div>
+                    <div class="item-right-item">3.4、实时调度</div>
+                    <div class="item-right-item">3.5、死锁概述</div>
+                    <div class="item-right-item">3.6、预防死锁</div>
+                    <div class="item-right-item">3.7、避免死锁</div>
+                    <div class="item-right-item">3.8、死锁的检测与解除</div>
+                </div>
+            </section>
+            <section class="item">
+                <div class="item-left">第四章、存储器管理</div>
+                <div class="item-right">
+                    <div class="item-right-item">4.1、存储器的层次结构</div>
+                    <div class="item-right-item">4.2、程序的装入和链接</div>
+                    <div class="item-right-item">4.3、连续分配存储管理方式</div>
+                    <div class="item-right-item">4.4、对换（Swapping）</div>
+                    <div class="item-right-item">4.5、分页存储管理方式</div>
+                    <div class="item-right-item">4.6、分段存储管理方式</div>
+                </div>
+            </section>
+            <section class="item">
+                <div class="item-left">第五章、虚拟存储器</div>
+                <div class="item-right">
+                    <div class="item-right-item">5.1、虚拟存储器概述</div>
+                    <div class="item-right-item">5.2、请求分页存储管理方式</div>
+                    <div class="item-right-item">5.3、页面置换算法</div>
+                    <div class="item-right-item">5.4、“抖动”与工作集</div>
+                    <div class="item-right-item">5.5、请求分段存储管理方式</div>
+                </div>
+            </section>
+            <section class="item">
+                <div class="item-left">第六章、输入输出系统</div>
+                <div class="item-right">
+                    <div class="item-right-item">6.1、I/O 系统的功能，模型和接口</div>
+                    <div class="item-right-item">6.2、I/O 设备和设备控制器</div>
+                    <div class="item-right-item">6.3、中断机构和中断处理程序</div>
+                    <div class="item-right-item">6.4、设备驱动程序</div>
+                    <div class="item-right-item">6.5、与设备无关的 I/O 软件</div>
+                    <div class="item-right-item">6.6、用户层的 I/O 软件</div>
+                    <div class="item-right-item">6.7、缓冲区管理</div>
+                    <div class="item-right-item">6.8、磁盘存储器的性能和调度</div>
+                </div>
+            </section>
+            <section class="item">
+                <div class="item-left">第七章、文件管理</div>
+                <div class="item-right">
+                    <div class="item-right-item">7.1、文件和文件系统</div>
+                    <div class="item-right-item">7.2、文件的逻辑结构</div>
+                    <div class="item-right-item">7.3、文件目录</div>
+                    <div class="item-right-item">7.4、文件共享</div>
+                    <div class="item-right-item">7.5、文件保护</div>
+                </div>
+            </section>
+            <section class="item">
+                <div class="item-left">第八章、磁盘存储器的管理</div>
+                <div class="item-right">
+                    <div class="item-right-item">8.1、外存的组织方式</div>
+                    <div class="item-right-item">8.2、文件存储空间的管理</div>
+                    <div class="item-right-item">8.3、提高磁盘 I/O 速度的途径</div>
+                    <div class="item-right-item">8.4、提高磁盘可靠性的技术</div>
+                    <div class="item-right-item">8.5、数据一致性控制</div>
+                </div>
+            </section>
+            <section class="item">
+                <div class="item-left">第九章、操作系统接口</div>
+                <div class="item-right">
+                    <div class="item-right-item">9.1、用户接口</div>
+                    <div class="item-right-item">9.2、Shell 命令语言</div>
+                    <div class="item-right-item">9.3、联机命令接口的实现</div>
+                    <div class="item-right-item">9.4、系统调用的概念和类型</div>
+                    <div class="item-right-item">9.5、UNIX 系统调用</div>
+                    <div class="item-right-item">9.6、系统调用的实现</div>
+                </div>
+            </section>
+            <section class="item">
+                <div class="item-left">第十章、多处理机操作系统</div>
+                <div class="item-right">
+                    <div class="item-right-item">10.1、多处理机系统的基本概念</div>
+                    <div class="item-right-item">10.2、多处理机系统的结构</div>
+                    <div class="item-right-item">10.3、多处理机操作系统的特征与分类</div>
+                    <div class="item-right-item">10.4、进程同步</div>
+                    <div class="item-right-item">10.5、多处理机系统的进程调度</div>
+                    <div class="item-right-item">10.6、网络操作系统</div>
+                    <div class="item-right-item">10.7、分布式文件系统</div>
+                </div>
+            </section>
+            <section class="item">
+                <div class="item-left">第十一章、多媒体操作系统</div>
+                <div class="item-right">
+                    <div class="item-right-item">11.1、多媒体系统简介</div>
+                    <div class="item-right-item">11.2、多媒体文件中的各种媒体</div>
+                    <div class="item-right-item">11.3、多媒体进程管理中的问题和接纳控制</div>
+                    <div class="item-right-item">11.4、多媒体实时调度</div>
+                    <div class="item-right-item">11.5、媒体服务器的特征和接纳控制</div>
+                    <div class="item-right-item">11.6、多媒体存储器的分配方法</div>
+                    <div class="item-right-item">11.7、高速缓存与磁盘调度</div>
+                </div>
+            </section>
+            <section class="item">
+                <div class="item-left">第十二章、保护和安全</div>
+                <div class="item-right">
+                    <div class="item-right-item">12.1、安全环境</div>
+                    <div class="item-right-item">12.2、数据加密技术</div>
+                    <div class="item-right-item">12.3、用户验证</div>
+                    <div class="item-right-item">12.4、来自系统内部的攻击</div>
+                    <div class="item-right-item">12.5、来自系统外部的攻击</div>
+                    <div class="item-right-item">12.6、可信系统（Trusted System）</div>
+                </div>
+            </section>
+        </article>
+        <aside id="right-aside"></aside>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
