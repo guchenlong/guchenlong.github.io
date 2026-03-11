@@ -30,13 +30,12 @@ main {
     width: 100%;
     height: calc(100vh - 100px);
     display: flex;
-
 }
 
 #left-aside {
-    width: 350px;
+    width: 250px;
     height: 100%;
-    padding: 10px;
+    padding: 5px;
 }
 
 #right-aside {
@@ -49,7 +48,7 @@ main {
 
 article {
     flex: 1;
-    margin: 10px 0;
+    margin: 10px;
 }
 
 .item {
