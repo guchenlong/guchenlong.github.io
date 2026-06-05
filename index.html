@@ -2,117 +2,326 @@
 <html>
 
 <head>
-    <!-- 编码 -->
-    <meta charset="UTF-8">
-    <!-- title, keywords, description -->
-    <title>首页 | 顾晨龙的个人站</title>
-    <meta title="keywords" content="首页 | 顾晨龙的个人站" />
-    <meta title="description" content="首页 | 顾晨龙的个人站" />
-    <!-- 移动端缩放 -->
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="./index/index-layout.css" />
-    <link rel="stylesheet" type="text/css" href="./index/index-article.css" />
+    <title>课程</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #5c5a5a;
+        }
+
+        header {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        main {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+        }
+
+        aside {
+            width: 20%;
+            height: 100%;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        article {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        section {
+            width: 90%;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #f0f0f0;
+            display: flex;
+        }
+
+        .left {
+            width: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right {}
+
+        .right-item {
+            display: flex;
+        }
+
+        .right-item-left {
+            margin: 0 10px;
+            color: rgb(232, 145, 110);
+        }
+
+        .right-item-right {
+            display: flex;
+        }
+
+        .course-item {
+            margin: 0 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <header onclick="jumpTo('./')">顾晨龙的个人站</header>
-    <!-- <nav>首页</nav> -->
+    <header>课程</header>
     <main>
-        <aside id="left-aside"></aside>
-        <article id="content"></article>
-        <aside id="right-aside"></aside>
-    </main>
-
-    <!-- script -->
-    <script src="./common/js/common.js"></script>
-    <!-- script data -->
-    <script src="./index/indexData.js"></script>
-    <script>
-        window.onload = function () {
-            init();
-        }
-
-        function init() {
-            initBaiduTongji(); // 百度统计 上报
-            initPage();  // 渲染 - 页面
-        }
-
-        // 渲染 - 页面
-        function initPage() {
-            initLeftAside();  // 渲染 - 左侧 aside
-            initRightAside();  // 渲染 - 右侧 aside
-            initContent();  // 渲染 - 内容
-        }
-
-        function initLeftAside() {
-            let leftAsideElement = document.getElementById("left-aside");
-            leftAsideElement.innerHTML = "";
-            for (let i = 0; i < indexLeftAside.length; i++) {
-                let asideBox = document.createElement("div");
-                asideBox.className = "aside-box";
-                asideBox.innerHTML += `<div>${indexLeftAside[i].title}</div>`;
-                for (let j = 0; j < indexLeftAside[i].list.length; j++) {
-                    let item = indexLeftAside[i].list[j];
-                    asideBox.innerHTML += `<div><a target="_blank" href="${item.link}">${item.title}</a></div>`;
-                }
-                leftAsideElement.appendChild(asideBox);
-            }
-        }
-
-        function initRightAside() {
-            let rightAsideElement = document.getElementById("right-aside");
-            rightAsideElement.innerHTML = "";
-            for (let i = 0; i < indexRightAside.length; i++) {
-                let asideBox = document.createElement("div");
-                asideBox.className = "aside-box";
-                asideBox.innerHTML += `<div>${indexRightAside[i].title}</div>`;
-                for (let j = 0; j < indexRightAside[i].list.length; j++) {
-                    let item = indexRightAside[i].list[j];
-                    asideBox.innerHTML += `<div><a target="_blank" href="${item.link}">${item.title}</a></div>`;
-                }
-                rightAsideElement.appendChild(asideBox);
-            }
-        }
-
-        // 渲染 - 内容
-        function initContent() {
-            let contentElement = document.getElementById("content");
-            contentElement.innerHTML = "";
-            for (let i = 0; i < indexData.length; i++) {
-                let section = document.createElement("section");
-                let articleLeftElement = document.createElement("div");
-                // article-left
-                articleLeftElement.className = "article-left";
-                articleLeftElement.innerHTML = indexData[i].range;
-                section.appendChild(articleLeftElement);
-                // article-right
-                let articleRightElement = document.createElement("div");
-                articleRightElement.className = "article-right";
-                for (let j = 0; j < indexData[i].list.length; j++) {
-                    let item = indexData[i].list[j];
-                    //  background-create
-                    articleRightElement.innerHTML += `
-                    <div class="${item.isMarked ? 'item background-create' : 'item'}">
-                        <div class="item-when">${item.time}</div>
-                        <div class="item-where">
-                            ${item.locationLink ? `<a target="_blank" href="${item.locationLink}">${item.location}</a>` : item.location}
-                        </div>
-                        <div class="item-who">
-                            ${item.peopleLink ? `<a target="_blank" href="${item.peopleLink}">${item.people}</a>` : item.people}
-                        </div>
-                        <div class="item-what">
-                            ${item.thingLink ? `<a target="_blank" href="${item.thingLink}">${item.thing}</a>` : item.thing}
+        <aside>
+            数学
+        </aside>
+        <article>
+            <!-- 幼儿园 -->
+            <section>
+                <div class="left">幼儿园</div>
+                <div class="right">
+                    <div class="right-item">
+                        <div class="right-item-left">小班</div>
+                        <div class="right-item-right">
+                            <div class="course-item">语文</div>
+                            <div class="course-item">数学</div>
+                            <div class="course-item">英语</div>
                         </div>
                     </div>
-                    `
-                }
-                section.appendChild(articleLeftElement);
-                section.appendChild(articleRightElement);
-                contentElement.appendChild(section);
-            }
-        }
-    </script>
+                    <div class="right-item">
+                        <div class="right-item-left">中班</div>
+                        <div class="right-item-right">
+                            <div class="course-item">语文</div>
+                            <div class="course-item">数学</div>
+                            <div class="course-item">英语</div>
+                        </div>
+                    </div>
+                    <div class="right-item">
+                        <div class="right-item-left">大班</div>
+                        <div class="right-item-right">
+                            <div class="course-item">语文</div>
+                            <div class="course-item">数学</div>
+                            <div class="course-item">英语</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 小学初中 -->
+            <section>
+                <div class="left">小学初中</div>
+                <div class="right">
+                    <div class="right-item">
+                        <div class="right-item-left">一年级</div>
+                        <div class="right-item-right">
+                            <div class="course-item">语文</div>
+                            <a class="course-item" href="./pages/2xx/1nj/21njsx/yi-nian-ji-shu-xue.html"
+                                target="_blank">数学</a>
+                            <div class="course-item">英语</div>
+                        </div>
+                    </div>
+                    <div class="right-item">
+                        <div class="right-item-left">二年级</div>
+                        <div class="right-item-right">
+                            <div class="course-item">语文</div>
+                            <a class="course-item" href="./pages/2xx/2nj/22njsx/er-nian-ji-shu-xue.html"
+                                target="_blank">数学</a>
+                            <div class="course-item">英语</div>
+                        </div>
+                    </div>
+                    <div class="right-item">
+                        <div class="right-item-left">三年级</div>
+                        <div class="right-item-right">
+                            <div class="course-item">语文</div>
+                            <a class="course-item" href="./pages/2xx/3nj/23njsx/san-nian-ji-shu-xue.html"
+                                target="_blank">数学</a>
+                            <div class="course-item">英语</div>
+                        </div>
+                    </div>
+                    <div class="right-item">
+                        <div class="right-item-left">四年级</div>
+                        <div class="right-item-right">
+                            <div class="course-item">语文</div>
+                            <a class="course-item" href="./pages/2xx/4nj/24njsx/si-nian-ji-shu-xue.html"
+                                target="_blank">数学</a>
+                            <div class="course-item">英语</div>
+                        </div>
+                    </div>
+                    <div class="right-item">
+                        <div class="right-item-left">五年级</div>
+                        <div class="right-item-right">
+                            <div class="course-item">语文</div>
+                            <a class="course-item" href="./pages/2xx/5nj/25njsx/wu-nian-ji-shu-xue.html"
+                                target="_blank">数学</a>
+                            <div class="course-item">英语</div>
+                        </div>
+                    </div>
+                    <div class="right-item">
+                        <div class="right-item-left">六年级</div>
+                        <div class="right-item-right">
+                            <div class="course-item">语文</div>
+                            <a class="course-item" href="./pages/3cz/6nj/26njsx/liu-nian-ji-shu-xue.html"
+                                target="_blank">数学</a>
+                            <div class="course-item">英语</div>
+                        </div>
+                    </div>
+                    <div class="right-item">
+                        <div class="right-item-left">七年级</div>
+                        <div class="right-item-right">
+                            <div class="course-item">语文</div>
+                            <a class="course-item" href="./pages/3cz/7nj/27njsx/qi-nian-ji-shu-xue.html"
+                                target="_blank">数学</a>
+                            <div class="course-item">英语</div>
+                        </div>
+                    </div>
+                    <div class="right-item">
+                        <div class="right-item-left">八年级</div>
+                        <div class="right-item-right">
+                            <div class="course-item">语文</div>
+                            <a class="course-item" href="./pages/3cz/8nj/28njsx/ba-nian-ji-shu-xue.html"
+                                target="_blank">数学</a>
+                            <div class="course-item">英语</div>
+                            <div class="course-item">物理</div>
+                        </div>
+                    </div>
+                    <div class="right-item">
+                        <div class="right-item-left">九年级</div>
+                        <div class="right-item-right">
+                            <div class="course-item">语文</div>
+                            <a class="course-item" href="./pages/3cz/9nj/29njsx/jiu-nian-ji-shu-xue.html"
+                                target="_blank">数学</a>
+                            <div class="course-item">英语</div>
+                            <div class="course-item">物理</div>
+                            <div class="course-item">化学</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 高中 -->
+            <section>
+                <div class="left">高中</div>
+                <div class="right">
+                    <div class="right-item">
+                        <div class="right-item-left">高一</div>
+                        <div class="right-item-right">
+                            <div class="course-item">语文</div>
+                            <a class="course-item" href="./pages/4gz/g1/2g1sx/gao-yi-shu-xue.html"
+                                target="_blank">数学</a>
+                            <div class="course-item">英语</div>
+                            <div class="course-item">物理</div>
+                            <div class="course-item">化学</div>
+                            <div class="course-item">生物</div>
+                            <div class="course-item">政治</div>
+                            <div class="course-item">历史</div>
+                            <div class="course-item">地理</div>
+                            <div class="course-item">信息科技</div>
+                        </div>
+                    </div>
+                    <div class="right-item">
+                        <div class="right-item-left">高二</div>
+                        <div class="right-item-right">
+                            <div class="course-item">语文</div>
+                            <a class="course-item" href="./pages/4gz/g2/2g2sx/gao-er-shu-xue.html"
+                                target="_blank">数学</a>
+                            <div class="course-item">物理</div>
+                            <div class="course-item">化学</div>
+                            <div class="course-item">生物</div>
+                            <div class="course-item">政治</div>
+                            <div class="course-item">历史</div>
+                            <div class="course-item">地理</div>
+                        </div>
+                    </div>
+                    <div class="right-item">
+                        <div class="right-item-left">高三</div>
+                        <div class="right-item-right">
+                            <div class="course-item">语文</div>
+                            <a class="course-item" href="./pages/4gz/g3/2g3sx/gao-san-shu-xue.html"
+                                target="_blank">数学</a>
+                            <div class="course-item">英语</div>
+                            <div class="course-item">物理</div>
+                            <div class="course-item">化学</div>
+                            <div class="course-item">生物</div>
+                            <div class="course-item">政治</div>
+                            <div class="course-item">历史</div>
+                            <div class="course-item">地理</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 大学 -->
+            <section>
+                <div class="left">大学</div>
+                <div class="right">
+                    <div class="right-item">
+                        <div class="right-item-left"></div>
+                        <div class="right-item-right">
+                            <div class="course-item">语文</div>
+                            <div class="course-item">数学</div>
+                            <div class="course-item">英语</div>
+                            <div class="course-item">物理</div>
+                            <div class="course-item">化学</div>
+                            <div class="course-item">生物</div>
+                            <div class="course-item">政治</div>
+                            <div class="course-item">历史</div>
+                            <div class="course-item">地理</div>
+                            <div class="course-item">计算机科学</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 硕士 -->
+            <section>
+                <div class="left">硕士</div>
+                <div class="right">
+                    <div class="right-item">
+                        <div class="right-item-left"></div>
+                        <div class="right-item-right">
+                            <div class="course-item">语文</div>
+                            <div class="course-item">数学</div>
+                            <div class="course-item">英语</div>
+                            <div class="course-item">物理</div>
+                            <div class="course-item">化学</div>
+                            <div class="course-item">生物</div>
+                            <div class="course-item">政治</div>
+                            <div class="course-item">历史</div>
+                            <div class="course-item">地理</div>
+                            <div class="course-item">计算机科学</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 博士 -->
+            <section>
+                <div class="left">博士</div>
+                <div class="right">
+                    <div class="right-item">
+                        <div class="right-item-left"></div>
+                        <div class="right-item-right">
+                            <div class="course-item">语文</div>
+                            <div class="course-item">数学</div>
+                            <div class="course-item">英语</div>
+                            <div class="course-item">物理</div>
+                            <div class="course-item">化学</div>
+                            <div class="course-item">生物</div>
+                            <div class="course-item">政治</div>
+                            <div class="course-item">历史</div>
+                            <div class="course-item">地理</div>
+                            <div class="course-item">计算机科学</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
 </body>
 
 </html>
