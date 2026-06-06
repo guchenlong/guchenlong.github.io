@@ -24,8 +24,8 @@
         }
 
         main {
-            width: 100%;
-            height: 100vh;
+            min-height: 100vh;
+            padding: 10px;
             display: flex;
         }
 
@@ -62,17 +62,20 @@
 
         .right-item {
             display: flex;
+            margin: 2px 0;
         }
 
         .right-item-left {
-            width: 80px;
+            width: 120px;
             margin: 0 10px;
-            text-align: center;
+            font-size: 16px;
             color: rgb(232, 145, 110);
         }
 
         .right-item-right {
             display: flex;
+            flex-wrap: wrap;
+            font-size: 15px;
         }
 
         .course-item {
@@ -117,9 +120,9 @@
                     </div>
                 </div>
             </section>
-            <!-- 小学初中 -->
+            <!-- 小初 -->
             <section>
-                <div class="left">小学初中</div>
+                <div class="left">小初</div>
                 <div class="right">
                     <div class="right-item">
                         <div class="right-item-left">一年级</div>
@@ -263,52 +266,153 @@
             <section>
                 <div class="left">学科</div>
                 <div class="right">
+                    <!-- 1、哲学 -->
                     <div class="right-item">
-                        <div class="right-item-left"></div>
+                        <div class="right-item-left">1、哲学</div>
+                        <div class="right-item-right">
+                            <div class="course-item">哲学</div>
+                            <div class="course-item">应用伦理</div>
+                        </div>
+                    </div>
+                    <!-- 2、经济学 -->
+                    <div class="right-item">
+                        <div class="right-item-left">2、经济学</div>
+                        <div class="right-item-right">
+                            <div class="course-item">理论经济学</div>
+                            <div class="course-item">应用经济学</div>
+                        </div>
+                    </div>
+                    <!-- 3、法学 -->
+                    <div class="right-item">
+                        <div class="right-item-left">3、法学</div>
+                        <div class="right-item-right">
+                            <div class="course-item">法学</div>
+                            <div class="course-item">政治学</div>
+                            <div class="course-item">社会学</div>
+                        </div>
+                    </div>
+                    <!-- 4、教育学 -->
+                    <div class="right-item">
+                        <div class="right-item-left">4、教育学</div>
+                        <div class="right-item-right">
+                            <div class="course-item">教育学</div>
+                            <div class="course-item">心理学</div>
+                            <div class="course-item">教育</div>
+                        </div>
+                    </div>
+                    <!-- 5、文学 -->
+                    <div class="right-item">
+                        <div class="right-item-left">5、文学</div>
+                        <div class="right-item-right">
+                            <div class="course-item">中国语言文学</div>
+                            <div class="course-item">外国语言文学</div>
+                            <div class="course-item">新闻传播学</div>
+                        </div>
+                    </div>
+                    <!-- 6、历史学 -->
+                    <div class="right-item">
+                        <div class="right-item-left">6、历史学</div>
+                        <div class="right-item-right">
+                            <div class="course-item">考古学</div>
+                            <div class="course-item">中国史</div>
+                            <div class="course-item">世界史</div>
+                            <div class="course-item">博物馆</div>
+                        </div>
+                    </div>
+                    <!-- 7、理学 -->
+                    <div class="right-item">
+                        <div class="right-item-left">7、理学</div>
                         <div class="right-item-right">
                             <div class="course-item">数学</div>
-                            <div class="course-item">计算机科学</div>
-                            <div class="course-item">历史学</div>
-                            <div class="course-item">哲学</div>
-                            <div class="course-item">文学</div>
-                            <div class="course-item">经济学</div>
-                            <div class="course-item">政治学</div>
                             <div class="course-item">物理学</div>
                             <div class="course-item">化学</div>
+                            <div class="course-item">天文学</div>
+                            <div class="course-item">地理学</div>
+                            <div class="course-item">大气科学</div>
+                            <div class="course-item">海洋科学</div>
+                            <div class="course-item">地球物理学</div>
+                            <div class="course-item">地质学</div>
+                            <div class="course-item">生物学</div>
+                            <div class="course-item">系统科学</div>
+                            <div class="course-item">科学技术史</div>
+                            <div class="course-item">统计学</div>
+                        </div>
+                    </div>
+                    <!-- 8、工学 -->
+                    <div class="right-item">
+                        <div class="right-item-left">8、工学</div>
+                        <div class="right-item-right">
+                            <div class="course-item">力学</div>
+                            <div class="course-item">机械工程</div>
+                            <div class="course-item">光学工程</div>
+                            <div class="course-item">计算机科学与技术</div>
+                            <div class="course-item">建筑学</div>
+                        </div>
+                    </div>
+                    <!-- 9、农学 -->
+                    <div class="right-item">
+                        <div class="right-item-left">9、农学</div>
+                        <div class="right-item-right">
+                            <div class="course-item">作物学</div>
+                            <div class="course-item">园艺学</div>
+                            <div class="course-item">兽医学</div>
+                            <div class="course-item">林学</div>
+                            <div class="course-item">草学</div>
+                        </div>
+                    </div>
+                    <!-- 10、医学 -->
+                    <div class="right-item">
+                        <div class="right-item-left">10、医学</div>
+                        <div class="right-item-right">
+                            <div class="course-item">基础医学</div>
+                            <div class="course-item">临床医学</div>
+                            <div class="course-item">口腔医学</div>
+                            <div class="course-item">中医学</div>
+                            <div class="course-item">药学</div>
+                        </div>
+                    </div>
+                    <!-- 11、军事学 -->
+                    <div class="right-item">
+                        <div class="right-item-left">11、军事学</div>
+                        <div class="right-item-right">
+                            <div class="course-item">战略学</div>
+                            <div class="course-item">军事思想与军事历史</div>
+                        </div>
+                    </div>
+                    <!-- 12、管理学 -->
+                    <div class="right-item">
+                        <div class="right-item-left">12、管理学</div>
+                        <div class="right-item-right">
+                            <div class="course-item">管理科学与工程</div>
+                            <div class="course-item">公共管理学</div>
+                        </div>
+                    </div>
+                    <!-- 13、艺术学 -->
+                    <div class="right-item">
+                        <div class="right-item-left">13、艺术学</div>
+                        <div class="right-item-right">
+                            <div class="course-item">艺术学</div>
+                            <div class="course-item">音乐</div>
+                            <div class="course-item">舞蹈</div>
+                            <div class="course-item">戏剧与影视</div>
+                            <div class="course-item">戏曲与曲艺</div>
+                            <div class="course-item">美术与书法</div>
+                            <div class="course-item">设计</div>
+                        </div>
+                    </div>
+                    <!-- 14、交叉学科 -->
+                    <div class="right-item">
+                        <div class="right-item-left">14、交叉学科</div>
+                        <div class="right-item-right">
+                            <div class="course-item">集成电路科学与工程</div>
+                            <div class="course-item">设计学</div>
+                            <div class="course-item">纳米科学与工程</div>
+                            <div class="course-item">文物</div>
+                            <div class="course-item">密码</div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- 硕士 -->
-            <!-- <section>
-                <div class="left">硕士</div>
-                <div class="right">
-                    <div class="right-item">
-                        <div class="right-item-left"></div>
-                        <div class="right-item-right">
-                            <div class="course-item">数学</div>
-                            <div class="course-item">计算机科学</div>
-                            <div class="course-item">历史</div>
-                            <div class="course-item">经济学</div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-            <!-- 博士 -->
-            <!-- <section>
-                <div class="left">博士</div>
-                <div class="right">
-                    <div class="right-item">
-                        <div class="right-item-left"></div>
-                        <div class="right-item-right">
-                            <div class="course-item">数学</div>
-                            <div class="course-item">计算机科学</div>
-                            <div class="course-item">历史</div>
-                            <div class="course-item">经济学</div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
         </article>
     </main>
 </body>
