@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>一年级数学 | 顾晨龙的个人站</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="一年级数学, 顾晨龙的个人站">
+    <meta name="description" content="一年级数学">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../../common/css/common.css" />
+    <script src="../../../../../common/js/common.js"></script>
+    <!-- 引入 头部组件 -->
+    <script src="../../../../../common/components/header.js"></script>
+    <style>
+        .component {
+            /* margin */
+            margin: 20px;
+            /* border */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            /* box */
+            width: 80%;
+            /* padding */
+            padding: 10px;
+            /* content */
+            display: flex;
+        }
+
+        .component-title {
+            width: 200px;
+            color: #d54f4f;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .component-content {
+            flex: 1;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .component-content-box {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .component-content-box-title {
+            color: blue;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .component-content-box-list-item {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="website-name"></div>
+        <div class="page-name"></div>
+    </header>
+    <main>
+        <!-- <article> -->
+        <div class="component">
+            <div class="component-title"> 沪教版 · 2006 版</div>
+            <div class="component-content">
+                <div class="component-content-box">
+                    <div class="component-content-box-title">一年级数学·上册</div>
+                    <div class="component-content-box-list">
+                        <div class="component-content-box-list-item">一、10 以内的数</div>
+                        <div class="component-content-box-list-item">二、10 以内数的加减法</div>
+                        <div class="component-content-box-list-item">三、20 以内的数及其加减法</div>
+                        <div class="component-content-box-list-item">四、识别图形</div>
+                        <div class="component-content-box-list-item">五、整理与提高</div>
+                    </div>
+                </div>
+                <div class="component-content-box">
+                    <div class="component-content-box-title">一年级数学·下册</div>
+                    <div class="component-content-box-list">
+                        <div class="component-content-box-list-item">一、10 以内的数</div>
+                        <div class="component-content-box-list-item">二、10 以内数的加减法</div>
+                        <div class="component-content-box-list-item">三、20 以内的数及其加减法</div>
+                        <div class="component-content-box-list-item">四、识别图形</div>
+                        <div class="component-content-box-list-item">五、整理与提高</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </article> -->
+    </main>
+
+    <!-- script start -->
+    <script>
+        window.onload = function () {
+            renderHeaderComponent();  // 渲染 - 头部组件
+            renderPageNameComponent('一年级 · 数学');  // 渲染 - 页面 - 名称
+        }
+    </script>
+    <!-- script end -->
+</body>
+
+</html>
