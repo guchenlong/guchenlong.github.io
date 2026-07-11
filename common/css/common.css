@@ -5,9 +5,11 @@
 
 a {
     text-decoration: none;
+    color: #612be8;
 }
 
 main {
+    margin-top: 20px;
     width: 100%;
     display: flex;
     justify-content: center;

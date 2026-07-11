@@ -1,0 +1,20 @@
+/* 首页 样式 */
+
+/* 推荐 模块 样式 */
+.recommend {
+    width: 500px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.recommend-item {
+    display: block;
+    margin: 5px;
+    padding: 5px 20px;
+    background: #f9e2e2;
+    border-radius: 5px;
+}
