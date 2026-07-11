@@ -2,7 +2,7 @@
 
 /* 推荐 模块 样式 */
 .recommend {
-    width: 500px;
+    width: 400px;
     margin: 10px;
     padding: 10px;
     display: flex;
@@ -14,7 +14,7 @@
 .recommend-item {
     display: block;
     margin: 5px;
-    padding: 5px 20px;
+    padding: 5px 20px 5px 30px;
     background: #f9e2e2;
     border-radius: 5px;
 }
