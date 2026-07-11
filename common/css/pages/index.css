@@ -6,7 +6,7 @@
     padding: 5px;
     display: flex;
     flex-direction: column;
-    border: 1px solid #ddd;
+    border: 1px solid #959393;
     border-radius: 5px;
 }
 
@@ -14,7 +14,8 @@
     display: block;
     margin: 5px;
     padding: 5px 20px;
-    background: #f7eaea;
+    background: #fff;
     border-radius: 5px;
     font-size: 14px;
+    text-align: center;
 }

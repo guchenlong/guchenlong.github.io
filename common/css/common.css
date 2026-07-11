@@ -1,11 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    background: rgb(232, 232, 226);
 }
 
 a {
     text-decoration: none;
-    color: #612be8;
+    color: #090914;
 }
 
 main {
@@ -29,7 +30,7 @@ header {
     text-align: center;
     font-size: 18px;
     cursor: pointer;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
 }
 
 /* 页面 - 名称 */
@@ -40,5 +41,5 @@ header {
     text-align: center;
     font-size: 18px;
     cursor: pointer;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
 }
