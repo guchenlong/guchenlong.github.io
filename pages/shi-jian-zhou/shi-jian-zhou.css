@@ -1,0 +1,29 @@
+.item {
+    width: 90%;
+    margin: 5px 10px;
+    padding: 5px 20px;
+    background: #f7f2f2;
+    border-radius: 5px;
+    display: flex;
+    font-size: 15px;
+}
+
+.mark {
+    background: #f6d2d2;
+}
+
+.shi_jian {
+    width: 200px;
+}
+
+.di_dian {
+    width: 200px;
+}
+
+.ren_wu {
+    width: 300px;
+}
+
+.shi_qing {
+    flex: 1;
+}
