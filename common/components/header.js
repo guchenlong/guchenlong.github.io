@@ -13,7 +13,7 @@ function renderHeaderComponent() {
     element.style.cursor = 'pointer';
     // 组件 - 事件
     element.addEventListener('click', function () {
-        window.open("https://guchenlong.github.io", "_blank");
+        window.open("/", "_blank");
     });
     document.querySelector('.website-name').appendChild(element);
 }
