@@ -1,0 +1,33 @@
+.content {
+    width: 80%;
+}
+
+.list {
+    margin: 5px;
+    padding: 2px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    display: flex;
+}
+
+.list-left {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.list-right {
+    flex: 1;
+    margin: 2px;
+    padding: 2px;
+}
+
+.item {
+    margin: 5px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background: #fff;
+    font-size: 14px;
+}
