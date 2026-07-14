@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>交换变量值 | 顾晨龙的个人站</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="交换变量值, 顾晨龙的个人站">
+    <meta name="description" content="交换变量值, 顾晨龙的个人站">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../../common/css/common.css" /><!-- 通用 样式 -->
+    <!-- <link rel="stylesheet" href="./mian-shi-ti.css" /> -->
+    <script src="../../../../../common/js/common.js"></script><!-- 通用 脚本 -->
+    <script src="../../../../../common/components/header.js"></script><!-- 头部组件 脚本 -->
+</head>
+
+<body>
+    <header>
+        <div class="website-name"></div>
+        <div class="page-name"></div>
+    </header>
+    <main>
+        <div class="content">
+            <div class="title">不使用第三个变量，交换两个变量的值 （a = 3; b = 4）</div>
+            <div class="answer">
+                <pre>
+                    <code>
+function jiao_huan(a, b) {
+    a = a + b;  // a = 3 + 4 = 7
+    b = a - b;  // b = 7 - 4 = 3
+    a = a - b;  // a = 7 - 3 = 4
+    console.log(`a = ${a}, b = ${b}`);
+}
+jiao_huan(3, 4);
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </main>
+    <!-- script start -->
+    <script>
+        window.onload = function () {
+            renderHeaderComponent();  // 渲染 - 头部组件
+            renderPageNameComponent('交换变量值');  // 渲染 - 页面 - 名称
+        }
+    </script>
+    <!-- script end -->
+</body>
+
+</html>

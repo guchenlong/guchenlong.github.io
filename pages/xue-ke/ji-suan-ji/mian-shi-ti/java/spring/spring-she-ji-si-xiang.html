@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Spring 设计思想 | 顾晨龙的个人站</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Spring 设计思想, 顾晨龙的个人站">
+    <meta name="description" content="Spring 设计思想, 顾晨龙的个人站">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../../../common/css/common.css" /><!-- 通用 样式 -->
+    <!-- <link rel="stylesheet" href="./mian-shi-ti.css" /> -->
+    <script src="../../../../../../common/js/common.js"></script><!-- 通用 脚本 -->
+    <script src="../../../../../../common/components/header.js"></script><!-- 头部组件 脚本 -->
+</head>
+
+<body>
+    <header>
+        <div class="website-name"></div>
+        <div class="page-name"></div>
+    </header>
+    <main>
+        <div class="content">
+            <div class="title">Spring 设计思想</div>
+            <div class="answer">
+                <div>控制反转（IoC）</div>
+                <div>依赖注入（DI）</div>
+                <div>AOP：面向切面编程</div>
+            </div>
+        </div>
+    </main>
+    <!-- script start -->
+    <script>
+        window.onload = function () {
+            renderHeaderComponent();  // 渲染 - 头部组件
+            renderPageNameComponent('Spring 设计思想');  // 渲染 - 页面 - 名称
+        }
+    </script>
+    <!-- script end -->
+</body>
+
+</html>
