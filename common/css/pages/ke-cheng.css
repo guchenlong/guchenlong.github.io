@@ -7,6 +7,12 @@
     border-radius: 5px;
 }
 
+.ke_cheng-page_item-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
 .content {
     width: 100%;
     min-height: 80vh;
