@@ -1,4 +1,12 @@
 /* 课程 页面 样式 */
+.ke_cheng-page_item {
+    width: 90%;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
 .content {
     width: 100%;
     min-height: 80vh;
