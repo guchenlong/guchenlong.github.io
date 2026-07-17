@@ -2,7 +2,7 @@
 function renderHeaderComponent() {
     let element = document.createElement('div');
     // 组件 - 元素
-    element.innerHTML = '顾晨龙的个人站';
+    element.innerHTML = '顾晨龙的个人网站';
     // 组件 - 样式
     element.classList.add('website-name');
     // 组件 - 事件
