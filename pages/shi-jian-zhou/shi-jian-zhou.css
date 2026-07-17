@@ -1,11 +1,20 @@
 .item {
-    width: 90%;
+    width: 80%;
     margin: 5px 10px;
     padding: 5px 20px;
-    border: 1px solid #296fe7;
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     font-size: 15px;
+    background: white;
+}
+
+.item div {
+    background: white;
+}
+
+.item a {
+    color: steelblue;
+    background: white;
 }
 
 .mark {
