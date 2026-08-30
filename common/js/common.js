@@ -1,5 +1,5 @@
 // 1、埋点上报
-if (window.location.host = "guchenlong.github.io") {
+if (window.location.host == "guchenlong.github.io") {
     var _hmt = _hmt || [];
     (function () {
         var hm = document.createElement("script");
