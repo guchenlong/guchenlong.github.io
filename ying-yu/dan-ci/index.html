@@ -24,16 +24,47 @@
         }
 
         main {
-            width: 80%;
+            width: 60%;
             margin: 5px;
             padding: 5px;
         }
+    </style>
+    <style>
+        .list-box {
+            display: flex;
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .zi-mu {
+            width: 15%;
+            color: rgb(240, 9, 9);
+            font-size: 18px;
+        }
 
         .list {
+            flex: 1;
             padding: 2px 10px;
             margin-left: 40px;
-            background: #f8ebeb;
+            background: #faf8f8;
             border-radius: 5px;
+        }
+
+        .word-box {
+            display: flex;
+            align-items: center;
+        }
+
+        .word {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .word-mean {
+            font-size: 14px;
+            margin-left: 50px;
         }
     </style>
 </head>
@@ -42,190 +73,257 @@
     <header>单词</header>
     <main>
         <!-- A -->
-        <div>
-            <div>A</div>
+        <div class="list-box">
+            <div class="zi-mu">A</div>
             <div class="list">
-                <div>and conj.然后</div>
-                <div>answer n.回答</div>
+                <div class="word-box">
+                    <div class="word">and</div>
+                    <div class="word-mean">conj.然后</div>
+                </div>
+                <div class="word-box">
+                    <div class="word">answer</div>
+                    <div class="word-mean">n.回答</div>
+                </div>
             </div>
         </div>
         <!-- B -->
-        <div>
-            <div>B</div>
+        <div class="list-box">
+            <div class="zi-mu">B</div>
             <div class="list">
-                <div>best adj.最合适的</div>
-                <div>blank n.空格</div>
+                <div class="word-box">
+                    <div class="word">best</div>
+                    <div class="word-mean">adj.最合适的</div>
+                </div>
             </div>
         </div>
         <!-- C -->
-        <div>
-            <div>C</div>
+        <div class="list-box">
+            <div class="zi-mu">C</div>
             <div class="list">
-                <div>choose v.选择</div>
+                <div class="word-box">
+                    <div class="word">choose</div>
+                    <div class="word-mean">v.选择</div>
+                </div>
             </div>
         </div>
         <!-- D -->
-        <div>
-            <div>D</div>
+        <div class="list-box">
+            <div class="zi-mu">D</div>
             <div class="list">
-                <div>direction n.说明</div>
+                <div class="word-box">
+                    <div class="word">direction</div>
+                    <div class="word-mean">n.说明</div>
+                </div>
             </div>
         </div>
         <!-- E -->
-        <div>
-            <div>E</div>
+        <div class="list-box">
+            <div class="zi-mu">E</div>
             <div class="list">
-                <div>each pron.每个</div>
-                <div>english n.英语</div>
+                <div class="word-box">
+                    <div class="word">each</div>
+                    <div class="word-mean">pron.每个</div>
+                </div>
+                <div class="word-box">
+                    <div class="word">english</div>
+                    <div class="word-mean">n.英语</div>
+                </div>
             </div>
         </div>
         <!-- F -->
-        <div>
-            <div>F</div>
+        <div class="list-box">
+            <div class="zi-mu">F</div>
             <div class="list">
-                <div>following adj.下列的</div>
-                <div>for prep.给</div>
+                <div class="word-box">
+                    <div class="word">following</div>
+                    <div class="word-mean">adj.下列的</div>
+                </div>
+                <div class="word-box">
+                    <div class="word">for</div>
+                    <div class="word-mean">prep.给</div>
+                </div>
             </div>
         </div>
         <!-- G -->
-        <div>
-            <div>G</div>
+        <div class="list-box">
+            <div class="zi-mu">G</div>
             <div class="list">
                 <div></div>
             </div>
         </div>
         <!-- H -->
-        <div>
-            <div>H</div>
+        <div class="list-box">
+            <div class="zi-mu">H</div>
             <div class="list">
                 <div></div>
             </div>
         </div>
         <!-- I -->
-        <div>
-            <div>I</div>
+        <div class="list-box">
+            <div class="zi-mu">I</div>
             <div class="list">
                 <div></div>
             </div>
         </div>
         <!-- J -->
-        <div>
-            <div>J</div>
+        <div class="list-box">
+            <div class="zi-mu">J</div>
             <div class="list">
                 <div></div>
             </div>
         </div>
         <!-- K -->
-        <div>
-            <div>K</div>
+        <div class="list-box">
+            <div class="zi-mu">K</div>
             <div class="list">
                 <div></div>
             </div>
         </div>
         <!-- L -->
-        <div>
-            <div>L</div>
+        <div class="list-box">
+            <div class="zi-mu">L</div>
             <div class="list">
                 <div></div>
             </div>
         </div>
         <!-- M -->
-        <div>
-            <div>M</div>
+        <div class="list-box">
+            <div class="zi-mu">M</div>
             <div class="list">
-                <div>mark v.做记号</div>
+                <div class="word-box">
+                    <div class="word">mark</div>
+                    <div class="word-mean">v.做记号</div>
+                </div>
             </div>
         </div>
-        <!-- n -->
-        <div>
-            <div>n</div>
+        <!-- N -->
+        <div class="list-box">
+            <div class="zi-mu">N</div>
             <div class="list">
-                <div>numbered adj.编号的</div>
+                <div class="word-box">
+                    <div class="word">numbered</div>
+                    <div class="word-mean">adj.编号的</div>
+                </div>
             </div>
         </div>
         <!-- O -->
-        <div>
-            <div>O</div>
+        <div class="list-box">
+            <div class="zi-mu">O</div>
             <div class="list">
-                <div>of prep.关于</div>
-                <div>on prep.在...上</div>
-                <div>or conj.或者</div>
+                <div class="word-box">
+                    <div class="word">of</div>
+                    <div class="word-mean">prep.关于</div>
+                </div>
+                <div class="word-box">
+                    <div class="word">on</div>
+                    <div class="word-mean">prep.在...上</div>
+                </div>
+                <div class="word-box">
+                    <div class="word">or</div>
+                    <div class="word-mean">conj.或者</div>
+                </div>
             </div>
         </div>
         <!-- P -->
-        <div>
-            <div>P</div>
+        <div class="list-box">
+            <div class="zi-mu">P</div>
             <div class="list">
                 <div></div>
             </div>
         </div>
         <!-- Q -->
-        <div>
-            <div>Q</div>
+        <div class="list-box">
+            <div class="zi-mu">Q</div>
             <div class="list">
                 <div></div>
             </div>
         </div>
         <!-- R -->
-        <div>
-            <div>R</div>
+        <div class="list-box">
+            <div class="zi-mu">R</div>
             <div class="list">
-                <div>read v.阅读</div>
+                <div class="word-box">
+                    <div class="word">read</div>
+                    <div class="word-mean">v.阅读</div>
+                </div>
+                <div class="word-box">
+                    <div class="word">remote</div>
+                    <div class="word-mean">adj.遥远的</div>
+                </div>
+                <div class="word-box">
+                    <div class="word">remove</div>
+                    <div class="word-mean">v.搬迁</div>
+                </div>
             </div>
         </div>
         <!-- S -->
-        <div>
-            <div>S</div>
+        <div class="list-box">
+            <div class="zi-mu">S</div>
             <div class="list">
-                <div>section n.部分</div>
-                <div>sheet n.纸</div>
+                <div class="word-box">
+                    <div class="word">section</div>
+                    <div class="word-mean">n.部分</div>
+                </div>
+                <div class="word-box">
+                    <div class="word">sheet</div>
+                    <div class="word-mean">n.纸</div>
+                </div>
             </div>
         </div>
         <!-- T -->
-        <div>
-            <div>T</div>
+        <div class="list-box">
+            <div class="zi-mu">T</div>
             <div class="list">
-                <div>text n.文章</div>
+                <div class="word-box">
+                    <div class="word">text</div>
+                    <div class="word-mean">n.文章</div>
+                </div>
             </div>
         </div>
         <!-- U -->
-        <div>
-            <div>U</div>
+        <div class="list-box">
+            <div class="zi-mu">U</div>
             <div class="list">
-                <div>use n.使用</div>
+                <div class="word-box">
+                    <div class="word">use</div>
+                    <div class="word-mean">n.使用</div>
+                </div>
             </div>
         </div>
         <!-- V -->
-        <div>
-            <div>V</div>
+        <div class="list-box">
+            <div class="zi-mu">V</div>
             <div class="list">
                 <div></div>
             </div>
         </div>
         <!-- W -->
-        <div>
-            <div>W</div>
+        <div class="list-box">
+            <div class="zi-mu">W</div>
             <div class="list">
-                <div>word n.单词</div>
+                <div class="word-box">
+                    <div class="word">word</div>
+                    <div class="word-mean">n.单词</div>
+                </div>
             </div>
         </div>
         <!-- X -->
-        <div>
-            <div>X</div>
+        <div class="list-box">
+            <div class="zi-mu">X</div>
             <div class="list">
                 <div></div>
             </div>
         </div>
         <!-- Y -->
-        <div>
-            <div>Y</div>
+        <div class="list-box">
+            <div class="zi-mu">Y</div>
             <div class="list">
                 <div></div>
             </div>
         </div>
         <!-- Z -->
-        <div>
-            <div>Z</div>
+        <div class="list-box">
+            <div class="zi-mu">Z</div>
             <div class="list">
                 <div></div>
             </div>
