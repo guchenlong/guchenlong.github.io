@@ -32,9 +32,19 @@ header {
 
 /* ---- main ---- */
 main {
-    width: 80%;
+    width: 100%;
     margin: 10px;
     font-size: 13px;
+    display: flex;
+}
+
+aside {
+    width: 15vw;
+    background: #fab0b0;
+}
+
+article {
+    flex: 1;
 }
 
 /* 书 */
