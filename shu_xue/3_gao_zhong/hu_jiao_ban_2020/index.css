@@ -44,7 +44,7 @@ main {
 }
 
 aside {
-    width: 15%;
+    width: 20%;
     font-size: 12px;
 }
 
@@ -76,6 +76,8 @@ article {
 
 .article-section-list {
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .article-section-list-item {
@@ -103,29 +105,19 @@ article {
 }
 
 .article-section-2-title {
-    width: 10vw;
+    width: 15vw;
 }
 
 .article-section-2-list {
     flex: 1;
 }
 
-.zhi-shi-dian {
-    color: rgb(210, 1, 1);
+.article-section-3-item {
     margin: 1px;
     padding-left: 10px;
     border: 1px solid #fff;
     border-radius: 5px;
 }
-
-.ti-mu {
-    margin: 1px;
-    padding-left: 10px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-}
-
-.wen-ti {}
 
 /* 3.3、components aside right */
 .aside-right-section {
