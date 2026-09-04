@@ -173,12 +173,45 @@
                                         <div style="margin-left: 80px;">（2）若 A ⊆ B 且 B ⊆ A，则 A = B。</div>
                                         <div style="margin-left: 80px;">（3）传递性：若 A ⊆ B 且 B ⊆ C，则 A ⊆ C。</div>
                                     </div>
+                                    <!-- 真子集 -->
+                                    <div class="zhi-shi-dian">
+                                        <span class="zhong_dian">真子集</span>：
+                                        <div style="margin-left: 40px;">
+                                            <span class="zhong_dian">定义</span>：对于两个集合 A 与 B，如果 A ⊆ B，且 B 中至少有一个元素不属于 A（即 B 不是 A 的子集），那么集合 A 是集合 B 的<span class="zhong_dian">真子集</span>（proper subset），记作 A ⊂ B（或 B ⊃ A），读作“A 真包含于 B”（或“B 真包含 A”）。
+                                            <div style="margin-left: 40px;">对于常用的数集，我们有如下的包含关系： N ⊂ Z ⊂ Q ⊂ R。</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="article-section-1-list-item">
                                 <div class="article-section-2-title">4、集合的运算</div>
                                 <div class="article-section-2-list">
-                                    <div class="zhi-shi-dian"></div>
+                                    <!-- 交集 -->
+                                    <div class="zhi-shi-dian">
+                                        <span class="zhong_dian">交集</span>：
+                                        <div style="margin-left: 40px;">
+                                            <span class="zhong_dian">定义</span>：由既属于集合 A 又属于集合 B 的所有元素组成的集合，叫做集合 A 与 B 的 <span class="zhong_dian">交集</span>（intersection），记作 A ∩ B（读作 “A 交 B”），即 A ∩ B = { x | x ∈ A 且 x ∈ B }。
+                                        </div>
+                                    </div>
+                                    <!-- 并集 -->
+                                    <div class="zhi-shi-dian">
+                                        <span class="zhong_dian">并集</span>：
+                                        <div style="margin-left: 40px;">
+                                            <span class="zhong_dian">定义</span>：由所有属于集合 A 或属于集合 B 的元素组成的集合，叫做集合 A 与 B 的 <span class="zhong_dian">并集</span>（union），记作 A U B（读作 “A 并 B”），即 A U B = { x | x ∈ A 或 x ∈ B }。
+                                        </div>
+                                    </div>
+                                    <!-- 全集 -->
+                                    <div class="zhi-shi-dian">
+                                        <span class="zhong_dian">全集</span>：在数学研究中，所研究的对象往往是某个确定集合的一个子集或元素。这个确定的集合称为<span class="zhong_dian">全集</span>（universal set），常用符号 U 表示，
+                                    </div>
+                                    <!-- 补集 -->
+                                    <div class="zhi-shi-dian">
+                                        <span class="zhong_dian">补集</span>：
+                                        <div style="margin-left: 40px;">
+                                            <span class="zhong_dian">定义</span>：设 U 为全集，A 是 U 的子集。由 U 中所有不属于 A 的元素组成的集合称为集合 A 在全集 U 中的 补集（complementary set），记作 Ā（读作 “A 补”），即 Ā = { x | x ∈ U 且 x ∉ A }。
+                                            <div style="margin-left: 40px;">有时为了强调全集 U，集合 A 在全集 U 中的补集 Ā 也可以记作 ∁ᵤA。</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -189,19 +222,64 @@
                             <div class="article-section-1-list-item">
                                 <div class="article-section-2-title">1、命题</div>
                                 <div class="article-section-2-list">
-                                    <div class="zhi-shi-dian">命题：用自然语言，符号或式子表达，且可以判断其真假的语句叫做命题（proposition）。</div>
+                                    <!-- 命题 -->
+                                    <div class="zhi-shi-dian">
+                                        <span class="zhong_dian">命题</span>：用自然语言，符号或式子表达，且可以判断其真假的语句叫做命题（proposition）。
+                                        <div style="margin-left: 40px;">命题通常用陈述句表述。</div>
+                                        <div style="margin-left: 20px;">
+                                            <span class="zhong_dian">真命题</span>：其含义判断为真的命题叫做真命题。
+                                        </div>
+                                        <div style="margin-left: 20px;">
+                                            <span class="zhong_dian">假命题</span>：其含义判断为假的命题叫做假命题。
+                                        </div>
+                                    </div>
+                                    <!-- 若 α，则 β -->
+                                    <div class="zhi-shi-dian">
+                                        <span class="zhong_dian">若 α，则 β</span>：在形如 “若 α，则 β” 的命题中，陈述句 α 称为条件，β 称为结论。
+                                        <div style="margin-left: 20px;">
+                                            <span class="zhong_dian">命题 “若 α，则 β” 是真命题</span>：指 <span class="zhong_dian">所有</span> 满足条件 α 的对象都满足结论 β。用集合的语言描述即 { x | x 满足 α } ⊆ { x | x 满足 β }。
+                                        </div>
+                                        <div style="margin-left: 20px;">
+                                            <span class="zhong_dian">命题 “若 α，则 β” 是假命题</span>：指 <span class="zhong_dian">存在</span> 满足条件 α 的对象，它不满足结论 β。
+                                            <div style="margin-left: 40px;">要确定这类命题是假命题，举一个满足条件 α 而不满足结论 β 的例子就可以了。</div>
+                                        </div>
+                                        <div style="margin-left: 20px;">
+                                            <span class="zhong_dian">定义</span>：如果命题 “若 α，则 β” 是真命题，那么就称 α 推出 β，记作 α => β（或 β <= α）。
+                                            <div style="margin-left: 40px;">因为子集关系满足传递性，所以推出关系也满足传递性：若 α => β，且 β => γ，那么 α => γ。它是逻辑推理的基础。</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="article-section-1-list-item">
                                 <div class="article-section-2-title">2、充分条件与必要条件</div>
                                 <div class="article-section-2-list">
-                                    <div class="zhi-shi-dian"></div>
+                                    <!-- 充分条件 / 必要条件 -->
+                                    <div class="zhi-shi-dian">
+                                        <span class="zhong_dian">充分条件 / 必要条件</span>
+                                        <div style="margin-left: 20px;">
+                                            <span class="zhong_dian">定义</span>：对于两个陈述句 α 与 β，如果 α => β，就称 α 是 β 的 <span class="zhong_dian">充分条件</span>（sufficient conditon），亦称 β 是 α 的<span class="zhong_dian">必要条件</span>（necessary conditon）。
+                                        </div>
+                                    </div>
+                                    <!-- 充要条件 -->
+                                    <div class="zhi-shi-dian">
+                                        <span class="zhong_dian">充要条件</span>
+                                        <div style="margin-left: 20px;">
+                                            <span class="zhong_dian">定义</span>：对于两个陈述句 α 与 β，如果既有 α => β，又有 β => α，就称 α 是 β 的 <span class="zhong_dian">充分必要条件</span>，简称<span class="zhong_dian">充要条件</span>，记作 α <=> β，读作 “α 与 β 等价” 或 “α 成立当且仅当 β成立”。
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="article-section-1-list-item">
                                 <div class="article-section-2-title">3、反证法</div>
                                 <div class="article-section-2-list">
-                                    <div class="zhi-shi-dian"></div>
+                                    <!-- 存在 / 所有 -->
+                                    <div class="zhi-shi-dian">
+                                        <span class="zhong_dian">存在 / 所有</span>：要判断命题 “若 α，则 β” 是假命题，只要 <span class="zhong_dian">存在</span> 一个满足条件 α 但不满足结论 β 的对象就行了。但要判断命题 “若 α，则 β” 是真命题，就需要证明 <span class="zhong_dian">所有</span> 满足条件 α 的对象都满足结论 β。
+                                    </div>
+                                    <!-- 反证法 -->
+                                    <div class="zhi-shi-dian">
+                                        <span class="zhong_dian">反证法</span>：它首先假设结论 β 不成立（β 为假），然后经过正确的逻辑推理得出矛盾，从而说明 “β 为假” 是不可能发生的，即结论 β 是正确的。这样的证明方法叫做<span class="zhong_dian">反证法</span>。
+                                    </div>
                                 </div>
                             </div>
                         </div>
