@@ -16,7 +16,7 @@ a {
 /* 2、layout */
 body {
     /* 全局 · 字体 · 大小 */
-    font-size: 12px;
+    font-size: 13px;
     /* 全局 · 背景色 */
     background: rgb(245, 220, 198);
     display: flex;
@@ -41,6 +41,8 @@ main {
     width: 100%;
     margin: 10px 0 50px;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 aside {
@@ -49,7 +51,7 @@ aside {
 }
 
 article {
-    flex: 1;
+    width: 96%;
 }
 
 /* 3、components */
@@ -89,7 +91,7 @@ article {
 }
 
 .article-section-1-title {
-    width: 10vw;
+    width: 15vw;
 }
 
 .article-section-1-list {
@@ -105,7 +107,7 @@ article {
 }
 
 .article-section-2-title {
-    width: 15vw;
+    width: 22vw;
 }
 
 .article-section-2-list {
