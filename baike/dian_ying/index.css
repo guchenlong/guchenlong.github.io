@@ -19,7 +19,7 @@ header {
 main {
     width: 100%;
     display: flex;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 aside {
@@ -31,6 +31,12 @@ aside section {
     margin: 5px;
     padding: 5px 20px;
     border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+aside section div {
+    margin: 2px 0;
+    text-align: center;
     border-radius: 5px;
 }
 
@@ -77,4 +83,10 @@ article {
     padding: 1px;
     background-color: #fff;
     border-radius: 5px;
+}
+
+/* mark */
+
+.finish {
+    background: rgb(246, 183, 100)
 }
