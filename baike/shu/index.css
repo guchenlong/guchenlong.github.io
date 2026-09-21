@@ -1,0 +1,92 @@
+/* 1、common */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 2、layout */
+body {
+    background-color: rgb(255, 250, 243);
+}
+
+header {
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    font-size: 13px;
+}
+
+aside {
+    margin: 5px;
+    width: 15%;
+}
+
+aside section {
+    margin: 5px;
+    padding: 5px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+aside section div {
+    margin: 2px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+article {
+    margin: 10px;
+    width: 70%;
+}
+
+/* 3、components */
+.list {
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.list-title {
+    width: 10vw;
+}
+
+.list-2 {
+    flex: 1;
+    margin: 2px;
+    padding: 2px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.list-2-item {
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.list-2-title {
+    width: 10vw;
+}
+
+.list-3-item {
+    margin: 1px;
+    padding: 1px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* mark */
+
+.finish {
+    background: rgb(246, 183, 100)
+}
