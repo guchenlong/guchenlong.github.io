@@ -9,6 +9,7 @@
 a {
     text-decoration: none;
     color: rgb(16, 127, 238);
+    background-color: transparent;
 }
 
 .list {
