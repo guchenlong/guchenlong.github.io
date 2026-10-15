@@ -64,7 +64,7 @@ nav {
 .nav-item {
 	margin: 1px 0;
 	padding: 1px 10px;
-	border: 1px solid #fff;
+	/* border: 1px solid #fff; */
 	border-radius: 5px;
 }
 
